@@ -1,6 +1,36 @@
+// Futura STD Heavy
 @font-face {
-    font-family: 'Myriad Pro Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Myriad Pro Regular'), url('../fonts/MYRIADPRO-REGULAR.woff') format('woff');
+    font-family: "FH";
+    font-weight: 800;
+    src: url("//db.onlinewebfonts.com/t/93dfd51b8a2f04cf6b71f2eea0d20031.eot");
+    src: url("//db.onlinewebfonts.com/t/93dfd51b8a2f04cf6b71f2eea0d20031.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/93dfd51b8a2f04cf6b71f2eea0d20031.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/93dfd51b8a2f04cf6b71f2eea0d20031.woff") format("woff"), url("//db.onlinewebfonts.com/t/93dfd51b8a2f04cf6b71f2eea0d20031.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/93dfd51b8a2f04cf6b71f2eea0d20031.svg#Futura Std") format("svg");
+}
+
+// Futura STD BOLD
+@font-face {
+    font-family: "Futura Std";
+    src: url("//db.onlinewebfonts.com/t/f7339bec7d6baa9a4bf184e63bf013dd.eot");
+    src: url("//db.onlinewebfonts.com/t/f7339bec7d6baa9a4bf184e63bf013dd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f7339bec7d6baa9a4bf184e63bf013dd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f7339bec7d6baa9a4bf184e63bf013dd.woff") format("woff"), url("//db.onlinewebfonts.com/t/f7339bec7d6baa9a4bf184e63bf013dd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f7339bec7d6baa9a4bf184e63bf013dd.svg#Futura Std") format("svg");
+}
+
+// Futura STD Medium
+@font-face {
+    font-family: "FM";
+    font-weight: 500;
+    src: url("//db.onlinewebfonts.com/t/14792084dfffdbe3116c33b3a8c5c5f9.eot");
+    src: url("//db.onlinewebfonts.com/t/14792084dfffdbe3116c33b3a8c5c5f9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/14792084dfffdbe3116c33b3a8c5c5f9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/14792084dfffdbe3116c33b3a8c5c5f9.woff") format("woff"), url("//db.onlinewebfonts.com/t/14792084dfffdbe3116c33b3a8c5c5f9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/14792084dfffdbe3116c33b3a8c5c5f9.svg#Futura Std") format("svg");
+}
+
+// Futura STD Book Oblique
+@font-face {
+    font-family: "FBO";
+    src: url("//db.onlinewebfonts.com/t/c961c9b1802e79ea12dcfe89bd016753.eot");
+    src: url("//db.onlinewebfonts.com/t/c961c9b1802e79ea12dcfe89bd016753.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c961c9b1802e79ea12dcfe89bd016753.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c961c9b1802e79ea12dcfe89bd016753.woff") format("woff"), url("//db.onlinewebfonts.com/t/c961c9b1802e79ea12dcfe89bd016753.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c961c9b1802e79ea12dcfe89bd016753.svg#Futura Std") format("svg");
+}
+
+// Futura STD Book
+@font-face {
+    font-family: "FO";
+    src: url("//db.onlinewebfonts.com/t/921351f146d78d55c8030239527bf2d6.eot");
+    src: url("//db.onlinewebfonts.com/t/921351f146d78d55c8030239527bf2d6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/921351f146d78d55c8030239527bf2d6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/921351f146d78d55c8030239527bf2d6.woff") format("woff"), url("//db.onlinewebfonts.com/t/921351f146d78d55c8030239527bf2d6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/921351f146d78d55c8030239527bf2d6.svg#Futura Std") format("svg");
 }

@@ -1,10 +1,10 @@
 (function () {
     'use strict';
 
-    $('#nav-toggler').click(function () {
+    $('[data-toggle="navbar"]').click(function () {
         const isExpanded = $(this).attr('aria-expanded') === 'false' ? false : true;
 
-        $('#mobile-nav').toggleClass('active');
+        $('#mobile-nav-content').toggleClass('active');
 
         $(this).attr('aria-expanded', !isExpanded);
     });

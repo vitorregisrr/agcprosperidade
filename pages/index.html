@@ -37,18 +37,19 @@
         <meta property="fb:app_id" content="_app_id"/>
         <meta name="twitter:site" content="@app">
 
+        <!-- Load Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
+            rel="stylesheet">
+
         <!-- Vendor JS -->
         <script src="../vendors/js/vendor.bundle.base.js" defer></script>
         <script src="../vendors2/jquery.custom-scrollbar.js" defer></script>
 
         <!-- Custom JS -->
         <script src="../js/misc.js" defer></script>
-        <script src="../js/login.js" defer></script>
-        <script src="../js/modal.js" defer></script>
-        <script src="../js/dropdowns.js" defer></script>
         <script src="../js/carousels.js" defer></script>
         <script src="../js/checkout.js" defer></script>
-        <script src="../js/agendamento.js" defer></script>
         <script src="../js/forms.js" defer></script>
         <script src="../js/responsivenav.js" defer></script>
         <script src="../js/inputmasks.js" defer></script>
@@ -70,10 +71,167 @@
         <!-- partial -->
     </head>
 
-    <body class=" wow fadeIn">
+    <body class="wow fadeIn">
+        <section id="home-tree" class="home-tree">
+            <!-- partial:../partials/__navbar.html -->
+            <nav id="main-nav" class="main-nav">
+                <div class="container">
+                    <div class="main-nav__tree">
+                        <img class="tree" src="../images/brands/tree-black.png" alt="Arvore estilizada">
+                        <img class="lines" src="../images/ico/lines.png" alt="Linhas estilizadas">
+                    </div>
+                    <button class="main-nav__toggler" data-toggle="navbar">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </button>
+                    <div id="mobile-nav-content" class="main-nav__content">
+                        <ul class="main-nav__links">
+                            <li class="d-block d-lg-none active">
+                                <a href="#">Home</a>
 
+                                <div class="line"></div>
+                            </li>
+                            <li>
+                                <a href="#">Soluções</a>
+
+                                <div class="line"></div>
+                            </li>
+                            <li>
+                                <a href="#">Portfólio</a>
+
+                                <div class="line"></div>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+
+                                <div class="line"></div>
+                            </li>
+                            <div class="main-nav__close" data-toggle="navbar">
+                                X
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- partial -->
+            <div class="container">
+                <div class="home-tree__banner">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="home-tree__caption order-last order-lg-first">
+                                <h1 class="title wow fadeInUp" data-wow-delay="0.8s">
+                                    Estratégias que convertem
+                                </h1>
+                                <h2 class="desc wow fadeInUp" data-wow-delay="1.3s">
+                                    Você nos conta onde quer chegar.
+                                    <span>
+                                        Nós traçamos o caminho.
+
+                                        <div class="icons">
+                                            <div class="line wow fadeInUp"></div>
+                                            <a class="contact wow fadeIn" data-wow-delay="0.8s" href="#">Contato</a>
+                                        </div>
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 order-first order-lg-last">
+                            <div class="home-tree__img wow fadeIn" data-wow-delay="1.3s">
+                                <img src="../images/banners/light-tree.png" alt="Árvore com folhas brancas">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="home-woman" class="home-woman">
+            <div class="container">
+                <div class="d-none d-lg-block">
+                    <!-- partial:../partials/__navbar.html -->
+                    <nav id="main-nav" class="main-nav">
+                        <div class="container">
+                            <div class="main-nav__tree">
+                                <img class="tree" src="../images/brands/tree-black.png" alt="Arvore estilizada">
+                                <img class="lines" src="../images/ico/lines.png" alt="Linhas estilizadas">
+                            </div>
+                            <button class="main-nav__toggler" data-toggle="navbar">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </button>
+                            <div id="mobile-nav-content" class="main-nav__content">
+                                <ul class="main-nav__links">
+                                    <li class="d-block d-lg-none active">
+                                        <a href="#">Home</a>
+
+                                        <div class="line"></div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Soluções</a>
+
+                                        <div class="line"></div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Portfólio</a>
+
+                                        <div class="line"></div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+
+                                        <div class="line"></div>
+                                    </li>
+                                    <div class="main-nav__close" data-toggle="navbar">
+                                        X
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- partial -->
+                </div>
+
+                <div class="home-woman__content">
+                    <div class="row position-relative">
+                        <div class="col-lg-4">
+                            <img
+                                src="../images/banners/woman-colorful.png"
+                                alt="Moça colorida, alegre, tatuada e descolada utilizando um celular com capa laranja enquanto dá uma risada.">
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="title">
+                                <hr class="linecircle">
+                                    Alcance melhores
+                                </hr>
+                                Resultados no universo
+                                <span class="has-line">
+                                    Digital?
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="desc">
+                                Nossa proposta é desenvolver estratégias e conteúdos do ponto de vista dos
+                                públicos com quem se desejagera diálogo, relacionamento, engajamento e
+                                oportunidades de negócios.
+                                <div class="scroll">
+                                    <hr class="linecircle-v"></hr>
+                                    <span class="text">Scroll</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- partial:../partials/__footer.html -->
+        <footer class="footer"></footer>
+        <!-- partial -->
     </body>
 
-    <!-- partial:../partials/__footer.html -->
-    <!-- partial -->
 </html>

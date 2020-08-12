@@ -30,4 +30,15 @@
                 .top - 80
         }, 500);
     });
+
+    // Mobile navbar dinamic height
+    const setMobileNavHeight = function(){
+        if( window.innerWidth < 992){
+            $('.main-nav__links').css('min-height', $('.home-tree__banner').height() + 2);
+        }else{
+            $('.main-nav__links').css('min-height', 0);
+        }
+    }
+    setMobileNavHeight();
+    window.addEventListener("resize", setMobileNavHeight);
 })();

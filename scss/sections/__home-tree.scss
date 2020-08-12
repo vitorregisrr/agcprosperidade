@@ -1,0 +1,269 @@
+.home-tree {
+    background-color: #8169a7;
+    
+    @media screen and (max-width: $bp-LG) {
+        padding-bottom: 90px;
+    }
+
+    &__banner {
+        background-color: #000000;
+        padding: 0 70px;
+        margin-top: 17px;
+        overflow: hidden;
+
+        @media screen and (max-width: $bp-MD) {
+            padding: 0 30px;
+        }
+    }
+
+    &__caption {
+        padding-top: 150px;
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+        
+        @media screen and (min-width: 2000px){
+            padding-top: 250px;
+        }
+
+        @media screen and (max-width: $bp-XL) {
+            padding-top: 90px;
+            padding-bottom: 90px;
+        }
+
+        @media screen and (max-width: $bp-LG){
+            margin-top: -80px;
+            padding-bottom: 70px;
+        }
+
+        @media screen and (max-width: $bp-MD){
+            margin-top: -150px;
+            padding-bottom: 70px;
+        }
+
+        @media screen and (max-width: 400px){
+            margin-top: -130px;
+        }
+
+        .title {
+            font-size: 60px;
+            font-family: 'FH';
+            letter-spacing: 9px;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+
+            @media screen and (min-width: 2000px) {
+                font-size: 90px;
+                margin-bottom: 30px;
+            }
+
+            @media screen and (max-width: $bp-XL) {
+                font-size: 40px;
+                margin-bottom: 30px;
+            }
+
+            @media screen and (max-width: $bp-LG) {
+                font-size: 60px;
+                letter-spacing: 6px;
+                padding-right: 140px;
+                margin-bottom: 20px;
+            }
+
+            @media screen and (max-width: $bp-MD) {
+                font-size: 34px;
+                letter-spacing: 6px;
+                margin-bottom: 20px;
+            }
+
+            @media screen and (max-width: 375px){
+                font-size: 32px;
+            }
+            @media screen and (max-width: 360px){
+                font-size: 28px;
+            }
+        }
+
+        .desc {
+            font-size: 16px;
+            font-family: 'FM';
+            letter-spacing: 3px;
+            color: #fff;
+            text-transform: uppercase;
+
+            @media screen and (min-width: 2000px){
+               font-size: 24px;
+            }
+
+            @media screen and (max-width: $bp-XL) {
+                font-size: 12px;
+            }
+
+            @media screen and (max-width: $bp-LG) {
+                font-size: 12px;
+                letter-spacing: 7px;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 8px;
+                letter-spacing: 3px;
+            }
+
+            span {
+                display: flex;
+                flex-wrap: nowrap;
+                margin-top: 26px;
+
+                @media screen and (max-width: $bp-XL) {
+                    margin-top: 17px;
+                }
+
+                @media screen and (max-width: $bp-MD) {
+                    margin-top: 12px;
+                }
+
+                @media screen and (max-width: 400px){
+                    flex-direction: column;
+                }
+
+                .line {
+                    @keyframes slideIn100px {
+                        0% {
+                            width: 0;
+                        }
+                        100% {
+                            width: 150px;
+                        }
+                    }
+
+                    position: relative;
+                    display: inline-block;
+                    width: 0;
+                    height: 2.3px;
+                    background-color: #8169a7;
+                    margin-right: 10px;
+                    z-index: 1;
+                    animation: slideIn100px 1s;
+                    animation-fill-mode: forwards;
+                    max-width: 100px;
+                    animation-delay: 1.7s;
+
+                    @media screen and (min-width: 2000px) {
+                        max-width: 230px;
+                    }
+                    @media screen and (max-width: 1300px) {
+                        max-width: 70px;
+                    }
+                    @media screen and (max-width: 1230px) {
+                        max-width: 50px;
+                    }
+                    @media screen and (max-width: $bp-XL) {
+                        max-width: 65px;
+                    }
+
+                    @media screen and (max-width: $bp-LG){
+                        max-width: 90px;
+                        height: 1.5px;
+                    }
+                    @media screen and (max-width: $bp-MD){
+                        max-width: 50px;
+                        height: 1.5px;
+                    }
+
+                    @media screen and (max-width: 400px){
+                        max-width: 160px;
+                    }
+        
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        width: 5px;
+                        height: 5px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                .contact {
+                    display: inline-block;
+                    padding: 6px 14px;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                    background-color: #ffb84d;
+                    font-family: 'FB';
+                    color: #fff;
+                    border-radius: 60px;
+                    margin-top: 2px;
+                    @include transition();
+
+                    @media screen and (min-width: 2000px){
+                        font-size: 17px;
+                    }
+
+                    @media screen and (max-width: $bp-XL) {
+                        font-size: 14px;
+                    }
+
+                    @media screen and (max-width: $bp-MD){
+                        font-size: 9px;
+                        padding: 4px 10px;
+                    }
+        
+
+                    &:hover {
+                        @include scale(1.04);
+                    }
+                }
+
+                .icons {
+                    display: flex;
+                    align-items: center;
+                    margin-top: -4px;
+
+                    @media screen and (min-width: 2000px){
+                       margin-top: 4px;
+                    }
+
+                    @media screen and (max-width: 400px){
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+
+        img {
+            width: 105%;
+            margin-left: -1%;
+            margin-bottom: -37px;
+
+            @media screen and (min-width: 2000px){
+                width: 94%;
+                margin-left: -8%;
+            }
+
+            @media screen and (max-width: $bp-LG){
+                width: 80%;
+                margin: 0 auto;
+                opacity: .7;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                width: 115%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

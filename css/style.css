@@ -1979,7 +1979,7 @@ select.form-control {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 444px) {
   .home-tree__caption {
     margin-top: -130px;
   }
@@ -2044,7 +2044,7 @@ select.form-control {
 }
 
 .home-tree__caption .desc {
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'FM';
   letter-spacing: 3px;
   color: #fff;
@@ -2095,7 +2095,7 @@ select.form-control {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 444px) {
   .home-tree__caption .desc span {
     flex-direction: column;
   }
@@ -2111,8 +2111,9 @@ select.form-control {
   z-index: 1;
   animation: slideIn100px 1s;
   animation-fill-mode: forwards;
-  max-width: 100px;
+  max-width: 180px;
   animation-delay: 1.7s;
+  margin-left: 3px;
 }
 
 @keyframes slideIn100px {
@@ -2120,13 +2121,13 @@ select.form-control {
     width: 0;
   }
   100% {
-    width: 100px;
+    width: 105px;
   }
 }
 
 @media screen and (min-width: 2000px) {
   .home-tree__caption .desc span .line {
-    max-width: 230px;
+    max-width: 200px;
   }
 }
 
@@ -2144,7 +2145,7 @@ select.form-control {
 
 @media screen and (max-width: 1200px) {
   .home-tree__caption .desc span .line {
-    max-width: 65px;
+    max-width: 105px;
   }
 }
 
@@ -2162,7 +2163,7 @@ select.form-control {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 444px) {
   .home-tree__caption .desc span .line {
     max-width: 160px;
   }
@@ -2200,13 +2201,21 @@ select.form-control {
 
 @media screen and (min-width: 2000px) {
   .home-tree__caption .desc span .contact {
-    font-size: 17px;
+    font-size: 23px;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .home-tree__caption .desc span .contact {
-    font-size: 14px;
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home-tree__caption .desc span .contact {
+    font-size: 16px;
+    padding: 5px 10px;
   }
 }
 
@@ -2237,7 +2246,7 @@ select.form-control {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 444px) {
   .home-tree__caption .desc span .icons {
     margin-top: 15px;
   }
@@ -2656,7 +2665,7 @@ select.form-control {
 
 .desafios-banner {
   background-color: #ffb84d;
-  padding-top: 30px;
+  padding-top: 40px;
   padding-bottom: 50px;
   border-bottom: 8px solid black;
   overflow: hidden;
@@ -2665,13 +2674,14 @@ select.form-control {
 @media screen and (max-width: 992px) {
   .desafios-banner {
     padding-bottom: 5px;
-    padding-top: 22px;
+    padding-top: 27px;
   }
 }
 
 @media screen and (min-width: 2000px) {
   .desafios-banner {
     padding-bottom: 60px;
+    padding-top: 60px;
   }
 }
 
@@ -2806,15 +2816,15 @@ select.form-control {
 .desafios-banner__item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .desafios-banner__item .title {
-  font-family: 'FH';
-  letter-spacing: 1px;
+  font-family: 'FB';
+  letter-spacing: 1.2px;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 21px;
   text-align: center;
   order: 2;
   max-width: 220px;
@@ -2822,7 +2832,7 @@ select.form-control {
 
 @media screen and (min-width: 2000px) {
   .desafios-banner__item .title {
-    font-size: 25px;
+    font-size: 29px;
     max-width: 290px;
   }
 }
@@ -2858,6 +2868,12 @@ select.form-control {
   max-width: 290px;
 }
 
+@media screen and (min-width: 2000px) {
+  .desafios-banner__item .title.lg {
+    max-width: 380px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .desafios-banner__item .title.lg {
     max-width: 200px;
@@ -2871,18 +2887,18 @@ select.form-control {
 }
 
 .desafios-banner__item .img {
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 85px;
   object-fit: contain;
-  object-position: center bottom;
+  object-position: center center;
   order: 1;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 }
 
 @media screen and (min-width: 2000px) {
   .desafios-banner__item .img {
     height: 110px;
-    width: 110px;
+    width: 100px;
   }
 }
 
@@ -2890,13 +2906,12 @@ select.form-control {
   .desafios-banner__item .img {
     width: 130px;
     height: 130px;
-    object-position: center center;
     margin-bottom: 18px;
   }
 }
 
 .desafios-banner__item .img.sm {
-  width: 72px;
+  width: 74px;
 }
 
 @media screen and (min-width: 2000px) {
@@ -2911,13 +2926,35 @@ select.form-control {
   }
 }
 
+.desafios-banner__item .img.md {
+  width: 92px;
+  height: 100px;
+  margin-bottom: 17px;
+}
+
+@media screen and (min-width: 2000px) {
+  .desafios-banner__item .img.md {
+    margin-bottom: 22px;
+    width: 110px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .desafios-banner__item .img.md {
+    width: 100px;
+  }
+}
+
 .desafios-banner__item .img.lg {
-  width: 100px;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 4px;
 }
 
 @media screen and (min-width: 2000px) {
   .desafios-banner__item .img.lg {
-    width: 116px;
+    width: 140px;
   }
 }
 

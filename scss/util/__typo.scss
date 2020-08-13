@@ -42,3 +42,10 @@
 .color-dark {
     color: $color-dark !important;
 }
+
+.stroke-lettering{
+    -webkit-text-stroke-width: 1.5px;
+    font-family: 'FB';
+    -webkit-text-stroke-color: $color-secondary;
+    color: rgba(129,105,157, 0);
+}

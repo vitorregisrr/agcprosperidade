@@ -2128,6 +2128,7 @@ select.form-control {
 @media screen and (min-width: 2000px) {
   .home-tree__caption .desc span .line {
     max-width: 200px;
+    margin-bottom: 7px;
   }
 }
 
@@ -2314,7 +2315,7 @@ select.form-control {
 
 @media screen and (max-width: 768px) {
   .home-woman .triangle-bottom {
-    margin-bottom: -3px;
+    margin-bottom: 6px;
   }
 }
 
@@ -2335,6 +2336,8 @@ select.form-control {
 }
 
 .home-woman__banner img {
+  position: relative;
+  z-index: -1;
   width: 147%;
   margin-left: -29%;
 }

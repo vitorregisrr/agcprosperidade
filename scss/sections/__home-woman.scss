@@ -16,7 +16,7 @@
         z-index: 2;
         
         @media screen and (max-width: $bp-MD){
-            margin-bottom: -3px;
+            margin-bottom: 6px;
         }
     }
 
@@ -34,6 +34,8 @@
         width: 100%;
 
         img {
+            position: relative;
+            z-index: -1;
             width: 147%;
             margin-left: -29%;
 

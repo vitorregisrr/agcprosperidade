@@ -2471,7 +2471,7 @@ select.form-control {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .home-woman .title .has-line .line {
     width: calc(100% + 4px);
   }

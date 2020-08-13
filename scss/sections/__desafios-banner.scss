@@ -95,7 +95,7 @@
         
             .owl-prev{
                 left: -40px;
-                background-image: url(../../images/ico/chevron-left.png) !important;
+                background-image: url(../images/ico/chevron-left.png) !important;
 
                 @media screen and (max-width: $bp-LG){
                    left: 5px;
@@ -108,7 +108,7 @@
 
             .owl-next{
                 right: -40px;
-                background-image: url(../../images/ico/chevron-right.png) !important;
+                background-image: url(../images/ico/chevron-right.png) !important;
 
                 @media screen and (max-width: $bp-LG){
                     right: 5px;

@@ -2765,7 +2765,7 @@ select.form-control {
 
 .desafios-banner__carousel .owl-nav .owl-prev {
   left: -40px;
-  background-image: url(../../images/ico/chevron-left.png) !important;
+  background-image: url(../images/ico/chevron-left.png) !important;
 }
 
 @media screen and (max-width: 992px) {
@@ -2782,7 +2782,7 @@ select.form-control {
 
 .desafios-banner__carousel .owl-nav .owl-next {
   right: -40px;
-  background-image: url(../../images/ico/chevron-right.png) !important;
+  background-image: url(../images/ico/chevron-right.png) !important;
 }
 
 @media screen and (max-width: 992px) {

@@ -2025,9 +2025,15 @@ select.form-control {
   }
 }
 
+@media screen and (max-width: 430px) {
+  .home-tree__caption .title {
+    font-size: 38px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .home-tree__caption .title {
-    font-size: 32px;
+    font-size: 33.3px;
   }
 }
 

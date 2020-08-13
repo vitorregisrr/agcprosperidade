@@ -77,9 +77,14 @@
                 margin-bottom: 20px;
             }
 
-            @media screen and (max-width: 375px){
-                font-size: 32px;
+            @media screen and (max-width: 430px){
+                font-size: 38px;
             }
+
+            @media screen and (max-width: 375px){
+                font-size: 33.3px;
+            }
+
             @media screen and (max-width: 360px){
                 font-size: 28px;
             }

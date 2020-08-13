@@ -893,6 +893,7 @@ button:focus {
   display: none;
   background: none;
   border: none;
+  margin-right: -5px;
 }
 
 .main-nav__toggler div {

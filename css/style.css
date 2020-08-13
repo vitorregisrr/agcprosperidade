@@ -2827,7 +2827,7 @@ select.form-control {
   font-size: 21px;
   text-align: center;
   order: 2;
-  max-width: 220px;
+  max-width: 200px;
 }
 
 @media screen and (min-width: 2000px) {
@@ -2865,7 +2865,7 @@ select.form-control {
 }
 
 .desafios-banner__item .title.lg {
-  max-width: 290px;
+  max-width: 280px;
 }
 
 @media screen and (min-width: 2000px) {

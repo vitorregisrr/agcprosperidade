@@ -2206,8 +2206,8 @@ select.form-control {
 
 @media screen and (max-width: 768px) {
   .home-tree__caption .desc span .contact {
-    font-size: 9px;
-    padding: 4px 10px;
+    font-size: 10px;
+    padding: 4px 9px;
   }
 }
 

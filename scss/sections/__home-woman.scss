@@ -14,11 +14,16 @@
         bottom: 0;
         width: 100%;
         z-index: 2;
+        
+        @media screen and (max-width: $bp-MD){
+            margin-bottom: -3px;
+        }
     }
 
     &__content {
         position: relative;
         margin-top: -60px;
+        margin-bottom: -12px;
 
         @media screen and (min-width: 2100px){
             margin-left: -230px;
@@ -29,7 +34,7 @@
         width: 100%;
 
         img {
-            width: 146%;
+            width: 147%;
             margin-left: -29%;
 
             @media screen and (min-width: 2100px){

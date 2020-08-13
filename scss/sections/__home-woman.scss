@@ -234,6 +234,7 @@
             flex-direction: column;
             justify-content: flex-end;
             align-items: flex-end;
+            
             @media screen and (max-width: $bp-LG) {
                 display: none;
             }
@@ -259,10 +260,12 @@
                 width: 1.6px;
                 background-color: black;
                 animation-fill-mode: forwards !important;
+
                 @media screen and (max-width: $bp-XL) {
                     height: 40px;
                     width: 1.2px;
                 }
+
                 @media screen and (min-width: 2000px) {
                     height: 70px;
                     width: 2px;
@@ -271,6 +274,7 @@
                 &.animated {
                     animation: slideInV 1.5s;
                 }
+
                 &:after {
                     content: '';
                     position: absolute;

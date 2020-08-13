@@ -243,14 +243,15 @@
         justify-content: center;
         position: relative;
         z-index: 1;
-        min-height: auto;
         width: 100%;
-
+        
         img {
             width: 105%;
             margin-left: -1%;
             margin-bottom: -37px;
-
+            min-height: auto;
+            height: auto;
+            
             @media screen and (min-width: 2000px){
                 width: 100%;
                 margin-left: -20%;

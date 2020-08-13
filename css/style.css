@@ -2226,7 +2226,6 @@ select.form-control {
   justify-content: center;
   position: relative;
   z-index: 1;
-  min-height: auto;
   width: 100%;
 }
 
@@ -2234,6 +2233,8 @@ select.form-control {
   width: 105%;
   margin-left: -1%;
   margin-bottom: -37px;
+  min-height: auto;
+  height: auto;
 }
 
 @media screen and (min-width: 2000px) {

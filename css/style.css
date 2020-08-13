@@ -1925,6 +1925,7 @@ select.form-control {
 @media screen and (max-width: 768px) {
   .home-tree__banner {
     padding: 0 30px;
+    margin-top: 7px;
   }
 }
 

@@ -283,6 +283,12 @@
   color: rgba(129, 105, 157, 0);
 }
 
+@media screen and (max-width: 576px) {
+  .stroke-lettering {
+    -webkit-text-stroke-width: 1px;
+  }
+}
+
 .stroke-lettering.black {
   -webkit-text-stroke-color: black;
   color: transparent;
@@ -951,7 +957,7 @@ button:focus {
 
 @media screen and (max-width: 768px) {
   .main-nav__content {
-    top: 90px;
+    top: 80px;
   }
 }
 
@@ -2447,7 +2453,7 @@ select.form-control {
 
 @keyframes slideIn110p {
   0% {
-    max-width: 0;
+    max-width: 0%;
   }
   100% {
     max-width: 113%;
@@ -2463,6 +2469,9 @@ select.form-control {
   top: 50%;
   left: 4px;
   transform: translateY(-50%);
+  max-width: 0%;
+  animation: slideIn110p 1s;
+  animation-fill-mode: forwards;
 }
 
 @media screen and (min-width: 2000px) {
@@ -2475,10 +2484,6 @@ select.form-control {
   .home-woman .title .has-line .line {
     width: calc(100% + 4px);
   }
-}
-
-.home-woman .title .has-line .line.animated {
-  animation: slideIn110p 1s;
 }
 
 .home-woman .title .has-line .line:after {
@@ -2640,6 +2645,258 @@ select.form-control {
   font-size: 12px;
   letter-spacing: 1.3px;
   margin-top: -5px;
+}
+
+.desafios-banner {
+  background-color: #ffb84d;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-bottom: 8px solid black;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 992px) {
+  .desafios-banner {
+    padding-bottom: 5px;
+    padding-top: 22px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .desafios-banner {
+    padding-bottom: 60px;
+  }
+}
+
+.desafios-banner .container {
+  max-width: 1400px;
+}
+
+@media screen and (min-width: 2000px) {
+  .desafios-banner .container {
+    max-width: 2000px;
+  }
+}
+
+.desafios-banner__title {
+  font-size: 41px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: 'FH';
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 2000px) {
+  .desafios-banner__title {
+    font-size: 60px;
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desafios-banner__title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 330px) {
+  .desafios-banner__title {
+    font-size: 24px;
+  }
+}
+
+.desafios-banner__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 992px) {
+  .desafios-banner__list {
+    display: none;
+  }
+}
+
+.desafios-banner__carousel {
+  display: none !important;
+  position: relative;
+}
+
+@media screen and (max-width: 992px) {
+  .desafios-banner__carousel {
+    display: block !important;
+  }
+}
+
+.desafios-banner__carousel .owl-nav .owl-prev, .desafios-banner__carousel .owl-nav .owl-next {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 25.6%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  color: #fff !important;
+  border-radius: 4px;
+  font-size: 20px;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: contain !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.desafios-banner__carousel .owl-nav .owl-prev:hover, .desafios-banner__carousel .owl-nav .owl-next:hover {
+  transform: scale(1.04) translateY(-50%);
+}
+
+.desafios-banner__carousel .owl-nav .owl-prev::after, .desafios-banner__carousel .owl-nav .owl-prev::before, .desafios-banner__carousel .owl-nav .owl-next::after, .desafios-banner__carousel .owl-nav .owl-next::before {
+  display: none !important;
+}
+
+.desafios-banner__carousel .owl-nav .owl-prev i, .desafios-banner__carousel .owl-nav .owl-next i {
+  font-size: 12px;
+}
+
+.desafios-banner__carousel .owl-nav .owl-prev {
+  left: -40px;
+  background-image: url(../../images/ico/chevron-left.png) !important;
+}
+
+@media screen and (max-width: 992px) {
+  .desafios-banner__carousel .owl-nav .owl-prev {
+    left: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desafios-banner__carousel .owl-nav .owl-prev {
+    left: 80px;
+  }
+}
+
+.desafios-banner__carousel .owl-nav .owl-next {
+  right: -40px;
+  background-image: url(../../images/ico/chevron-right.png) !important;
+}
+
+@media screen and (max-width: 992px) {
+  .desafios-banner__carousel .owl-nav .owl-next {
+    right: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desafios-banner__carousel .owl-nav .owl-next {
+    right: 80px;
+  }
+}
+
+.desafios-banner__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.desafios-banner__item .title {
+  font-family: 'FH';
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  order: 2;
+  max-width: 220px;
+}
+
+@media screen and (min-width: 2000px) {
+  .desafios-banner__item .title {
+    font-size: 25px;
+    max-width: 290px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .desafios-banner__item .title {
+    font-size: 17px;
+    max-width: 180px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .desafios-banner__item .title {
+    max-width: 270px;
+    font-family: 'FB';
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .desafios-banner__item .title {
+    font-size: 23px;
+  }
+}
+
+.desafios-banner__item .title.lg {
+  max-width: 290px;
+}
+
+@media screen and (max-width: 1200px) {
+  .desafios-banner__item .title.lg {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desafios-banner__item .title.lg {
+    max-width: 250px;
+  }
+}
+
+.desafios-banner__item .img {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  object-position: center bottom;
+  order: 1;
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 2000px) {
+  .desafios-banner__item .img {
+    height: 110px;
+    width: 110px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .desafios-banner__item .img {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+.desafios-banner__item .img.sm {
+  width: 72px;
+}
+
+@media screen and (min-width: 2000px) {
+  .desafios-banner__item .img.sm {
+    width: 90px;
+  }
+}
+
+.desafios-banner__item .img.lg {
+  width: 100px;
+}
+
+@media screen and (min-width: 2000px) {
+  .desafios-banner__item .img.lg {
+    width: 116px;
+  }
 }
 
 body {

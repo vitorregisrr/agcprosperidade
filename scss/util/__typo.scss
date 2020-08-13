@@ -49,6 +49,10 @@
     -webkit-text-stroke-color: $color-secondary;
     color: rgba(129,105,157, 0);
     
+    @media screen and (max-width: $bp-SM){
+        -webkit-text-stroke-width: 1px;
+    }
+
     &.black{
         -webkit-text-stroke-color: black;
         color: rgba(0,0,0, 0);

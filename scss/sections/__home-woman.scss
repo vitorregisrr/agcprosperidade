@@ -124,7 +124,7 @@
 
             @keyframes slideIn110p {
                 0% {
-                    max-width: 0;
+                    max-width: 0%;
                 }
                 100% {
                     max-width: 113%;
@@ -140,19 +140,18 @@
                 top: 50%;
                 left: 4px;
                 transform: translateY(-50%);
-
+                max-width: 0%;
+                animation: slideIn110p 1s;
+                animation-fill-mode: forwards;
+                
                 @media screen and (min-width: 2000px){
                     width: calc(100% + 50px);
                 }
-
+                
                 @media screen and (max-width: $bp-LG){
                     width: calc(100% + 4px);
                 }
-                
-                &.animated{
-                    animation: slideIn110p 1s;
-                }
-
+        
                 &:after{
                     content: '';
                     position: absolute;

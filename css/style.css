@@ -283,6 +283,11 @@
   color: rgba(129, 105, 157, 0);
 }
 
+.stroke-lettering.black {
+  -webkit-text-stroke-color: black;
+  color: transparent;
+}
+
 .bounce {
   -moz-animation: bounce 1.5s infinite;
   -webkit-animation: bounce 1.5s infinite;
@@ -374,6 +379,10 @@ b {
 button:focus {
   outline: none !important;
   box-shadow: none !important;
+}
+
+* {
+  -webkit-text-size-adjust: none;
 }
 
 @font-face {
@@ -2224,6 +2233,7 @@ select.form-control {
 .home-tree__img {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   position: relative;
   z-index: 1;
   width: 100%;

@@ -30,3 +30,7 @@ button:focus{
     outline: none !important;
     box-shadow: none !important;
 }
+
+*{
+    -webkit-text-size-adjust: none;
+}

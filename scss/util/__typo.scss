@@ -48,4 +48,9 @@
     font-family: 'FB';
     -webkit-text-stroke-color: $color-secondary;
     color: rgba(129,105,157, 0);
+    
+    &.black{
+        -webkit-text-stroke-color: black;
+        color: rgba(0,0,0, 0);
+    }
 }

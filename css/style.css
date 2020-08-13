@@ -2225,6 +2225,7 @@ select.form-control {
   justify-content: center;
   position: relative;
   z-index: 1;
+  min-height: auto;
   width: 100%;
 }
 

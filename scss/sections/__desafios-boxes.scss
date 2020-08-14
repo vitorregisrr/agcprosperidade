@@ -41,16 +41,31 @@
         }
 
         @media screen and (max-width: $bp-LG){
-            max-width: 320px;
+            max-width: 380px;
             display: none;
             margin: 0 auto;
             padding-bottom: 30px;
+            padding-left: 40px;
+            padding-right: 40px;
             width: 100%;
+            font-size: 18px;
             
             &.active{
                 display: block;
                 animation: fadeIn 0.8s;
             }
+        }
+        
+        @media screen and (max-width: $bp-MD){
+            max-width: 310px;
+            display: none;
+            margin: 0 auto;
+            padding-bottom: 30px;
+            padding-right: 15px;
+            padding-top: 30px;
+            padding-left: 28px;
+            width: 100%;
+            font-size: 16px;
         }
 
         &.active{
@@ -68,6 +83,11 @@
             border-left: 17px solid transparent;
             border-right: 17px solid transparent;
             border-top: 17px solid black;
+
+            @media screen and (max-width: $bp-MD){
+                border-width: 15px;
+                left: 17px;
+            }
         }
     }
 }

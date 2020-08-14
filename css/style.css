@@ -3059,7 +3059,7 @@ select.form-control {
 
 @media screen and (min-width: 1200px) {
   .nossas-solucoes__item .link {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
@@ -3124,15 +3124,32 @@ select.form-control {
 
 @media screen and (max-width: 992px) {
   .desafios-boxes__item {
-    max-width: 320px;
+    max-width: 380px;
     display: none;
     margin: 0 auto;
     padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
     width: 100%;
+    font-size: 18px;
   }
   .desafios-boxes__item.active {
     display: block;
     animation: fadeIn 0.8s;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desafios-boxes__item {
+    max-width: 310px;
+    display: none;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-left: 28px;
+    width: 100%;
+    font-size: 16px;
   }
 }
 
@@ -3151,6 +3168,13 @@ select.form-control {
   border-left: 17px solid transparent;
   border-right: 17px solid transparent;
   border-top: 17px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .desafios-boxes__item::after {
+    border-width: 15px;
+    left: 17px;
+  }
 }
 
 .desafios-banner {

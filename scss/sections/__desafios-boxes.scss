@@ -6,9 +6,13 @@
         display: flex;
         justify-content: space-between;
         
-        @media screen and (min-width: 1050px){
+        @media screen and (min-width: 1320px){
             margin-left: -70px;
             margin-right: -70px;
+        }
+        @media screen and (min-width: 1074px) and (max-width: 1190px){
+            margin-left: -80px;
+            margin-right: -80px;
         }
     }
 
@@ -34,7 +38,7 @@
             padding-right: 50px;
         }
 
-        @media screen and (max-width: $bp-XL){
+        @media screen and (max-width: 1350px){
             font-size: 13px;
             padding-left: 15px;
             padding-right: 15px;

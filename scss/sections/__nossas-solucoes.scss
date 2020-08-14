@@ -31,12 +31,7 @@
         margin-right: -60px;
         line-height: 1.4;
         margin-top: -20px;
-        
-
-        @media screen and (min-width: 2000px){
-            font-size: 40px;
-            margin-top: -40px;
-        }
+    
 
         @media screen and (min-width: $bp-MD) and (max-width: $bp-LG){
             font-size: 39px !important;
@@ -56,6 +51,12 @@
             font-size: 30px;
             padding-left: 36px;
         }
+
+        @media screen and (min-width: 2000px){
+            font-size: 40px;
+            margin-top: -40px;
+        }
+
 
         .stroke-lettering{
             letter-spacing: 6px;

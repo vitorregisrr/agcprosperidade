@@ -44,17 +44,40 @@
 }
 
 .stroke-lettering{
+    @keyframes fillInPrimary {
+        0% {
+            color: rgba(129,105,157, 0);
+        }
+        100% {
+            color: rgba(129,105,157, 1);
+        }
+    }
+    
+    @keyframes fillInDark{
+        0% {
+            color: rgba(0,0,0, 0);
+        }
+        100% {
+            color: rgba(0,0,0, 1);
+        }
+    }
+    
     -webkit-text-stroke-width: 1.5px;
     font-family: 'FB';
     -webkit-text-stroke-color: $color-secondary;
     color: rgba(129,105,157, 0);
+    transition: color 2s ease-in-out;
+    animation: fillInPrimary 2s;
+    animation-fill-mode: forwards;
     
     @media screen and (max-width: $bp-SM){
         -webkit-text-stroke-width: 1px;
     }
-
+    
     &.black{
         -webkit-text-stroke-color: black;
         color: rgba(0,0,0, 0);
+        animation: fillInDark 2s;
+        animation-fill-mode: forwards;
     }
 }

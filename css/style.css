@@ -281,6 +281,27 @@
   font-family: 'FB';
   -webkit-text-stroke-color: #8169a7;
   color: rgba(129, 105, 157, 0);
+  transition: color 2s ease-in-out;
+  animation: fillInPrimary 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fillInPrimary {
+  0% {
+    color: rgba(129, 105, 157, 0);
+  }
+  100% {
+    color: #81699d;
+  }
+}
+
+@keyframes fillInDark {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: black;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -292,6 +313,8 @@
 .stroke-lettering.black {
   -webkit-text-stroke-color: black;
   color: transparent;
+  animation: fillInDark 2s;
+  animation-fill-mode: forwards;
 }
 
 .bounce {
@@ -3292,7 +3315,7 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   font-weight: 400;
-  color: #383838;
+  color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

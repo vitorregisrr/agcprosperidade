@@ -3080,7 +3080,7 @@ select.form-control {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1050px) {
   .desafios-boxes__list {
     margin-left: -70px;
     margin-right: -70px;
@@ -3111,6 +3111,14 @@ select.form-control {
     font-size: 18px;
     padding-left: 40px;
     padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .desafios-boxes__item {
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 

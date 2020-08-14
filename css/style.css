@@ -2978,11 +2978,17 @@ select.form-control {
 .nossas-solucoes__item .desc {
   font-family: 'FM';
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 1px;
   margin: 0 auto;
   white-space: nowrap;
   line-height: 1.2;
+}
+
+@media screen and (max-width: 992px) {
+  .nossas-solucoes__item .desc {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 2000px) {
@@ -3000,9 +3006,15 @@ select.form-control {
   padding-right: 25px;
   text-transform: uppercase;
   font-family: 'FB';
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 2.7px;
   margin-top: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .nossas-solucoes__item .link {
+    font-size: 15px;
+  }
 }
 
 .desafios-banner {

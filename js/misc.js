@@ -47,5 +47,14 @@
         }, 500);
     });
 
+    // Womman banner effects
+    var womanImage = document.getElementById('womanImage');
+    new simpleParallax(womanImage, {
+        overflow: true,
+        orientation: 'left',
+        transition: 'ease-in-out',
+        scale: 1.1
+    });
+
     window.addEventListener("resize", replaceStyles);
 })();

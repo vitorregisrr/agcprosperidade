@@ -4,9 +4,9 @@
       // Mobile navbar dinamic height
       const replaceStyles = function(){
         if( window.innerWidth < 992){
-            $('.main-nav__links').css('min-height', $('.home-tree__banner').height() + 2);
+            $('.main-nav__content .overlay').css('min-height', $('.home-tree__banner').height() + 6);
         }else{
-            $('.main-nav__links').css('min-height', 0);
+            $('.main-nav__content .overlay').css('min-height', 0);
         }
 
         if(window.innerWidth < 992){

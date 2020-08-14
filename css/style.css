@@ -2706,6 +2706,7 @@ select.form-control {
 @media screen and (max-width: 768px) {
   .nossas-solucoes {
     padding: 50px 0;
+    padding-bottom: 50px;
   }
 }
 
@@ -2901,7 +2902,7 @@ select.form-control {
 }
 
 @media screen and (max-width: 992px) {
-  .nossas-solucoes__item {
+  .nossas-solucoes__item:not(:last-child) {
     margin-bottom: 90px;
   }
 }
@@ -3069,6 +3070,81 @@ select.form-control {
   }
 }
 
+.desafios-boxes {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.desafios-boxes__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1400px) {
+  .desafios-boxes__list {
+    margin-left: -70px;
+    margin-right: -70px;
+  }
+}
+
+.desafios-boxes__item {
+  position: relative;
+  font-family: 'FO';
+  color: #fff;
+  width: 19.8%;
+  background-color: #8169a7;
+  letter-spacing: 1px;
+  max-height: 0;
+  padding: 36px 34px 20px 30px;
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+@media screen and (min-width: 1400px) {
+  .desafios-boxes__item {
+    padding: 36px 34px 26px 35px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .desafios-boxes__item {
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .desafios-boxes__item {
+    max-width: 320px;
+    display: none;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+  .desafios-boxes__item.active {
+    display: block;
+    animation: fadeIn 0.8s;
+  }
+}
+
+.desafios-boxes__item.active {
+  max-height: 700px;
+  opacity: 1;
+}
+
+.desafios-boxes__item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 0;
+  height: 0;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-top: 17px solid black;
+}
+
 .desafios-banner {
   background-color: #ffb84d;
   padding-top: 40px;
@@ -3224,6 +3300,20 @@ select.form-control {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.desafios-banner__item:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .desafios-banner__item .title {

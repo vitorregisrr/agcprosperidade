@@ -6,6 +6,7 @@
 
     @media screen and (max-width: $bp-MD){
         padding: 50px 0;
+        padding-bottom: 50px;
     }
 
     @media screen and (min-width: 2000px){
@@ -176,7 +177,9 @@
         align-items: center;
 
         @media screen and (max-width: $bp-LG){
-            margin-bottom: 90px;
+            &:not(:last-child){
+                margin-bottom: 90px;
+            }
         }
         
         &:not(:last-child){

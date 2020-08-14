@@ -56,5 +56,15 @@
         scale: 1.1
     });
 
+    $('[data-toggle="desafio"]').click( function(){
+        $('#desafios-boxes').show();
+        var target = $(this).attr('data-target');
+        $(target).addClass('active');
+
+        if(window.innerWidth < 992){
+            $(target).siblings().removeClass('active');
+        }
+    });
+
     window.addEventListener("resize", replaceStyles);
 })();

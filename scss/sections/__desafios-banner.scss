@@ -126,6 +126,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        cursor: pointer;  
+        @include transition();
+
+        &:hover{
+            @include scale(1.05);
+        }
 
         .title {
             font-family: 'FB';

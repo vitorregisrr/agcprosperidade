@@ -44,6 +44,11 @@
             margin-bottom: 110px;
         }
 
+        @media screen and (min-width: 390px){
+            font-size: 30px;
+            padding-left: 36px;
+        }
+
         .stroke-lettering{
             letter-spacing: 6px;
         }
@@ -103,6 +108,11 @@
                     animation: slideInv2 1.4s;
                     animation-fill-mode: forwards;
                 }
+
+                @media screen and (min-width: 390px){
+                    right: 67px;
+                }
+                
         
                 &:after{
                     content: '';

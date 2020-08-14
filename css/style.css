@@ -2730,6 +2730,13 @@ select.form-control {
   }
 }
 
+@media screen and (min-width: 390px) {
+  .nossas-solucoes__title {
+    font-size: 30px;
+    padding-left: 36px;
+  }
+}
+
 .nossas-solucoes__title .stroke-lettering {
   letter-spacing: 6px;
 }
@@ -2796,6 +2803,12 @@ select.form-control {
     max-height: 0;
     animation: slideInv2 1.4s;
     animation-fill-mode: forwards;
+  }
+}
+
+@media screen and (min-width: 390px) {
+  .nossas-solucoes__title .has-line .line {
+    right: 67px;
   }
 }
 

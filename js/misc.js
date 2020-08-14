@@ -1,6 +1,22 @@
 (function () {
     'use strict';
 
+      // Mobile navbar dinamic height
+      const replaceStyles = function(){
+        if( window.innerWidth < 992){
+            $('.main-nav__links').css('min-height', $('.home-tree__banner').height() + 2);
+        }else{
+            $('.main-nav__links').css('min-height', 0);
+        }
+
+        if(window.innerWidth < 992){
+            $('.nossas-solucoes__item').attr('data-wow-delay', '0.8s');
+            $('.nossas-solucoes__item .line').attr('data-wow-delay', '1s');
+            $('.nossas-solucoes__item .desc').attr('data-wow-delay', '1.4s');
+        }
+    }
+    replaceStyles();
+    
     //Init Libs
     new WOW().init();
     $('.lazy').lazyload();
@@ -31,14 +47,5 @@
         }, 500);
     });
 
-    // Mobile navbar dinamic height
-    const setMobileNavHeight = function(){
-        if( window.innerWidth < 992){
-            $('.main-nav__links').css('min-height', $('.home-tree__banner').height() + 2);
-        }else{
-            $('.main-nav__links').css('min-height', 0);
-        }
-    }
-    setMobileNavHeight();
-    window.addEventListener("resize", setMobileNavHeight);
+    window.addEventListener("resize", replaceStyles);
 })();

@@ -2333,7 +2333,7 @@ select.form-control {
   left: 0;
   bottom: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 4;
 }
 
 @media screen and (max-width: 768px) {
@@ -3096,7 +3096,7 @@ select.form-control {
   letter-spacing: 1px;
   max-height: 0;
   padding: 36px 34px 20px 30px;
-  transition: all 0.4s;
+  transition: all 1s;
   opacity: 0;
 }
 

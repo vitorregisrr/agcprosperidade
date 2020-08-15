@@ -48,6 +48,8 @@
         navigation : true,
         center: true,
         dragEndSpeed: 300,
+        autoplayTimeout: 2200,
+        slideTransition: 'ease-in-out',
         items: 7,
         startPosition: 3,
         responsive:  {
@@ -73,12 +75,16 @@
     // Como Trabalhamos Carousel
     const clientesDepoimentos = $("#clientes-depoimentos-carousel");
     clientesDepoimentos.owlCarousel({
+        autoplay: true,
         dots: true,
         infinite: true,
         center: true,
         slideTransition: 'ease-in-out',
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
         dragEndSpeed: 1000,
-        items: 1
+        items: 1,
+        autoHeight: true
     });
 
     window.dispatchEvent(new Event('resize'));

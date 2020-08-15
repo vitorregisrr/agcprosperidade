@@ -451,8 +451,8 @@ button:focus {
 
 @font-face {
   font-family: "FBO";
-  src: url("//db.onlinewebfonts.com/t/c961c9b1802e79ea12dcfe89bd016753.eot");
-  src: url("//db.onlinewebfonts.com/t/c961c9b1802e79ea12dcfe89bd016753.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c961c9b1802e79ea12dcfe89bd016753.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c961c9b1802e79ea12dcfe89bd016753.woff") format("woff"), url("//db.onlinewebfonts.com/t/c961c9b1802e79ea12dcfe89bd016753.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c961c9b1802e79ea12dcfe89bd016753.svg#Futura Std") format("svg");
+  src: url("//db.onlinewebfonts.com/t/5c93534f730451dd5b64c72434e4a14d.eot");
+  src: url("//db.onlinewebfonts.com/t/5c93534f730451dd5b64c72434e4a14d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/5c93534f730451dd5b64c72434e4a14d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/5c93534f730451dd5b64c72434e4a14d.woff") format("woff"), url("//db.onlinewebfonts.com/t/5c93534f730451dd5b64c72434e4a14d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/5c93534f730451dd5b64c72434e4a14d.svg#Futura Std") format("svg");
 }
 
 @font-face {
@@ -3234,7 +3234,7 @@ select.form-control {
   font-family: 'FB';
   color: #ffb84d;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   line-height: 1.4;
   letter-spacing: 4px;
@@ -3242,7 +3242,7 @@ select.form-control {
 
 @media screen and (min-width: 2000px) {
   .clientes-banner__header .title {
-    font-size: 26px;
+    font-size: 24px;
     padding-top: 30px;
   }
 }
@@ -3254,9 +3254,24 @@ select.form-control {
   }
 }
 
+.clientes-banner .divisor {
+  height: 1px;
+  width: 80%;
+  background-color: rgba(250, 250, 250, 0.4);
+  max-width: 250px;
+  margin-top: 41px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 2000px) {
+  .clientes-banner .divisor {
+    max-width: 320px;
+  }
+}
+
 .clientes-banner__brands-carousel {
   width: 100%;
-  padding-top: 40px;
+  padding-top: 39px;
   margin-right: -50px;
 }
 
@@ -3273,8 +3288,46 @@ select.form-control {
 
 @media screen and (min-width: 2000px) {
   .clientes-banner__brands-carousel {
-    padding-top: 60px;
+    padding-top: 80px;
   }
+}
+
+.clientes-banner__depoimentos-carousel .owl-dots {
+  margin-top: -16px;
+}
+
+@media screen and (max-width: 768px) {
+  .clientes-banner__depoimentos-carousel .owl-dots {
+    margin-top: -33px;
+  }
+}
+
+.clientes-banner__depoimentos-carousel .owl-dots .owl-dot {
+  border: 1.2px solid #ffffff;
+  width: 10px;
+  height: 10.4px;
+}
+
+.clientes-banner__depoimentos-carousel .owl-dots .owl-dot:not(:last-child) {
+  margin-right: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .clientes-banner__depoimentos-carousel .owl-dots .owl-dot:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .clientes-banner__depoimentos-carousel .owl-dots .owl-dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.clientes-banner__depoimentos-carousel .owl-dots .owl-dot.active {
+  background-color: #ffb84d;
+  border-color: #ffb84d;
 }
 
 .clientes-banner__brand {
@@ -3288,6 +3341,95 @@ select.form-control {
   .clientes-banner__brand {
     max-width: 210px;
     height: 60px;
+  }
+}
+
+.clientes-banner__depoimentos-carousel {
+  position: relative;
+}
+
+.clientes-banner .depoimentos-wrapper {
+  position: relative;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.clientes-banner .depoimentos-wrapper::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: 0;
+  transform: translateX(100%);
+  width: 87px;
+  height: 87px;
+  background-image: url(../../images/ico/quotes.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .clientes-banner .depoimentos-wrapper::after {
+    width: 35px;
+    height: 35px;
+    right: 40px;
+    top: -18px;
+  }
+}
+
+.clientes-banner .depoimentos-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -180px;
+  transform: translateX(100%);
+  width: 87px;
+  height: 87px;
+  background-image: url(../../images/ico/quotes-l.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .clientes-banner .depoimentos-wrapper::before {
+    width: 35px;
+    left: -30px;
+    top: -18px;
+    height: 35px;
+  }
+}
+
+.clientes-banner__depoimento {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.clientes-banner__depoimento .desc {
+  font-family: 'FBO';
+  letter-spacing: 1.7px;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .clientes-banner__depoimento .desc {
+    font-size: 12px;
+  }
+}
+
+.clientes-banner__depoimento .author {
+  color: #ffb84d;
+  font-family: 'FB';
+  font-size: 14px;
+  letter-spacing: 1.2px;
+}
+
+@media screen and (max-width: 768px) {
+  .clientes-banner__depoimento .author {
+    font-size: 11px;
   }
 }
 

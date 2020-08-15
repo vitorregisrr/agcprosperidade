@@ -1,9 +1,9 @@
 (function () {
     'use strict';
-    
+
     // Home Carousel //
-    const loginCarousel = $("#desafios-carousel");
-    loginCarousel.owlCarousel({
+    const homeCarousel = $("#desafios-carousel");
+    homeCarousel.owlCarousel({
         margin: 0,
         items: 1,
         loop: true,
@@ -14,13 +14,30 @@
         dots: false,
         startPosition: 0,
         animateOut: 'fadeOut',
-        navText: ['',''],
+        navText: [
+            '', ''
+        ],
         animateIn: 'fadeIn',
         dotsContainer: '#login-carousel-dots',
-        onChange: function(e){
-
-        },
+        onChange: function (e) {}
     });
-    
+
+    // Como Trabalhamos Carousel
+    const comoTrabCarousel = $("#como-trabalhamos-carousel");
+    comoTrabCarousel.owlCarousel({
+        dots: true,
+        infinite: true,
+        arrows: false,
+        center: true,
+        slideTransition: 'ease-in-out',
+        dragEndSpeed: 1000,
+        items: 1,
+        responsive: {
+            992: {
+                items: 3
+            }
+        }
+    });
+
     window.dispatchEvent(new Event('resize'));
 })();

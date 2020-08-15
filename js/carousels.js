@@ -27,7 +27,6 @@
     comoTrabCarousel.owlCarousel({
         dots: true,
         infinite: true,
-        arrows: false,
         nav: true,
         navText: ['', '<div class="line wow fadeIn" data-wow-delay="2s"><span class="wow"></span></div>'],
         center: true,
@@ -39,6 +38,47 @@
                 items: 3
             }
         }
+    });
+    // Clientes Brands Carousel
+    const clientesBrands = $("#clientes-brands-carousel");
+    clientesBrands.owlCarousel({
+        autoplay: true,
+        dots: false,
+        loop: true,
+        navigation : true,
+        center: true,
+        dragEndSpeed: 300,
+        items: 7,
+        startPosition: 3,
+        responsive:  {
+            0:{
+                center: false,
+                items: 3,
+                startPosition: 5
+            },
+            778: {
+                center: true,
+                items: 4,
+                startPosition: 3
+            },
+            1098: {
+                items: 7
+            },
+            2000: {
+                items: 9
+            }
+        }
+    });
+
+    // Como Trabalhamos Carousel
+    const clientesDepoimentos = $("#clientes-depoimentos-carousel");
+    clientesDepoimentos.owlCarousel({
+        dots: true,
+        infinite: true,
+        center: true,
+        slideTransition: 'ease-in-out',
+        dragEndSpeed: 1000,
+        items: 1
     });
 
     window.dispatchEvent(new Event('resize'));

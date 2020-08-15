@@ -28,6 +28,8 @@
         dots: true,
         infinite: true,
         arrows: false,
+        nav: true,
+        navText: ['', '<div class="line wow fadeIn" data-wow-delay="2s"><span class="wow"></span></div>'],
         center: true,
         slideTransition: 'ease-in-out',
         dragEndSpeed: 1000,

@@ -102,7 +102,13 @@
         object-position: center center;
         max-width: 174px;
         height: 54px;
+        margin: 10px 0;
+        @include transition();
 
+        &:hover{
+            @include scale(1.06);
+        }
+        
         @media screen and (min-width: 2000px){
             max-width: 210px;
             height: 60px;

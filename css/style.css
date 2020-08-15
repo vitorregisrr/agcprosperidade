@@ -3349,7 +3349,7 @@ select.form-control {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: -80px;
+  right: -68px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -3366,7 +3366,7 @@ select.form-control {
   position: relative;
   display: block;
   width: 100px;
-  height: 2px;
+  height: 2.5px;
   background-color: #fff !important;
   max-width: 0;
   animation: slideIn1002 1.4s;

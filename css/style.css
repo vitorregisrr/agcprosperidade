@@ -3376,7 +3376,7 @@ select.form-control {
   transform: translateX(100%);
   width: 87px;
   height: 87px;
-  background-image: url(../../images/ico/quotes.png);
+  background-image: url(../images/ico/quotes.png);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -3399,7 +3399,7 @@ select.form-control {
   transform: translateX(100%);
   width: 87px;
   height: 87px;
-  background-image: url(../../images/ico/quotes-l.png);
+  background-image: url(../images/ico/quotes-l.png);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;

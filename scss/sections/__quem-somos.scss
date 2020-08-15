@@ -1,0 +1,66 @@
+.quem-somos{
+    position: relative;
+    background-color: black;
+    color: #fff;
+
+    .triangle-top{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        transform: translateY(100%);
+    }
+    
+    .triangle-bottom{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-100%);
+        width: 100%;
+    }
+
+    &__header{
+        position: relative;
+        background-color: #c4c4c4;
+    }
+
+    
+    &__newsletter{
+        position: relative;
+        background-color: #c4c4c4;
+    }
+
+    &__content{
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 200px 0;
+
+        .trees{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20%;
+            height: 100%;
+            z-index: 1;
+
+            img{
+                width: 100%;
+            }
+            
+            &.right{
+                right: 40px;
+                z-index: 1;
+            }
+        }
+
+
+        .text{
+            width: 20%;
+        }
+
+        .line{
+            width: 20%;
+        }
+    }
+}

@@ -31,17 +31,15 @@
             text-align: center;
             letter-spacing: 4px;
             color: #fff;
-
             @media screen and (min-width: 2000px) {
                 font-size: 43px;
             }
-
-            @media screen and (max-width: $bp-SM){
+            @media screen and (max-width: $bp-SM) {
                 font-size: 28px;
             }
         }
 
-        .line-wrapper{
+        .line-wrapper {
             height: 96px;
         }
 
@@ -80,7 +78,6 @@
 
         .owl-dots {
             margin-top: -16px;
-
             @media screen and (max-width: $bp-LG) {
                 margin-top: -14px;
             }
@@ -128,15 +125,14 @@
             top: 50%;
             transform: translateY(-50%);
             right: -68px;
-
-            @media screen and (max-width: $bp-XL){
+            @media screen and (max-width: $bp-XL) {
                 display: none;
             }
 
             .line {
                 width: 80px;
 
-                span{
+                span {
                     position: relative;
                     display: block;
                     width: 100px;
@@ -146,7 +142,6 @@
                     animation: slideIn1002 1.4s;
                     animation-fill-mode: forwards;
                     animation-delay: 3s;
-
                     @keyframes slideIn1002 {
                         0% {
                             max-width: 0;
@@ -180,8 +175,7 @@
         border: 1.6px solid black;
         text-align: center;
         max-width: 400px;
-        
-        @media screen and (max-width: $bp-MD){
+        @media screen and (max-width: $bp-MD) {
             max-width: 370px;
             height: 340px;
         }
@@ -200,9 +194,9 @@
             font-family: 'FB';
             letter-spacing: 3px;
 
-            @media screen and (max-width: $bp-MD){
+            @media screen and (max-width: $bp-MD) {
                 font-size: 30px;
-                margin-bottom: 0px;
+                margin-bottom: 0;
                 margin-top: -8px;
             }
         }
@@ -216,38 +210,41 @@
             justify-content: center;
             color: #fff;
             padding: 10px 20px 20px;
+            padding-top: 6px;
             height: 100%;
             margin: 0 auto;
 
             li {
                 font-size: 21px;
                 margin-bottom: 7px;
-
                 @media screen and (max-width: $bp-SM) {
                     font-size: 18px;
                 }
 
                 &.md {
                     font-size: 24px;
-
-                    @media screen and (max-width: $bp-SM){
+                    @media screen and (max-width: $bp-SM) {
                         font-size: 21px;
                     }
                 }
 
                 &.lg {
                     font-size: 26px;
-
-                    @media screen and (max-width: $bp-SM){
+                    @media screen and (max-width: $bp-SM) {
                         font-size: 21px;
                     }
                 }
 
                 &.xl {
                     font-size: 33px;
-                    line-height: 1.3;
-
-                    @media screen and (max-width: $bp-SM){
+                    line-height: 1.3
+                    ;
+                    &:first-child {
+                        @media screen and (min-width: $bp-XL) {
+                            margin-top: -20px;
+                        }
+                    }
+                    @media screen and (max-width: $bp-SM) {
                         font-size: 28px;
                     }
                 }

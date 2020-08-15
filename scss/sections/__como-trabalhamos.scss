@@ -36,6 +36,10 @@
             }
         }
 
+        .line-wrapper{
+            height: 96px;
+        }
+
         .line {
             position: relative;
             height: 80px;
@@ -98,8 +102,9 @@
             padding-top: 70px;
         }
         .owl-item:not(.center) {
-            @include scale(0.8);
-            opacity: 0.8;
+            padding-top: 85px;
+            @include scale(0.76);
+            opacity: 0.6;
         }
     }
 

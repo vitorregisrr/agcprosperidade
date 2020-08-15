@@ -71,14 +71,15 @@
             height: 1.6px;
             margin-top: 5px;
             animation: slideIn110perc 1s;
+            max-width: 0;
             animation-fill-mode: forwards;
 
             @keyframes slideIn110perc {
                 0% {
-                    width: 0;
+                    max-width: 0;
                 }
                 100% {
-                    width: 110%;
+                    max-width: 110%;
                 }
             }
 

@@ -2,13 +2,25 @@
     background-color: black;
     padding-bottom: 70px;
 
+    @media screen and (max-width: $bp-LG){
+        padding-bottom: 40px;
+    }
+
     &__brand {
         display: flex;
         justify-content: center;
         padding-top: 60px;
 
+        @media screen and (max-width: $bp-LG){
+            padding-top: 40px;
+        }
+
         img {
             width: 84px;
+
+            @media screen and (max-width: $bp-LG){
+                width: 65px;
+            }
         }
     }
 
@@ -17,9 +29,20 @@
         justify-content: space-between;
         padding-top: 26px;
 
+        @media screen and (max-width: $bp-MD){
+            flex-direction: column;
+        }
+
         ul {
             display: flex;
             flex-direction: column;
+
+            @media screen and (max-width: $bp-MD){
+                padding-left: 20px;
+                &:not(:last-child){
+                    margin-bottom: 28px;
+                }
+            }
 
             li {
                 font-family: 'FO';
@@ -29,8 +52,20 @@
                 font-size: 15px;
                 margin-bottom: 8px;
 
+                @media screen and (max-width: $bp-LG){
+                    font-size: 13px;
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 12px;
+                }
+
                 i{
                     font-size: 19px;
+
+                    @media screen and (max-width: $bp-LG){
+                        font-size: 17px;
+                    }
                 }
 
                 a{
@@ -44,6 +79,14 @@
                     letter-spacing: 3PX;
                     text-transform: uppercase;
                     margin-bottom: 12px;
+
+                    @media screen and (max-width: $bp-LG){
+                        font-size: 17px;
+                    }
+
+                    @media screen and (max-width: $bp-MD){
+                        font-size: 15px;
+                    }
                 }
 
             }

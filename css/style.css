@@ -3767,7 +3767,7 @@ select.form-control {
 @media screen and (max-width: 768px) {
   .quem-somos__newsletter-body .form .submit-wrapper button {
     margin-top: 14px;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 10px;
     letter-spacing: 3px;
     padding: 2px 17px;

@@ -1169,12 +1169,13 @@ button:focus {
   padding: 2.8px 14px;
 }
 
-.form-control.error {
-  border-color: #e07777;
+input.error {
+  border: 1px solid #e07777 !important;
+  background-color: #fff7f7;
 }
 
-.form-control.error ~ label {
-  color: #e07777;
+label.error {
+  display: none !important;
 }
 
 .select-transparent {
@@ -1281,7 +1282,8 @@ button:focus {
   border-radius: 10px;
 }
 
-.quantity-input input, .quantity-input button {
+.quantity-input button,
+.quantity-input input {
   height: 41px;
 }
 
@@ -1301,7 +1303,7 @@ button:focus {
   /* Firefox */
 }
 
-.quantity-input input::-webkit-outer-spin-button, .quantity-input input::-webkit-inner-spin-button {
+.quantity-input input::-webkit-inner-spin-button, .quantity-input input::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -1924,58 +1926,55 @@ select.form-control {
 }
 
 .footer {
-  padding: 30px 0;
-  background-color: #FBF8F5;
-  letter-spacing: 1px;
-  color: #fffff5;
+  background-color: black;
+  padding-bottom: 70px;
 }
 
-@media screen and (min-width: 1400px) {
-  .footer .container {
-    max-width: 1300px;
-  }
-}
-
-.footer__list {
-  text-transform: lowercase;
-  color: #383838;
-}
-
-.footer__list a {
-  display: block;
-  margin-bottom: 4px;
-  color: #383838 !important;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.footer__list a:hover {
-  color: #ffb84d !important;
-}
-
-.footer__list a.btn-media {
+.footer__brand {
   display: flex;
-  color: #fff !important;
+  justify-content: center;
+  padding-top: 60px;
 }
 
-.footer__list-item {
+.footer__brand img {
+  width: 84px;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 26px;
+}
+
+.footer__links ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links ul li {
+  font-family: 'FO';
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   font-size: 15px;
-  font-weight: 300;
-  margin-bottom: 10px;
-}
-
-.footer__list-title {
-  font-weight: 800;
   margin-bottom: 8px;
 }
 
-@media screen and (max-width: 768px) {
-  .footer__list {
-    text-align: center;
-  }
+.footer__links ul li i {
+  font-size: 19px;
+}
+
+.footer__links ul li a {
+  color: inherit;
+}
+
+.footer__links ul li.title {
+  font-family: 'FB';
+  font-size: 19px;
+  color: #ffb84d;
+  letter-spacing: 3PX;
+  text-transform: uppercase;
+  margin-bottom: 12px;
 }
 
 .home-tree {

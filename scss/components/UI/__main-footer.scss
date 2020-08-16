@@ -1,46 +1,52 @@
 .footer {
-    padding: 30px 0;
-    background-color: #FBF8F5;
-    letter-spacing: 1px;
-    color: hsl(60, 100%, 98%);
+    background-color: black;
+    padding-bottom: 70px;
 
-    .container {
-        @media screen and (min-width: 1400px) {
-            max-width: 1300px;
+    &__brand {
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+
+        img {
+            width: 84px;
         }
     }
 
-    &__list {
-        text-transform: lowercase;
-        color: $color-dark;
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 26px;
 
-        a {
-            display: block;
-            margin-bottom: 4px;
-            color: $color-dark !important;
-            @include transition();
-            &:hover {
-                color: $color-primary !important;
+        ul {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                font-family: 'FO';
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-size: 15px;
+                margin-bottom: 8px;
+
+                i{
+                    font-size: 19px;
+                }
+
+                a{
+                    color: inherit;
+                }
+
+                &.title {
+                    font-family: 'FB';
+                    font-size: 19px;
+                    color: $color-primary;
+                    letter-spacing: 3PX;
+                    text-transform: uppercase;
+                    margin-bottom: 12px;
+                }
+
             }
-
-            &.btn-media {
-                display: flex;
-                color: #fff !important;
-            }
-        }
-
-        &-item {
-            font-size: 15px;
-            font-weight: 300;
-            margin-bottom: 10px;
-        }
-
-        &-title {
-            font-weight: 800;
-            margin-bottom: 8px;
-        }
-        @media screen and (max-width: $bp-MD) {
-            text-align: center;
         }
     }
 }

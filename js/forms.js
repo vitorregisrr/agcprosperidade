@@ -1,11 +1,11 @@
 // Formulário acessar (LOGIN)
-$("#form-login").validate({
+$("#form-newsletter").validate({
     rules: {
         email: {
             required: true,
             email: true
         },
-        password: {
+        nome: {
             required: true,
             minLength: 6
         },
@@ -13,8 +13,8 @@ $("#form-login").validate({
 
     messages: {
         password: {
-            required: "Digite sua senha",
-            minLength: "Sua senha deve ter no mínimo 6 caractéres"
+            required: "Digite seu nome",
+            minLength: "Seu nome deve ter no mínimo 4 caractéres"
         },
 
         email: {

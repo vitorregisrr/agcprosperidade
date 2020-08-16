@@ -8,7 +8,6 @@
     color: #383838;
     font-weight: 400;
     border-radius: 5px;
-
     &:focus {
         box-shadow: none;
         border: 1px solid #636363;
@@ -23,14 +22,14 @@
         padding: 2.8px 14px;
     }
 
-    &.error {
-        border-color: rgb(224, 119, 119);
-        
-        & ~ label{
-            color: rgb(224, 119, 119);            
-        }
-    }
+}
+input.error {
+    border: 1px solid rgb(224, 119, 119) !important;
+    background-color: rgb(255, 247, 247);
+}
 
+label.error {
+    display: none !important;
 }
 
 .select-transparent {
@@ -101,7 +100,7 @@
     }
 }
 
-.input-search{
+.input-search {
     display: flex;
     align-items: center;
     display: flex;
@@ -120,11 +119,9 @@
         border: none;
         color: #909090;
         width: 300px;
-
-        @media screen and (max-width: $bp-LG){
+        @media screen and (max-width: $bp-LG) {
             width: 110px;
         }
-        
         &:active,
         &:focus {
             border: none;
@@ -134,16 +131,17 @@
     }
 }
 
-.quantity-input{
+.quantity-input {
     display: flex;
     border: 1.3px solid $color-primary;
     border-radius: 10px;
-    
-    input, button{
+
+    button,
+    input {
         height: 41px;
     }
 
-    input{
+    input {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -155,21 +153,21 @@
         font-size: 24px;
         color: $color-dark;
         font-weight: 500;
-        
+
         /* Chrome, Safari, Edge, Opera */
-        &::-webkit-outer-spin-button,
-        &::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
         }
 
         /* Firefox */
         &[type=number] {
-        -moz-appearance: textfield;
+            -moz-appearance: textfield;
         }
     }
 
-    button{
+    button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -182,6 +180,6 @@
     }
 }
 
-select.form-control{
+select.form-control {
     min-height: 50px;
 }

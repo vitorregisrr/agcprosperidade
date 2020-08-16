@@ -3,6 +3,8 @@
 
     &__content {
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__title {
@@ -30,5 +32,105 @@
             -webkit-text-stroke-width: 2px !important;
             display: inline;
         }
+    }
+
+    &__item{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 50px;
+
+        .line-wrapper{
+            position: absolute;
+            left: 37px;
+            height: 53%;
+            top: 0;
+
+            @keyframes slideInv100vp {
+                0% {
+                    max-height: 0;
+                }
+                100% {
+                    max-height: 100%;
+                }
+            }
+
+            .line{
+                position: relative;
+                width: 3px;
+                height: 100%;
+                max-height: 0;
+                background-color: $color-primary;
+                animation: slideInv100vp 1.4s;
+                animation-fill-mode: forwards;
+
+                &:after{
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 0;
+                    width: 8px;
+                    height: 8px;
+                    background-color: $color-primary;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .title{
+            font-family: 'FB';
+            color: $color-secondary;
+            font-size: 20px;
+            letter-spacing: 4px;
+            max-width: 620px;
+            line-height: 1.6;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .desc{
+            font-family: 'FO';
+            max-width: 430px;
+            letter-spacing: 1.4px;
+            line-height: 1.7;
+        }
+
+        .link{
+            font-family: 'FB';
+            font-size: 20px;
+            letter-spacing: 3px;
+            color: $color-secondary;
+            text-transform: uppercase;
+            margin-top: -4px;
+        }
+        
+        .chevron{
+            padding-top: 70px;
+            padding-right: 90%;
+        }
+
+        .body{
+            padding-left: 70px;
+        }
+
+        .autor{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 19px;
+            letter-spacing: 1px;
+            padding-top: 20px;
+        
+            img{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                margin-right: 16px;
+            }
+        }
+        
     }
 }

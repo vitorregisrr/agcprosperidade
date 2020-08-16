@@ -1939,6 +1939,7 @@ select.form-control {
 .footer__brand {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 60px;
 }
 

@@ -9,6 +9,7 @@
     &__brand {
         display: flex;
         justify-content: center;
+        align-items: center;
         padding-top: 60px;
 
         @media screen and (max-width: $bp-LG){

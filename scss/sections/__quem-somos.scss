@@ -156,6 +156,7 @@
 
             @media screen and (max-width: $bp-LG){
                 flex-direction: column;
+                padding-bottom: 130px;
             }
 
             .text{
@@ -265,7 +266,7 @@
                             font-size: 28px;
                         }
 
-                        @media screen and (max-width: $bp-MD){
+                        @media screen and (max-width: $bp-LG){
                             margin-top: 14px;
                             font-size: 15px;
                             border-radius: 10px;

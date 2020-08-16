@@ -3638,6 +3638,7 @@ select.form-control {
 @media screen and (max-width: 992px) {
   .quem-somos__newsletter-body {
     flex-direction: column;
+    padding-bottom: 130px;
   }
 }
 
@@ -3764,7 +3765,7 @@ select.form-control {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .quem-somos__newsletter-body .form .submit-wrapper button {
     margin-top: 14px;
     font-size: 15px;

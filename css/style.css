@@ -3505,8 +3505,8 @@ select.form-control {
   letter-spacing: 10px;
   line-height: 1;
   text-transform: uppercase;
-  margin-bottom: -60px;
-  margin-left: -190px;
+  margin-bottom: -68px;
+  margin-left: -199px;
   margin-top: 92px;
   z-index: 2;
 }
@@ -3791,7 +3791,7 @@ select.form-control {
 .quem-somos__newsletter-body .form .submit-wrapper .line-wrapper .line {
   position: relative;
   width: 40vw;
-  height: 1.3px;
+  height: 1.5px;
   max-width: 0;
   animation: slideIn100perc 2s;
   animation-fill-mode: forwards;
@@ -3801,7 +3801,7 @@ select.form-control {
 
 @media screen and (min-width: 2000px) {
   .quem-somos__newsletter-body .form .submit-wrapper .line-wrapper .line {
-    height: 1.8px;
+    height: 1.3px;
   }
 }
 

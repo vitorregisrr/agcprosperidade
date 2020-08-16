@@ -41,8 +41,8 @@
 
             @media screen and (min-width: 2000px){
                 font-size: 92px;
-                margin-bottom: -140px;
-                margin-left: -230px;
+                margin-bottom: -170px;
+                margin-left: -250px;
                 margin-top: 110px;
             }
 
@@ -82,26 +82,44 @@
         padding: 200px 0;
 
         @media screen and (min-width: 2000px){
-            padding: 290px 0;
+            padding: 320px 0;
         }
 
         .trees{
+            position: relative;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             width: 20%;
             height: 100%;
             z-index: 1;
+            padding: 0 2%;
+            margin-bottom: 140px;
 
+            @media screen and (min-width: 2000px){
+                padding-left: 90px;
+                padding-right: 0;
+            }
 
             img{
-                width: 80%;
-                margin: 0 auto;
+                width: 21%;
+
+                @media screen and (min-width: 2000px){
+                    width: 19%;
+                }
             }
-            
+
             &.right{
-                z-index: 1;
+                padding-left: 30px;
+                padding-right: 30px;
+
+                @media screen and (min-width: 2000px){
+                    padding-right: 90px;
+                    padding-left: 0px;
+                }
             }
+
+            
         }
 
         .text{
@@ -120,7 +138,7 @@
                 line-height: 1.6;
 
                 @media screen and (min-width: 2000px){
-                    font-size: 35px;
+                    font-size: 39px;
                     max-width: 380px;
                     margin: 0 auto;
                     margin-bottom: 20px;
@@ -167,6 +185,10 @@
                 background-color: $color-secondary;
                 margin: 0;
 
+                @media screen and (min-width: 2000px){
+                    height: 1.8px;
+                }
+
                 &:after{
                     content: '';
                     display: block;
@@ -178,6 +200,11 @@
                     height: 9px;
                     border-radius: 50%;
                     background-color: $color-secondary;
+
+                    @media screen and (min-width: 2000px){
+                        width: 11px;
+                        height: 11px;
+                    }
                 }
             }
         }

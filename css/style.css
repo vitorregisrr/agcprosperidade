@@ -461,6 +461,11 @@ button:focus {
   src: url("//db.onlinewebfonts.com/t/921351f146d78d55c8030239527bf2d6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/921351f146d78d55c8030239527bf2d6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/921351f146d78d55c8030239527bf2d6.woff") format("woff"), url("//db.onlinewebfonts.com/t/921351f146d78d55c8030239527bf2d6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/921351f146d78d55c8030239527bf2d6.svg#Futura Std") format("svg");
 }
 
+@font-face {
+  font-family: "HB";
+  src: url("../fonts/helvetica-black.woff") format("woff");
+}
+
 .owl-carousel.nav-center .owl-nav {
   display: flex;
   justify-content: center;
@@ -3281,6 +3286,42 @@ select.form-control {
   }
 }
 
+.direto-blog {
+  padding: 110px 0;
+}
+
+.direto-blog__content {
+  display: flex;
+}
+
+.direto-blog__title {
+  display: flex;
+}
+
+.direto-blog__title .sm {
+  font-size: 30px;
+  text-align: right;
+  color: #8169a7;
+  font-family: 'FH';
+  text-transform: uppercase;
+  margin-right: -14px;
+}
+
+.direto-blog__title .lg {
+  font-size: 130px;
+  margin-top: -29px;
+  color: #8169a7;
+}
+
+.direto-blog__title .lg, .direto-blog__title .lg .stroke-lettering {
+  font-family: 'HB';
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 2px !important;
+  display: inline;
+}
+
 .clientes-banner {
   background-color: #8169a7;
   padding-top: 100px;
@@ -3357,6 +3398,7 @@ select.form-control {
 
 .clientes-banner__depoimentos-carousel .owl-dots {
   margin-top: -16px;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -3366,9 +3408,14 @@ select.form-control {
 }
 
 .clientes-banner__depoimentos-carousel .owl-dots .owl-dot {
-  border: 1.2px solid #ffffff;
-  width: 10px;
-  height: 10.4px;
+  border: 1.4px solid #ffffff;
+  width: 13px;
+  height: 13.4px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .clientes-banner__depoimentos-carousel .owl-dots .owl-dot:not(:last-child) {
@@ -4491,9 +4538,14 @@ select.form-control {
 }
 
 .como-trabalhamos__carousel .owl-dots .owl-dot {
-  border: 1.2px solid #ffffff;
-  width: 10px;
-  height: 10.4px;
+  border: 1.4px solid #ffffff;
+  width: 13px;
+  height: 13.4px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .como-trabalhamos__carousel .owl-dots .owl-dot:not(:last-child) {

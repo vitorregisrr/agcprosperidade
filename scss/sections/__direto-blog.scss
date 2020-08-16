@@ -1,0 +1,34 @@
+.direto-blog {
+    padding: 110px 0;
+
+    &__content {
+        display: flex;
+    }
+
+    &__title {
+        display: flex;
+        .sm{
+            font-size: 30px;
+            text-align: right;
+            color: $color-secondary;
+            font-family: 'FH';
+            text-transform: uppercase;
+            margin-right: -14px;
+        }
+
+        .lg{
+            font-size: 130px;
+            margin-top: -29px; 
+            color: $color-secondary;
+        }
+
+        .lg, .lg .stroke-lettering{
+            font-family: 'HB';
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            text-transform: uppercase;
+            -webkit-text-stroke-width: 2px !important;
+            display: inline;
+        }
+    }
+}

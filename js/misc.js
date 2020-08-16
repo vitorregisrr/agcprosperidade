@@ -15,7 +15,6 @@
             $('.nossas-solucoes__item .desc').attr('data-wow-delay', '1.4s');
         }
         
-        $('#newsletter-line').css('width', $('#newsletter-form').width() + 0);
     }
     replaceStyles();
     

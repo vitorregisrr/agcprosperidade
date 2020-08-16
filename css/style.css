@@ -3405,7 +3405,7 @@ select.form-control {
 @media screen and (max-width: 768px) {
   .direto-blog__item .line-wrapper {
     left: 20px;
-    height: 60%;
+    height: 56%;
   }
 }
 
@@ -3430,7 +3430,7 @@ select.form-control {
 
 @media screen and (max-width: 768px) {
   .direto-blog__item .line-wrapper .line {
-    width: 2.5px;
+    width: 2.1px;
   }
 }
 
@@ -3444,6 +3444,13 @@ select.form-control {
   height: 8px;
   background-color: #ffb84d;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .direto-blog__item .line-wrapper .line:after {
+    width: 5px;
+    height: 5px;
+  }
 }
 
 .direto-blog__item .title {
@@ -3519,7 +3526,7 @@ select.form-control {
 .direto-blog__item .autor {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: 19px;
   letter-spacing: 1px;
   padding-top: 20px;

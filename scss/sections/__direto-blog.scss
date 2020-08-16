@@ -94,7 +94,7 @@
 
             @media screen and (max-width: $bp-MD){
                 left: 20px;
-                height: 60%;
+                height: 56%;
             }
 
             @keyframes slideInv100vp {
@@ -116,7 +116,7 @@
                 animation-fill-mode: forwards;
 
                 @media screen and (max-width: $bp-MD){
-                    width: 2.5px;
+                    width: 2.1px;
                 }
 
                 &:after{
@@ -129,6 +129,11 @@
                     height: 8px;
                     background-color: $color-primary;
                     border-radius: 50%;
+
+                    @media screen and (max-width: $bp-MD){
+                        width: 5px;
+                        height: 5px;
+                    }
                 }
             }
         }
@@ -196,7 +201,7 @@
         .autor{
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             font-size: 19px;
             letter-spacing: 1px;
             padding-top: 20px;

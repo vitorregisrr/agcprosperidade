@@ -8,12 +8,14 @@
         }else{
             $('.main-nav__content .overlay').css('min-height', 0);
         }
-
+        
         if(window.innerWidth < 992){
             $('.nossas-solucoes__item').attr('data-wow-delay', '0.8s');
             $('.nossas-solucoes__item .line').attr('data-wow-delay', '1s');
             $('.nossas-solucoes__item .desc').attr('data-wow-delay', '1.4s');
         }
+        
+        $('#newsletter-line').css('width', $('#newsletter-form').width() + 0);
     }
     replaceStyles();
     

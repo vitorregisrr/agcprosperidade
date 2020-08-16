@@ -3530,7 +3530,7 @@ select.form-control {
   height: 320px;
   right: -186px;
   bottom: -143px;
-  background-image: url("../../images/ico/quote.png");
+  background-image: url("../images/ico/quote.png");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -1;
@@ -3639,7 +3639,14 @@ select.form-control {
 
 @media screen and (max-width: 992px) {
   .quem-somos__content .trees img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .quem-somos__content .trees img {
     width: 80%;
+    max-width: 40px;
   }
 }
 

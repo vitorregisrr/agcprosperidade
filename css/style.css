@@ -3491,6 +3491,15 @@ select.form-control {
   z-index: 2;
 }
 
+@media screen and (min-width: 2000px) {
+  .quem-somos__header .title {
+    font-size: 92px;
+    margin-bottom: -140px;
+    margin-left: -230px;
+    margin-top: 110px;
+  }
+}
+
 .quem-somos__header .title::after {
   content: '';
   position: absolute;
@@ -3502,6 +3511,15 @@ select.form-control {
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -1;
+}
+
+@media screen and (min-width: 2000px) {
+  .quem-somos__header .title::after {
+    width: 380px;
+    height: 380px;
+    bottom: -165px;
+    right: -220px;
+  }
 }
 
 .quem-somos__newsletter {
@@ -3538,7 +3556,6 @@ select.form-control {
 }
 
 .quem-somos__content .trees.right {
-  right: 40px;
   z-index: 1;
 }
 
@@ -3571,7 +3588,8 @@ select.form-control {
 .quem-somos__content .text p {
   font-size: 15px;
   font-family: 'FO';
-  letter-spacing: 1.4px;
+  letter-spacing: 1.3px;
+  opacity: .97;
   line-height: 1.7;
 }
 

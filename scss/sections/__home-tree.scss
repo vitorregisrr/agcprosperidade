@@ -1,5 +1,27 @@
 .home-tree {
     background-color: #8169a7;
+    @include transition();
+
+    .container{
+        position: relative;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 27%;
+        z-index: 1;
+        background-color: #fff;
+        opacity: 0;
+        @include transition();
+        
+        @media screen and (max-width: $bp-MD){
+            height: 20%;
+        }
+    }
     
     @media screen and (max-width: $bp-LG) {
         padding-bottom: 90px;
@@ -8,11 +30,13 @@
     &__banner {
         background-color: #000000;
         padding: 0 70px;
+        padding-bottom: 40px;
         margin-top: 17px;
         overflow: hidden;
 
         @media screen and (max-width: $bp-MD) {
             padding: 0 30px;
+            padding-bottom: 0;
             margin-top: 7px;
         }
     }
@@ -281,6 +305,161 @@
             @media screen and (max-width: $bp-MD){
                 width: 115%;
                 margin: 0 auto;
+            }
+        }
+    }
+
+
+    .main-nav{
+        &__tree{
+            &.colorful{
+                display: none;
+                animation: fadeIn 0.4s;
+            }
+
+            &.black{
+                display: flex;
+            }
+        }
+    }
+    &.has-cookies{
+        position: relative;
+        padding-bottom: 108px;
+
+        .container{
+            position: relative;
+            z-index: 2;
+        }
+
+        &::after{
+            opacity: 1;
+        }
+
+        .main-nav{
+            position: relative;
+
+            @media screen and (max-width: $bp-MD){
+                margin-top: -5px;
+            }
+
+            &__toggler{
+                div{
+                    background-color: $color-secondary;
+                }
+            }
+            &__tree{
+                overflow: visible;
+                
+                &.black{
+                    animation: fadeIn 0.4s;
+                    display: none;
+                }
+
+                &.colorful{
+                    display: block;
+
+                    @media screen and (max-width: $bp-MD){
+                        margin-bottom: 13px;
+                    }
+
+                    .tree{
+                        margin-bottom: -50px;
+                        width: 150px;
+
+                        @media screen and (max-width: $bp-LG){
+                            margin: 0;
+                            width: 110px;
+                        }
+                        @media screen and (max-width: $bp-SM){
+                            width: 80px;
+                        }
+                    }
+
+                    .lines{
+                        width: calc(100% - 110px);
+                        margin-left: -66px;
+                        margin-top: 109px;
+                    }
+                }
+            }
+
+            &__links{
+                li{
+                    @media screen and (min-width: $bp-LG){
+                        color: $color-secondary !important;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    &__cookies{
+        position: absolute;
+        background-color: #e6e7e8;
+        width: 100vw;
+        height: 80vh;
+        z-index: 11;
+        @include transition();
+
+        @media screen and (max-width: $bp-LG){
+            width: 100%;
+            height: unset;
+            position: relative;
+            margin-bottom: -60px;
+        }
+
+        &.hide{
+            pointer-events: none;
+            opacity: 0;
+        }
+
+        .content{
+            display: flex;
+            justify-content: space-between;
+            align-items: cnter;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 0 0 30px 30px;
+            padding: 15px 35px 20px 35px;
+            letter-spacing: 0.9px;
+            color: rgba(0,0,0,.8);
+
+            @media screen and (max-width: $bp-LG){
+                padding: 10px 18px;
+                border-radius: 0;
+                font-size: 10px;
+            }
+            
+            a{
+                font-family: 'FO';
+                font-weight: normal;
+                color: rgba(0,0,0,.8);
+                letter-spacing: 0.8px;
+            }
+
+            u{
+                margin-left: 8px;
+                
+                @media screen and (max-width: $bp-SM){
+                    margin-left: 4px;
+                }
+            }
+
+            button{
+                background-color: $color-primary;
+                padding: 2px 11px;
+                border-radius: 30px;
+                border: none;
+                color: #fff;
+                letter-spacing: 2.5px;
+                margin-left: 13px;
+
+                @media screen and (max-width: $bp-SM){
+                    margin-left: 4px;
+                    padding: 1px 6px;
+                }
             }
         }
     }

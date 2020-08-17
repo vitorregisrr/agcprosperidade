@@ -7,6 +7,8 @@
         $('#mobile-nav-content').toggleClass('active');
 
         $(this).attr('aria-expanded', !isExpanded);
+        $('.home-tree').removeClass('has-cookies');
+        $('.home-tree__cookies').addClass('hide');
     });
     
     window.dispatchEvent(new Event('resize'));

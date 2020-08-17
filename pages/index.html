@@ -71,12 +71,22 @@
     </head>
 
     <body class="wow fadeIn">
-        <section id="home-tree" class="home-tree">
+        <section id="home-tree" class="home-tree has-cookies">
             <nav id="main-nav" class="main-nav">
                 <div class="container">
-                    <div class="main-nav__tree">
+                    <div class="main-nav__tree black">
                         <img class="tree" src="../images/brands/tree-black.png" alt="Arvore estilizada">
                         <img class="lines" src="../images/ico/lines.png" alt="Linhas estilizadas">
+                    </div>
+                    <div class="main-nav__tree colorful">
+                        <img
+                            class="tree"
+                            src="../images/brands/tree-light-colorful.gif"
+                            alt="Arvore estilizada">
+                        <img
+                            class="lines"
+                            src="../images/ico/lines-purple.png"
+                            alt="Linhas estilizadas">
                     </div>
                     <button class="main-nav__toggler" data-toggle="navbar">
                         <div></div>
@@ -154,8 +164,38 @@
                         </div>
                     </div>
                 </div>
+                <div class="home-tree__cookies d-lg-none">
+                    <div class="content">
+                        <div class="d-flex align-items-center">
+                            This website use
+                            <u>cookies</u>.
+                        </div>
+                        <div>
+                            <a href="#">
+                                <u>Manage settings</u>
+                            </a>
+                            <button class="closee">Accept</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
         </section>
+        <div class="home-tree__cookies d-none d-lg-block">
+            <div class="content">
+                <div class="d-flex align-items-center">
+                    This website use
+                    <u>cookies</u>.
+                </div>
+                <div>
+                    <a href="#">
+                        <u>Manage settings</u>
+                    </a>
+                    <button class="closee" >Accept</button>
+                </div>
+            </div>
+        </div>
 
         <section id="home-woman" class="home-woman">
             <div class="container">
@@ -1153,7 +1193,8 @@
                         </span>
                         <span class="lg wow fadeInLeft" data-wow-delay="0.3s">
                             <span class="stroke-lettering secondary wow" data-wow-delay="1.6s">
-                                Blo</span><span>g</span>
+                                Blo</span>
+                            <span>g</span>
                         </span>
                     </h1>
 
@@ -1188,10 +1229,7 @@
                             class="d-flex justify-content-center w-100 wow fadeInDown"
                             data-wow-delay="2s">
                             <a href="#">
-                                <img
-                                    class="chevron bounce"
-                                    src="../images/ico/chevron-down.png"
-                                    alt="">
+                                <img class="chevron bounce" src="../images/ico/chevron-down.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -1224,10 +1262,7 @@
                             class="d-flex justify-content-center w-100 wow fadeInDown"
                             data-wow-delay="2s">
                             <a href="#">
-                                <img
-                                    class="chevron bounce"
-                                    src="../images/ico/chevron-down.png"
-                                    alt="">
+                                <img class="chevron bounce" src="../images/ico/chevron-down.png" alt="">
                             </a>
                         </div>
                     </div>

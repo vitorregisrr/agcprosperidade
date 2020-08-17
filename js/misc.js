@@ -67,5 +67,13 @@
         }
     });
 
+
+    function acceptCookies(){
+        $('.home-tree').removeClass('has-cookies');
+        $('.home-tree__cookies').addClass('hide');
+    }
+
+    $('.home-tree__cookies .closee').click(acceptCookies);
+
     window.addEventListener("resize", replaceStyles);
 })();

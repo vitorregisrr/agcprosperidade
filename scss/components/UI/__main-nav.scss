@@ -76,11 +76,11 @@ $treewidthlg: 80px;
 
         div {
             width: 27px;
-            height: 2.5px;
+            height: 1.8px;
             background-color: black;
 
             &:not(:last-child) {
-                margin-bottom: 4.5px;
+                margin-bottom: 5px;
             }
         }
         @media screen and (max-width: $bp-LG) {

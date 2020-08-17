@@ -1124,17 +1124,6 @@ button:focus {
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .main-nav__links li .line:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    width: 8px;
-    height: 8px;
-    background-color: #fff;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-  }
   .main-nav__links li a {
     position: relative;
     z-index: 3;
@@ -2069,6 +2058,7 @@ select.form-control {
   z-index: 1;
   background-color: #fff;
   opacity: 0;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -2638,7 +2628,7 @@ select.form-control {
 .home-woman .triangle-bottom {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
   z-index: 4;
 }
@@ -4071,6 +4061,14 @@ select.form-control {
   }
 }
 
+@media screen and (min-width: 1800px) and (max-width: 2000px) {
+  .quem-somos__header .title {
+    margin-left: -210px;
+    margin-top: 80px;
+    margin-bottom: -88px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .quem-somos__header .title {
     margin-bottom: -40px;
@@ -4206,6 +4204,12 @@ select.form-control {
   font-family: 'FO';
   font-size: 20px;
   letter-spacing: 1.5px;
+}
+
+@media screen and (min-width: 1800px) and (max-width: 2000px) {
+  .quem-somos__newsletter-body .text p {
+    margin-left: -60px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -4426,6 +4430,12 @@ select.form-control {
   .quem-somos__content {
     padding-left: 10%;
     padding-right: 10%;
+  }
+}
+
+@media screen and (min-width: 1800px) and (max-width: 2000px) {
+  .quem-somos__content {
+    padding: 240px 0;
   }
 }
 

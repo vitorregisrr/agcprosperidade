@@ -231,18 +231,6 @@ $treewidthlg: 80px;
                     z-index: 1;
                     opacity: 0;
                     @include transition();
-
-                    &:after{
-                        content: '';
-                        position: absolute;
-                        right: 0;
-                        width: 8px;
-                        height: 8px;
-                        background-color: #fff;
-                        border-radius: 50%;
-                        top: 50%;
-                        transform: translateY(-50%);
-                    }
                 }
 
                 a{

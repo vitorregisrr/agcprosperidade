@@ -68,12 +68,27 @@
     });
 
 
+    // Cookies tab function
     function acceptCookies(){
         $('.home-tree').removeClass('has-cookies');
         $('.home-tree__cookies').addClass('hide');
+        $('.home-tree .main-nav__links li').css({
+            'visibility' : 'hidden',
+            'animation-name' : 'none'
+        }).removeClass('animated');
+        $('.home-tree .main-nav__links li').css({
+            'visibility' : 'visible',
+            'animation-name' : 'fadeIn'
+        }).addClass('animated');
     }
-
     $('.home-tree__cookies .closee').click(acceptCookies);
+
+    $(window).scroll(function () {
+        var height = $('.home-tree').height() - 200;
+        if ($(window).scrollTop() > height ) {
+            acceptCookies();
+        }
+    });
 
     window.addEventListener("resize", replaceStyles);
 })();

@@ -54,8 +54,7 @@
         startPosition: 3,
         responsive:  {
             0:{
-                center: false,
-                items: 3,
+                items: 2,
                 startPosition: 5
             },
             778: {

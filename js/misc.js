@@ -72,14 +72,19 @@
     function acceptCookies(){
         $('.home-tree').removeClass('has-cookies');
         $('.home-tree__cookies').addClass('hide');
+
+        // RESET WOW FROM HOME-TREE
         $('.home-tree .main-nav__links li').css({
             'visibility' : 'hidden',
             'animation-name' : 'none'
         }).removeClass('animated');
+
         $('.home-tree .main-nav__links li').css({
             'visibility' : 'visible',
             'animation-name' : 'fadeIn'
         }).addClass('animated');
+
+
     }
     $('.home-tree__cookies .closee').click(acceptCookies);
 

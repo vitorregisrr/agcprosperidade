@@ -4072,7 +4072,7 @@ select.form-control {
 }
 
 .quem-somos__newsletter-body .form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .quem-somos__newsletter-body .form .submit-wrapper {

@@ -3287,7 +3287,7 @@ select.form-control {
 }
 
 .direto-blog {
-  padding: 110px 0;
+  padding: 90px 0 40px 0;
   max-width: 100vw;
   overflow: hidden;
 }
@@ -3502,7 +3502,7 @@ select.form-control {
 }
 
 .direto-blog__item .chevron {
-  margin-top: 70px;
+  margin-top: 90px;
   margin-right: 120px;
 }
 
@@ -3661,8 +3661,8 @@ select.form-control {
 
 @media screen and (max-width: 768px) {
   .clientes-banner__depoimentos-carousel .owl-dots .owl-dot {
-    width: 8px;
-    height: 8px;
+    width: 11px;
+    height: 11px;
   }
 }
 
@@ -4777,6 +4777,13 @@ select.form-control {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .como-trabalhamos__carousel .owl-dots .owl-dot {
+    width: 11px;
+    height: 11px;
+  }
 }
 
 .como-trabalhamos__carousel .owl-dots .owl-dot:not(:last-child) {

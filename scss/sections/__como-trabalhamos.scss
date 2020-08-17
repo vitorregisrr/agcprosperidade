@@ -88,6 +88,11 @@
                 height: 13.4px;
                 @include transition();
 
+                @media screen and (max-width: $bp-MD){
+                    width: 11px;
+                    height: 11px;
+                }
+
                 &:not(:last-child) {
                     margin-right: 6px;
                     @media screen and (max-width: $bp-LG) {

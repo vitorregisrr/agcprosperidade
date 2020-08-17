@@ -400,6 +400,7 @@
         width: 100vw;
         height: 80vh;
         z-index: 11;
+        overflow: hidden;
         @include transition();
 
         @media screen and (max-width: $bp-LG){

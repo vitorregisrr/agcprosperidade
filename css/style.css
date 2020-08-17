@@ -2544,6 +2544,7 @@ select.form-control {
   width: 100vw;
   height: 80vh;
   z-index: 11;
+  overflow: hidden;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;

@@ -65,6 +65,7 @@
             writing-mode: vertical-rl;
             text-orientation: upright;
             text-transform: uppercase;
+            -webkit-text-orientation: upright;
             -webkit-text-stroke-width: 2px !important;
             display: inline;
         }
@@ -94,7 +95,7 @@
 
             @media screen and (max-width: $bp-MD){
                 left: 20px;
-                height: 56%;
+                height: 52%;
             }
 
             @keyframes slideInv100vp {
@@ -149,7 +150,8 @@
             margin-bottom: 20px;
 
             @media screen and (max-width: $bp-MD){
-                font-size: 12px;
+                font-size: 11px;
+                line-height: 1.4;
                 margin-bottom: 10px;
             }
         }
@@ -162,6 +164,7 @@
 
             @media screen and (max-width: $bp-MD){
                 font-size: 12px;
+                line-height: 1.4;
             }
         }
 
@@ -175,8 +178,10 @@
             margin-top: -4px;
 
             @media screen and (max-width: $bp-MD){
-                font-size: 14px;
+                font-size: 11px;
                 margin-top: -8px;
+                text-align: right;
+                padding-right: 40px;
             }
         }
         
@@ -207,7 +212,7 @@
             padding-top: 20px;
 
             @media screen and (max-width: $bp-MD){
-                font-size: 14px;
+                font-size: 12px;
             }
         
             img{

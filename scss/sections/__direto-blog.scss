@@ -1,9 +1,8 @@
 .direto-blog {
-    padding: 90px 0 40px 0;
+    padding: 90px 0 40px;
     max-width: 100vw;
     overflow: hidden;
-
-    @media screen and (max-width: $bp-MD){
+    @media screen and (max-width: $bp-MD) {
         padding: 30px 0;
     }
 
@@ -11,8 +10,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        @media screen and (max-width: $bp-MD){
+        @media screen and (max-width: $bp-MD) {
             text-align: left;
             font-size: 20px;
         }
@@ -20,39 +18,37 @@
 
     &__title {
         display: flex;
-
-        @media screen and (max-width: $bp-MD){
+        @media screen and (max-width: $bp-MD) {
             flex-direction: column;
         }
-        .sm{
+        .sm {
             font-size: 30px;
             text-align: right;
             color: $color-secondary;
             font-family: 'FH';
             text-transform: uppercase;
             margin-right: -14px;
-
-            @media screen and (max-width: $bp-LG){
+            @media screen and (max-width: $bp-LG) {
                 font-size: 27px;
             }
-
-            @media screen and (max-width: $bp-MD){
+            @media screen and (max-width: $bp-MD) {
                 text-align: left;
                 font-size: 20px;
             }
         }
 
-        .lg{
+        .lg {
             font-size: 130px;
-            margin-top: -29px; 
+            margin-top: -29px;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
             color: $color-secondary;
-
-            @media screen and (max-width: $bp-LG){
+            @media screen and (max-width: $bp-LG) {
                 font-size: 110px;
                 margin-top: -24px;
             }
-
-            @media screen and (max-width: $bp-MD){
+            @media screen and (max-width: $bp-MD) {
                 font-size: 80px;
                 text-align: left;
                 margin-left: -20px;
@@ -60,7 +56,8 @@
             }
         }
 
-        .lg, .lg .stroke-lettering{
+        .lg,
+        .lg .stroke-lettering {
             font-family: 'HB';
             writing-mode: vertical-rl;
             text-orientation: upright;
@@ -71,33 +68,29 @@
         }
     }
 
-    &__item{
+    &__item {
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         margin-left: 50px;
-
-        @media screen and (max-width: $bp-LG){
+        @media screen and (max-width: $bp-LG) {
             margin-left: 20px;
         }
-
-        @media screen and (max-width: $bp-MD){
+        @media screen and (max-width: $bp-MD) {
             margin-left: 0;
         }
 
-        .line-wrapper{
+        .line-wrapper {
             position: absolute;
             left: 37px;
             height: 53%;
             top: 0;
-
-            @media screen and (max-width: $bp-MD){
+            @media screen and (max-width: $bp-MD) {
                 left: 20px;
                 height: 52%;
             }
-
             @keyframes slideInv100vp {
                 0% {
                     max-height: 0;
@@ -107,7 +100,7 @@
                 }
             }
 
-            .line{
+            .line {
                 position: relative;
                 width: 3px;
                 height: 100%;
@@ -115,12 +108,10 @@
                 background-color: $color-primary;
                 animation: slideInv100vp 1.4s;
                 animation-fill-mode: forwards;
-
-                @media screen and (max-width: $bp-MD){
+                @media screen and (max-width: $bp-MD) {
                     width: 2.1px;
                 }
-
-                &:after{
+                &:after {
                     content: '';
                     position: absolute;
                     left: 50%;
@@ -130,8 +121,7 @@
                     height: 8px;
                     background-color: $color-primary;
                     border-radius: 50%;
-
-                    @media screen and (max-width: $bp-MD){
+                    @media screen and (max-width: $bp-MD) {
                         width: 5px;
                         height: 5px;
                     }
@@ -139,7 +129,7 @@
             }
         }
 
-        .title{
+        .title {
             font-family: 'FB';
             color: $color-secondary;
             font-size: 20px;
@@ -148,27 +138,25 @@
             line-height: 1.6;
             text-transform: uppercase;
             margin-bottom: 20px;
-
-            @media screen and (max-width: $bp-MD){
+            @media screen and (max-width: $bp-MD) {
                 font-size: 11px;
                 line-height: 1.4;
                 margin-bottom: 10px;
             }
         }
 
-        .desc{
+        .desc {
             font-family: 'FO';
             max-width: 430px;
             letter-spacing: 1.4px;
             line-height: 1.7;
-
-            @media screen and (max-width: $bp-MD){
+            @media screen and (max-width: $bp-MD) {
                 font-size: 12px;
                 line-height: 1.4;
             }
         }
 
-        .link{
+        .link {
             display: block;
             font-family: 'FB';
             font-size: 20px;
@@ -176,58 +164,53 @@
             color: $color-secondary;
             text-transform: uppercase;
             margin-top: -4px;
-
-            @media screen and (max-width: $bp-MD){
+            @media screen and (max-width: $bp-MD) {
                 font-size: 11px;
                 margin-top: -8px;
                 text-align: right;
                 padding-right: 40px;
             }
         }
-        
-        .chevron{
+
+        .chevron {
             margin-top: 90px;
             margin-right: 120px;
-
-            @media screen and (max-width: $bp-MD){
+            @media screen and (max-width: $bp-MD) {
                 width: 30px;
                 margin-right: 80px;
             }
         }
 
-        .body{
+        .body {
             padding-left: 70px;
-
-            @media screen and (max-width: $bp-MD){
+            @media screen and (max-width: $bp-MD) {
                 padding-left: 40px;
             }
         }
 
-        .autor{
+        .autor {
             display: flex;
             align-items: center;
             justify-content: flex-start;
             font-size: 19px;
             letter-spacing: 1px;
             padding-top: 20px;
-
-            @media screen and (max-width: $bp-MD){
+            @media screen and (max-width: $bp-MD) {
                 font-size: 12px;
             }
-        
-            img{
+
+            img {
                 width: 80px;
                 height: 80px;
                 border-radius: 50%;
                 margin-right: 16px;
-
-                @media screen and (max-width: $bp-MD){
+                @media screen and (max-width: $bp-MD) {
                     width: 45px;
                     height: 45px;
                     margin-right: 10px;
                 }
             }
         }
-        
+
     }
 }

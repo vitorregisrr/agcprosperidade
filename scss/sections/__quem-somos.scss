@@ -50,9 +50,6 @@
             font-size: 74px;
             color: #fff;
             font-family: 'FB';
-            font-weight: 400;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
             letter-spacing: 10px;
             line-height: 1;
             text-transform: uppercase;
@@ -88,10 +85,9 @@
             }
             @media screen and (max-width: $bp-SM) {
                 font-size: 40px;
-                margin-left: -84px;
+                margin-left: -94px;
                 margin-bottom: 0px;
-                letter-spacing: 30px;
-                margin-top: 80px;
+                margin-top: 40px;
             }
 
             &::after {

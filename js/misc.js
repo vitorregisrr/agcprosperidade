@@ -4,7 +4,7 @@
       // Mobile navbar dinamic height
       const replaceStyles = function(){
         if( window.innerWidth < 992){
-            $('.main-nav__content .overlay').css('min-height', $('.home-tree__banner').height() + 6);
+            $('.main-nav__content .overlay').css('min-height', $('.home-tree__banner').height() + 50);
         }else{
             $('.main-nav__content .overlay').css('min-height', 0);
         }
@@ -80,6 +80,7 @@
             'visibility' : 'visible',
             'animation-name' : 'fadeIn'
         }).addClass('animated');
+        replaceStyles();
 
 
     }

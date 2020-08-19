@@ -921,9 +921,9 @@ button:focus {
 
 .main-nav__tree .lines {
   width: calc(100% - 80px);
-  margin-left: -28px;
+  margin-left: -28.4px;
   height: 7px;
-  margin-bottom: 4px;
+  margin-bottom: 0px;
   animation-name: slideIn;
   animation-duration: 4s;
 }
@@ -2514,8 +2514,8 @@ select.form-control {
 
 .home-tree.has-cookies .main-nav__tree.colorful .lines {
   width: calc(100% - 110px);
-  margin-left: -66px;
-  margin-top: 109px;
+  margin-left: -69px;
+  margin-top: 105px;
 }
 
 @media screen and (min-width: 992px) {
@@ -4043,6 +4043,9 @@ select.form-control {
   font-size: 74px;
   color: #fff;
   font-family: 'FB';
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   letter-spacing: 10px;
   line-height: 1;
   text-transform: uppercase;
@@ -4894,7 +4897,7 @@ select.form-control {
 @media screen and (max-width: 992px) {
   .como-trabalhamos {
     padding-bottom: 10px;
-    background-position: -800px 150px;
+    background-position: -610px 150px;
     background-repeat: no-repeat;
   }
 }
@@ -5391,7 +5394,7 @@ select.form-control {
 }
 
 .desafios-banner .container {
-  max-width: 1400px;
+  max-width: 1500px;
 }
 
 @media screen and (min-width: 2000px) {
@@ -5543,10 +5546,10 @@ select.form-control {
   font-family: 'FB';
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  font-size: 21px;
+  font-size: 20px;
   text-align: center;
   order: 2;
-  max-width: 200px;
+  max-width: 350px;
 }
 
 @media screen and (min-width: 2000px) {
@@ -5584,7 +5587,7 @@ select.form-control {
 }
 
 .desafios-banner__item .title.lg {
-  max-width: 280px;
+  max-width: 300px;
 }
 
 @media screen and (min-width: 2000px) {
@@ -5603,6 +5606,19 @@ select.form-control {
   .desafios-banner__item .title.lg {
     max-width: 250px;
   }
+}
+
+.desafios-banner__item .more {
+  order: 4;
+  background-color: #8169a7;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 1px 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  letter-spacing: 2.5px;
+  margin-top: 10px;
 }
 
 .desafios-banner__item .img {
@@ -5668,7 +5684,7 @@ select.form-control {
 .desafios-banner__item .img.lg {
   width: 120px;
   height: 120px;
-  margin-bottom: 4px;
+  margin-bottom: -7px;
 }
 
 @media screen and (min-width: 2000px) {

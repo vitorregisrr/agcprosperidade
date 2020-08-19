@@ -57,9 +57,9 @@ $treewidthlg: 80px;
 
         .lines {
             width: calc(100% - 80px);
-            margin-left: -28px;
+            margin-left: -28.4px;
             height: 7px;
-            margin-bottom: 4px;
+            margin-bottom: 0px;
             animation-name: slideIn;
             animation-duration: 4s;
             @media screen and (max-width: $bp-LG) {

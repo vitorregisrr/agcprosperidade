@@ -1,11 +1,12 @@
 .como-trabalhamos {
-    background-color: $color-secondary;
+    background-color: #8169a7;
     background-image: url("../images/backgrounds/bg-coffe.png");
     background-size: cover;
     padding: 55px 0 45px;
+
     @media screen and (max-width: $bp-LG) {
         padding-bottom: 10px;
-        background-position: -800px 150px;
+        background-position: -610px 150px;
         background-repeat: no-repeat;
     }
 

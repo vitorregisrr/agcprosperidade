@@ -231,6 +231,18 @@ $treewidthlg: 80px;
                     z-index: 1;
                     opacity: 0;
                     @include transition();
+
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        transform: translateY(-50%);
+                        right: 0;
+                        width: 8px;
+                        top: 50%;
+                        height: 8px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                    }
                 }
 
                 a{

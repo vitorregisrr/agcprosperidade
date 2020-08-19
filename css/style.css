@@ -1124,6 +1124,17 @@ button:focus {
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
+  .main-nav__links li .line:after {
+    content: '';
+    position: absolute;
+    transform: translateY(-50%);
+    right: 0;
+    width: 8px;
+    top: 50%;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
   .main-nav__links li a {
     position: relative;
     z-index: 3;

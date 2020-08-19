@@ -4401,7 +4401,7 @@ select.form-control {
   content: '';
   display: block;
   position: absolute;
-  right: 0;
+  right: -.7px;
   top: 50%;
   transform: translateY(-50%);
   width: 9px;

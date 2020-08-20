@@ -3527,6 +3527,21 @@ select.form-control {
   }
 }
 
+.direto-blog__title .stroked {
+  -webkit-text-stroke-color: #8169a7;
+  color: rgba(129, 105, 157, 0);
+  transition: color 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.direto-blog__title .stroked.fill {
+  color: #81699d;
+}
+
 .direto-blog__title .sm {
   font-size: 30px;
   text-align: right;
@@ -3567,11 +3582,12 @@ select.form-control {
 
 @media screen and (max-width: 768px) {
   .direto-blog__title .lg {
+    display: block;
     font-size: 80px;
     text-align: left;
     margin-left: 35px;
     margin-top: 10px;
-    letter-spacing: 20px;
+    letter-spacing: 25px;
   }
 }
 

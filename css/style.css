@@ -3593,7 +3593,7 @@ select.form-control {
     display: block !important;
     font-size: 80px;
     text-align: left;
-    margin-left: 0;
+    margin-left: -18px;
     margin-top: 10px;
     letter-spacing: 30px;
   }

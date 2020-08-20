@@ -18,6 +18,9 @@
 
     &__title {
         display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;     
+           
         @media screen and (max-width: $bp-MD) {
             flex-direction: column;
         }
@@ -55,7 +58,7 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             color: $color-secondary;
-            
+
             @media screen and (max-width: $bp-LG) {
                 font-size: 110px;
                 margin-top: -24px;
@@ -67,7 +70,7 @@
                 margin-top: -10px;
                 
                 &.ios{
-                    display: block;
+                    display: block !important;
                     font-size: 80px;
                     text-align: left;
                     margin-left: 35px;

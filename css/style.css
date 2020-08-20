@@ -3519,6 +3519,8 @@ select.form-control {
 
 .direto-blog__title {
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 @media screen and (max-width: 768px) {
@@ -3588,7 +3590,7 @@ select.form-control {
     margin-top: -10px;
   }
   .direto-blog__title .lg.ios {
-    display: block;
+    display: block !important;
     font-size: 80px;
     text-align: left;
     margin-left: 35px;

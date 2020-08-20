@@ -3612,11 +3612,16 @@ select.form-control {
 
 .direto-blog__item {
   position: relative;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   margin-left: 50px;
+}
+
+.direto-blog__item.active {
+  display: flex;
+  animation: fadeIn 0.4s;
 }
 
 @media screen and (max-width: 992px) {

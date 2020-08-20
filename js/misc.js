@@ -32,7 +32,7 @@
         || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
       }
 
-    if(IOS){
+    if(iOS()){
         $('.direto-blog__title .lg').addClass('ios');
     }
 

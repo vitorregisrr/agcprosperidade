@@ -3582,6 +3582,12 @@ select.form-control {
 
 @media screen and (max-width: 768px) {
   .direto-blog__title .lg {
+    font-size: 80px;
+    text-align: left;
+    margin-left: -18px;
+    margin-top: -10px;
+  }
+  .direto-blog__title .lg.ios {
     display: block;
     font-size: 80px;
     text-align: left;

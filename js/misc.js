@@ -33,7 +33,7 @@
       }
 
     if(IOS){
-        $('.direto-blog__title').addClass('ios');
+        $('.direto-blog__title .lg').addClass('ios');
     }
 
     //Init Libs

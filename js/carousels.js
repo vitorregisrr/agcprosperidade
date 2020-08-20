@@ -93,13 +93,12 @@
         $('#direto-blog').attr('data-current', current);
         $('.direto-blog__item').find('.wow').attr('data-wow-delay', '0.2s');
         $('.direto-blog__item').find('.wow').css('animation-delay', '0.2s');
+        $('.direto-blog__item').find('.wow').removeClass('.wow')
         $('.direto-blog__item').siblings().removeClass('active');
         $('.direto-blog__item').eq(current).addClass('active');
         $('html, body').animate({
-            scrollTop: $('#direto-blog')
-                .offset()
-                .top
-        }, 500);
+            scrollTop: $(window).scrollTop() + 2
+        }, '300');
         $('.direto-blog__title .lg').find('.stroked').removeClass('fill');
         $('.direto-blog__title .lg').find('.stroked').eq(current).addClass('fill');
     }

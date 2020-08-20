@@ -89,13 +89,13 @@
     // BLOG CAROUSEL
     function nextBlogItem(){
         var old = $('#direto-blog').attr('data-current')
-        var current = old === 3 ? 0 : old + 1;
+        var current = old === $('.direto-blog__item').length ? 0 : old + 1;
         $('#direto-blog').attr('data-current', current);
-        $('.direto-blog__item').siblings.removeClass('active');
+        $('.direto-blog__item').siblings().removeClass('active');
         $('.direto-blog__item').eq(current).addClass('active');
     }
 
-    $('#blog-next').click( function(e){
+    $('.direto-blog__next').click( function(e){
         e.preventDefault();
         nextBlogItem()
     });

@@ -28,8 +28,7 @@
         .stroked{
             -webkit-text-stroke-color: $color-secondary;
             color: rgba(129,105,157, 0);
-            transition: color 0.5s ease-in-out;
-            @include transition();
+            transition: color 1s ease-in-out;
             
             &.fill{
                 color: rgba(129,105,157, 1);

@@ -923,7 +923,7 @@ button:focus {
   width: calc(100% - 80px);
   margin-left: -28.4px;
   height: 7px;
-  margin-bottom: .2px;
+  margin-bottom: 0px;
   animation-name: slideIn;
   animation-duration: 4s;
 }
@@ -3532,12 +3532,7 @@ select.form-control {
 .direto-blog__title .stroked {
   -webkit-text-stroke-color: #8169a7;
   color: rgba(129, 105, 157, 0);
-  transition: color 0.5s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  transition: color 1s ease-in-out;
 }
 
 .direto-blog__title .stroked.fill {

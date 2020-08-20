@@ -55,6 +55,7 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             color: $color-secondary;
+            
             @media screen and (max-width: $bp-LG) {
                 font-size: 110px;
                 margin-top: -24px;

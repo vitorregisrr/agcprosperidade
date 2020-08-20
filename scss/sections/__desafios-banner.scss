@@ -82,7 +82,9 @@
                 @include transition();
 
                 &:hover{
-                    transform: scale(1.04) translateY(-50%);
+                    @media screen and (min-width: $bp-LG){
+                        transform: scale(1.04) translateY(-50%);
+                    }
                 }
 
                 &::after, &::before{

@@ -86,12 +86,12 @@
         .line-wrapper {
             position: absolute;
             left: 37px;
-            height: 53%;
+            height: 94%;
             top: 0;
             @media screen and (max-width: $bp-MD) {
                 left: 20px;
-                height: 52%;
             }
+
             @keyframes slideInv100vp {
                 0% {
                     max-height: 0;
@@ -183,6 +183,7 @@
         }
 
         .body {
+            position: relative;
             padding-left: 70px;
             @media screen and (max-width: $bp-MD) {
                 padding-left: 40px;

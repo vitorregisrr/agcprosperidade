@@ -3610,14 +3610,13 @@ select.form-control {
 .direto-blog__item .line-wrapper {
   position: absolute;
   left: 37px;
-  height: 53%;
+  height: 94%;
   top: 0;
 }
 
 @media screen and (max-width: 768px) {
   .direto-blog__item .line-wrapper {
     left: 20px;
-    height: 52%;
   }
 }
 
@@ -3730,6 +3729,7 @@ select.form-control {
 }
 
 .direto-blog__item .body {
+  position: relative;
   padding-left: 70px;
 }
 
@@ -5488,8 +5488,10 @@ select.form-control {
   transition: all 0.3s ease-in-out;
 }
 
-.desafios-banner__carousel .owl-nav .owl-prev:hover, .desafios-banner__carousel .owl-nav .owl-next:hover {
-  transform: scale(1.04) translateY(-50%);
+@media screen and (min-width: 992px) {
+  .desafios-banner__carousel .owl-nav .owl-prev:hover, .desafios-banner__carousel .owl-nav .owl-next:hover {
+    transform: scale(1.04) translateY(-50%);
+  }
 }
 
 .desafios-banner__carousel .owl-nav .owl-prev::after, .desafios-banner__carousel .owl-nav .owl-prev::before, .desafios-banner__carousel .owl-nav .owl-next::after, .desafios-banner__carousel .owl-nav .owl-next::before {

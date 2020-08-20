@@ -88,11 +88,20 @@
 
     // BLOG CAROUSEL
     function nextBlogItem(){
-        var old = $('#direto-blog').attr('data-current')
-        var current = old === $('.direto-blog__item').length ? 0 : old + 1;
+        var old = parseInt($('#direto-blog').attr('data-current'));
+        var current = old === $('.direto-blog__item').length - 1 ? 0 : old + 1;
         $('#direto-blog').attr('data-current', current);
+        $('.direto-blog__item').find('.wow').attr('data-wow-delay', '0.2s');
+        $('.direto-blog__item').find('.wow').css('animation-delay', '0.2s');
         $('.direto-blog__item').siblings().removeClass('active');
         $('.direto-blog__item').eq(current).addClass('active');
+        $('html, body').animate({
+            scrollTop: $('#direto-blog')
+                .offset()
+                .top
+        }, 500);
+        $('.direto-blog__title .lg').find('.stroked').removeClass('fill');
+        $('.direto-blog__title .lg').find('.stroked').eq(current).addClass('fill');
     }
 
     $('.direto-blog__next').click( function(e){

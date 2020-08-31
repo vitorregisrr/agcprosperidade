@@ -44,23 +44,32 @@
         align-items: center;
         position: relative;
         background-color: #c4c4c4;
+        padding-top: 30px;
+
+        @media screen and (min-width: 2000px){
+            padding-top: 70px;
+        }
+
+        @media screen and (max-width: $bp-MD){
+            padding-top: 0;
+        }
 
         .title {
             position: relative;
-            font-size: 74px;
+            font-size: 62px;
             color: #fff;
-            font-family: 'FB';
+            font-family: 'FH';
             letter-spacing: 10px;
             line-height: 1;
             text-transform: uppercase;
-            margin-bottom: -68px;
-            margin-left: -199px;
+            margin-bottom: -58px;
+            margin-left: -202px;
             margin-top: 92px;
             z-index: 2;
 
             @media screen and (min-width: 2000px) {
-                font-size: 92px;
-                margin-bottom: -170px;
+                font-size: 76px;
+                margin-bottom: -130px;
                 margin-left: -250px;
                 margin-top: 110px;
             }
@@ -93,19 +102,20 @@
             &::after {
                 content: '';
                 position: absolute;
-                width: 320px;
-                height: 320px;
-                right: -186px;
-                bottom: -143px;
+                width: 282px;
+                height: 282px;
+                right: -152px;
+                bottom: -132px;
                 background-image: url("../images/ico/quote.png");
                 background-size: contain;
                 background-repeat: no-repeat;
                 z-index: -1;
+
                 @media screen and (min-width: 2000px) {
-                    width: 380px;
-                    height: 380px;
-                    bottom: -165px;
-                    right: -220px;
+                    width: 370px;
+                    height: 370px;
+                    bottom: -176px;
+                    right: -216px;
                 }
                 @media screen and (max-width: $bp-MD) {
                     width: 155px;
@@ -121,39 +131,51 @@
         position: relative;
         background-color: #c4c4c4;
 
+        .container{
+            @media screen and (min-width: 2000px){
+                max-width: 1500px;
+                margin: 0 auto;
+            }
+        }
         .header {
             display: flex;
             justify-content: center;
+            padding-top: 20px;
 
-            @media screen and (max-width: 1400px){
-                padding-top: 40px;
+            @media screen and (min-width: 2000px){
+                padding-top: 0;
+            }
+            @media screen and (max-width: $bp-LG){
+                padding-top: 0;
             }
 
             .title {
-                font-size: 47px;
+                font-size: 32px;
                 font-family: 'FB';
                 text-transform: uppercase;
                 text-align: center;
-                letter-spacing: 5px;
+                letter-spacing: 10px;
                 line-height: 1.1;
-                margin-top: -100px;
                 z-index: 2;
-                margin-bottom: 60px;
+                margin-left: 50px;
+                margin-top: -45px;
+                margin-bottom: 30px;
 
                 @media screen and (min-width: 2000px){
-                    font-size: 54px;
-                    margin-top: -200px;
+                    font-size: 37px;
+                    margin-top: -120px;
                 }
 
                 @media screen and (max-width: $bp-LG){
                     margin-bottom: 27px;
-                    margin-top: -80px;
+                    margin-top: -40px;
+                    margin-left: 0;
                     font-size: 42px;
                 }
 
                 @media screen and (max-width: $bp-MD){
                     font-size: 27px;
-                    margin-top: -40px;
+                    margin-top: 20px;
                 }
             }
         }
@@ -175,9 +197,9 @@
 
             .text{
                 font-family: 'FO';
-                font-size: 20px;
+                font-size: 18px;
                 letter-spacing: 1.5px;
-
+                margin-top: 9px;
 
                 @media screen and (min-width: 1800px) and (max-width: 2000px){
                    p{
@@ -191,6 +213,7 @@
 
                 @media screen and (max-width: $bp-LG){
                     text-align: center;
+                    margin-top: 0;
                 }
 
                 @media screen and (max-width: $bp-MD){
@@ -221,15 +244,15 @@
                 input{
                     position: relative;
                     z-index: 2;
-                    width: 68%;
+                    width: 57%;
                     border-radius: 100px;
                     padding: 2px 13px;
-                    font-size: 22px;
+                    font-size: 19px;
                     border: none;
                     box-shadow: none !important;
                     outline: none;
-                    margin: 0 auto;
                     letter-spacing: 1.3px;
+                    margin-left: 9%;
                     margin-right: 27%;
 
                     @media screen and (min-width: 2000px){
@@ -238,11 +261,16 @@
                         margin-right: 37%;
                     }
 
+                    @media screen and (max-width: $bp-XL){
+                        font-size: 18px;
+                    }
+
                     @media screen and (max-width: $bp-LG){
                         width: 80vw;
                         padding: 1px 10px;
                         border-radius: 8px;
                         font-size: 17px;
+                        margin: 0;
 
                         &:first-child{
                             margin-bottom: 18px;
@@ -309,7 +337,7 @@
 
                         .line {
                             position: relative;
-                            width: 40vw;
+                            width: 45vw;
                             height: 1.5px;
                             max-width: 0;
                             animation: slideIn100perc 2s;
@@ -319,14 +347,15 @@
 
                             @media screen and (min-width: 2000px) {
                                 height: 1.3px;
+                                width: 30vw;
                             }
 
                             @media screen and (max-width: 1500px){
-                                width: 50vw;
+                                width: 55vw;
                             }
 
                             @media screen and (max-width: 1200px){
-                                width: 40vw;
+                                width: 35vw;
                             }
 
             
@@ -404,7 +433,7 @@
             padding: 0 2%;
             margin-bottom: 140px;
             @media screen and (min-width: 2000px) {
-                padding-left: 90px;
+                padding-left: 130px;
                 padding-right: 0;
             }
             @media screen and (max-width: 1300px) {
@@ -424,9 +453,9 @@
             }
 
             img {
-                width: 21%;
+                width: 17%;
                 @media screen and (min-width: 2000px) {
-                    width: 19%;
+                    width: 16%;
                 }
                 @media screen and (max-width: $bp-LG) {
                     width: 40%;
@@ -444,7 +473,7 @@
                 padding-left: 30px;
                 padding-right: 30px;
                 @media screen and (min-width: 2000px) {
-                    padding-right: 90px;
+                    padding-right: 140px;
                     padding-left: 0;
                 }
                 @media screen and (max-width: 1300px) {
@@ -460,6 +489,7 @@
 
         .text {
             width: 20%;
+
             @media screen and (max-width: 1300px) {
                 width: 35%;
             }
@@ -472,6 +502,7 @@
 
             &.mt-n {
                 margin-top: -20px;
+
                 @media screen and (max-width: $bp-LG) {
                     margin-left: 13px;
                     margin-right: -13px;
@@ -482,7 +513,7 @@
             }
 
             .title {
-                font-size: 29px;
+                font-size: 26px;
                 margin-bottom: 20px;
                 font-family: 'FH';
                 letter-spacing: 6px;
@@ -490,7 +521,7 @@
                 line-height: 1.6;
 
                 @media screen and (min-width: 2000px) {
-                    font-size: 39px;
+                    font-size: 33px;
                     max-width: 380px;
                     margin: 0 auto 20px;
                 }
@@ -507,7 +538,7 @@
             }
 
             p {
-                font-size: 15px;
+                font-size: 13px;
                 font-family: 'FO';
                 letter-spacing: 1.3px;
                 opacity: 0.97;
@@ -515,7 +546,7 @@
                 @media screen and (min-width: 2000px) {
                     max-width: 380px;
                     margin: 0 auto;
-                    font-size: 18px;
+                    font-size: 15px;
                 }
                 @media screen and (max-width: $bp-MD) {
                     font-size: 11px;

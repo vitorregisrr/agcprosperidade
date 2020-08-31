@@ -28,7 +28,7 @@
         .title{
             font-family: 'FH';
             text-transform: uppercase;
-            font-size: 37px;
+            font-size: 32px;
             letter-spacing: 2.4px;
             text-align: center;
             line-height: 1.4;
@@ -72,7 +72,7 @@
             }
 
             .number{
-                font-size: 60px;
+                font-size: 53px;
                 color: $color-secondary;
                 font-family: 'FB';
                 letter-spacing: 3px;
@@ -91,6 +91,7 @@
             .desc{
                 font-family: 'FM';
                 color: #fff;
+                font-size: 13px;
                 letter-spacing: 2.5px;
 
                 @media screen and (max-width: $bp-LG){

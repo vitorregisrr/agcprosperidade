@@ -10,9 +10,13 @@
             margin-left: -70px;
             margin-right: -70px;
         }
-        @media screen and (min-width: 1074px) and (max-width: 1190px){
+        @media screen and (min-width: 1104px) and (max-width: 1190px){
             margin-left: -80px;
             margin-right: -80px;
+        }
+        @media screen and (min-width: 1032px) and (max-width: 1104px){
+            margin-left: -60px;
+            margin-right: -60px;
         }
     }
 
@@ -26,6 +30,7 @@
         max-height: 0;
         padding: 36px 34px 20px 30px;
         transition: all 1s;
+        font-size: 15px;
         opacity: 0;
 
         @media screen and (min-width: 1400px){

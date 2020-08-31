@@ -24,7 +24,7 @@
     }
 
     &__title {
-        font-size: 41px;
+        font-size: 35px;
         letter-spacing: 3px;
         text-transform: uppercase;
         font-family: 'FH';
@@ -32,7 +32,7 @@
         margin-bottom: 40px;
 
         @media screen and (min-width: 2000px){
-            font-size: 60px;
+            font-size: 50px;
             margin-bottom: 70px;
         }
 
@@ -139,14 +139,14 @@
             font-family: 'FB';
             letter-spacing: 1.2px;
             text-transform: uppercase;
-            font-size: 20px;
+            font-size: 17px;
             text-align: center;
             order: 2;
             max-width: 350px;
             
 
             @media screen and (min-width: 2000px){
-                font-size: 29px;
+                font-size: 24px;
                 max-width: 290px;
             }
 
@@ -191,17 +191,21 @@
             background-color: $color-secondary;
             text-transform: uppercase;
             color: #fff;
-            padding: 1px 10px;
+            padding: 1px 7px;
             border: none;
             border-radius: 20px;
-            font-size: 14px;
+            font-size: 12px;
             letter-spacing: 2.5px;
             margin-top: 10px;
+
+            @media screen and (min-width: 2000px){
+                font-size: 14px;
+            }
         }
 
         .img {
             height: 90px;
-            width: 85px;
+            width: 75px;
             object-fit: contain;
             object-position: center center;
             order: 1;
@@ -219,7 +223,7 @@
             }
             
             &.sm {
-                width: 74px;
+                width: 70px;
 
                 @media screen and (min-width: 2000px){
                     width: 90px;
@@ -231,8 +235,8 @@
             }
             
             &.md {
-                width: 92px;
-                height: 100px;
+                width: 86px;
+                height: 83px;
                 margin-bottom: 17px;
                 
                 @media screen and (min-width: 2000px){
@@ -247,7 +251,7 @@
             }
             
             &.lg {
-                width: 120px;
+                width: 105px;
                 height: 120px;
                 margin-bottom: -7px;
                 

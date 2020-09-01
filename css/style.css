@@ -4173,23 +4173,23 @@ select.form-control {
 
 .quem-somos__header .title {
   position: relative;
-  font-size: 62px;
+  font-size: 67px;
   color: #fff;
-  font-family: 'FH';
+  font-family: 'FB';
   letter-spacing: 10px;
   line-height: 1;
   text-transform: uppercase;
-  margin-bottom: -58px;
-  margin-left: -202px;
-  margin-top: 92px;
+  margin-bottom: -62px;
+  margin-left: -190px;
+  margin-top: 90px;
   z-index: 2;
 }
 
 @media screen and (min-width: 2000px) {
   .quem-somos__header .title {
     font-size: 76px;
-    margin-bottom: -130px;
-    margin-left: -250px;
+    margin-bottom: -155px;
+    margin-left: -220px;
     margin-top: 110px;
   }
 }
@@ -4237,8 +4237,8 @@ select.form-control {
   position: absolute;
   width: 282px;
   height: 282px;
-  right: -152px;
-  bottom: -132px;
+  right: -159px;
+  bottom: -124px;
   background-image: url("../images/ico/quote.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -4247,10 +4247,10 @@ select.form-control {
 
 @media screen and (min-width: 2000px) {
   .quem-somos__header .title::after {
-    width: 370px;
-    height: 370px;
-    bottom: -176px;
-    right: -216px;
+    width: 330px;
+    height: 330px;
+    bottom: -148px;
+    right: -193px;
   }
 }
 
@@ -4513,7 +4513,7 @@ select.form-control {
 .quem-somos__newsletter-body .form .submit-wrapper .line-wrapper .line {
   position: relative;
   width: 45vw;
-  height: 1.5px;
+  height: 1.4px;
   max-width: 0;
   animation: slideIn100perc 2s;
   animation-fill-mode: forwards;
@@ -4545,7 +4545,7 @@ select.form-control {
   display: block;
   position: absolute;
   right: -.7px;
-  top: 50%;
+  top: 41%;
   transform: translateY(-50%);
   width: 9px;
   height: 9px;
@@ -5615,7 +5615,7 @@ select.form-control {
 
 @media screen and (min-width: 2000px) {
   .desafios-banner__title {
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 70px;
   }
 }
@@ -5757,8 +5757,8 @@ select.form-control {
 
 @media screen and (min-width: 2000px) {
   .desafios-banner__item .title {
-    font-size: 24px;
-    max-width: 290px;
+    font-size: 22px;
+    max-width: 320px;
   }
 }
 
@@ -5841,8 +5841,8 @@ select.form-control {
 
 @media screen and (min-width: 2000px) {
   .desafios-banner__item .img {
-    height: 110px;
-    width: 100px;
+    height: 100px;
+    width: 90px;
   }
 }
 
@@ -5860,7 +5860,7 @@ select.form-control {
 
 @media screen and (min-width: 2000px) {
   .desafios-banner__item .img.sm {
-    width: 90px;
+    width: 85px;
   }
 }
 
@@ -5879,8 +5879,8 @@ select.form-control {
 @media screen and (min-width: 2000px) {
   .desafios-banner__item .img.md {
     margin-bottom: 22px;
-    width: 110px;
-    height: 120px;
+    width: 88px;
+    height: 110px;
   }
 }
 
@@ -5898,7 +5898,7 @@ select.form-control {
 
 @media screen and (min-width: 2000px) {
   .desafios-banner__item .img.lg {
-    width: 140px;
+    width: 110px;
   }
 }
 

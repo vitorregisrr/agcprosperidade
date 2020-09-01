@@ -56,21 +56,21 @@
 
         .title {
             position: relative;
-            font-size: 62px;
+            font-size: 67px;
             color: #fff;
-            font-family: 'FH';
+            font-family: 'FB';
             letter-spacing: 10px;
             line-height: 1;
             text-transform: uppercase;
-            margin-bottom: -58px;
-            margin-left: -202px;
-            margin-top: 92px;
+            margin-bottom: -62px;
+            margin-left: -190px;
+            margin-top: 90px;
             z-index: 2;
 
             @media screen and (min-width: 2000px) {
                 font-size: 76px;
-                margin-bottom: -130px;
-                margin-left: -250px;
+                margin-bottom: -155px;
+                margin-left: -220px;
                 margin-top: 110px;
             }
 
@@ -104,18 +104,18 @@
                 position: absolute;
                 width: 282px;
                 height: 282px;
-                right: -152px;
-                bottom: -132px;
+                right: -159px;
+                bottom: -124px;
                 background-image: url("../images/ico/quote.png");
                 background-size: contain;
                 background-repeat: no-repeat;
                 z-index: -1;
 
                 @media screen and (min-width: 2000px) {
-                    width: 370px;
-                    height: 370px;
-                    bottom: -176px;
-                    right: -216px;
+                    width: 330px;
+                    height: 330px;
+                    bottom: -148px;
+                    right: -193px;
                 }
                 @media screen and (max-width: $bp-MD) {
                     width: 155px;
@@ -338,7 +338,7 @@
                         .line {
                             position: relative;
                             width: 45vw;
-                            height: 1.5px;
+                            height: 1.4px;
                             max-width: 0;
                             animation: slideIn100perc 2s;
                             animation-fill-mode: forwards;
@@ -364,12 +364,13 @@
                                 display: block;
                                 position: absolute;
                                 right: -.7px;
-                                top: 50%;
+                                top: 41%;
                                 transform: translateY(-50%);
                                 width: 9px;
                                 height: 9px;
                                 border-radius: 50%;
                                 background-color: $color-secondary;
+
                                 @media screen and (min-width: 2000px) {
                                     width: 11px;
                                     height: 11px;

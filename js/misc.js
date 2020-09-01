@@ -85,6 +85,9 @@
     $('[data-toggle="popup-contact"]').click( function(e){
         e.preventDefault();
         $('.popup-contact').toggleClass('active');
+        $('.popup-contact .line-wrapper').addClass('active');
+        $('.popup-contact .send').addClass('active');
+        acceptCookies();
     });
 
 

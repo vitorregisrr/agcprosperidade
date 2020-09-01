@@ -23,3 +23,37 @@ $("#form-newsletter").validate({
         },
     }
 });
+
+// Formulário acessar (LOGIN)
+$("#popup-contact-form").validate({
+    rules: {
+        email: {
+            required: true,
+            email: true
+        },
+        nome: {
+            required: true,
+        },
+        sobrenome: {
+            required: true,
+        },
+        empresa: {
+            required: true,
+        },
+        siteempresa: {
+            required: true,
+        },
+        email: {
+            required: true,
+        },
+        cargo: {
+            required: true,
+        },
+        mensagem: {
+            required: true,
+        },
+    },
+
+    messages: {
+    }
+});

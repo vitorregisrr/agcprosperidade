@@ -5418,7 +5418,7 @@ select.form-control {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 70px 0 180px;
+  padding: 70px 0 140px;
   height: 100%;
 }
 
@@ -5568,7 +5568,13 @@ select.form-control {
 
 @media screen and (min-width: 1200px) {
   .projetos-recentes__item.right .tablet {
-    width: 77%;
+    width: 74%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .projetos-recentes__item.right .content {
+    margin-left: -60px;
   }
 }
 

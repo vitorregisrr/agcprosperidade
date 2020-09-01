@@ -40,8 +40,9 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 70px 0 180px;
+            padding: 70px 0 140px;
             height: 100%;
+
             @media screen and (max-width: $bp-MD) {
                 padding: 30px;
             }
@@ -165,7 +166,13 @@
 
             .tablet {
                 @media screen and (min-width: $bp-XL) {
-                    width: 77%;
+                    width: 74%;
+                }
+            }
+
+            .content{
+                @media screen and (min-width: $bp-LG){
+                    margin-left: -60px;
                 }
             }
 

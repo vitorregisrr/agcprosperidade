@@ -2137,7 +2137,13 @@ select.form-control {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .home-tree__banner .popup-contact {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
   .home-tree__banner .popup-contact {
     height: 105%;
   }
@@ -2157,9 +2163,15 @@ select.form-control {
   opacity: .52;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .home-tree__banner .popup-contact .bg {
     right: -100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home-tree__banner .popup-contact .bg {
+    right: -46%;
   }
 }
 
@@ -2184,6 +2196,12 @@ select.form-control {
 @media screen and (max-width: 1200px) {
   .home-tree__banner .popup-contact .content {
     padding: 10px 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home-tree__banner .popup-contact .content {
+    padding: 50px;
   }
 }
 
@@ -2493,7 +2511,7 @@ select.form-control {
 
 @media screen and (max-width: 992px) {
   .home-tree__caption .title {
-    font-size: 60px;
+    font-size: 40px;
     letter-spacing: 6px;
     padding-right: 140px;
     margin-bottom: 20px;
@@ -2548,8 +2566,8 @@ select.form-control {
 
 @media screen and (max-width: 992px) {
   .home-tree__caption .desc {
-    font-size: 12px;
-    letter-spacing: 7px;
+    font-size: 9px;
+    letter-spacing: 5px;
   }
 }
 
@@ -2698,7 +2716,7 @@ select.form-control {
 
 @media screen and (max-width: 992px) {
   .home-tree__caption .desc span .contact {
-    font-size: 16px;
+    font-size: 12px;
     padding: 5px 10px;
   }
 }
@@ -2763,7 +2781,7 @@ select.form-control {
 
 @media screen and (max-width: 992px) {
   .home-tree__img img {
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
     opacity: .7;
   }

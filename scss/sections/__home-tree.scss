@@ -62,7 +62,11 @@
                 height: 100%;
             }
 
-            @media screen and (max-width: $bp-MD){
+            @media screen and (max-width: $bp-LG){
+                height: 100%;
+            }
+
+            @media screen and (max-width: $bp-SM){
                 height: 105%;
             }
 
@@ -79,8 +83,12 @@
                 position: absolute;
                 opacity: .52;
 
-                @media screen and (max-width: $bp-LG){
+                @media screen and (max-width: $bp-MD){
                     right: -100%;
+
+                }
+                @media screen and (max-width: $bp-LG){
+                    right: -46%;
                 }
             }
 
@@ -103,11 +111,16 @@
                     padding: 10px 40px;
                 }
 
+                @media screen and (max-width: $bp-LG){
+                    padding: 50px;
+                }
+
                 @media screen and (max-width: $bp-MD){
                     border: none;
                     padding: 30px 20px;
                     overflow: hidden;
                 }
+
 
                 .close{
                     position: absolute;
@@ -356,7 +369,7 @@
             }
 
             @media screen and (max-width: $bp-LG) {
-                font-size: 60px;
+                font-size: 40px;
                 letter-spacing: 6px;
                 padding-right: 140px;
                 margin-bottom: 20px;
@@ -397,8 +410,8 @@
             }
             
             @media screen and (max-width: $bp-LG) {
-                font-size: 12px;
-                letter-spacing: 7px;
+                font-size: 9px;
+                letter-spacing: 5px;
             }
             
             @media screen and (max-width: $bp-MD){
@@ -510,7 +523,7 @@
                         padding: 5px 10px;
                     }
                     @media screen and (max-width: $bp-LG) {
-                        font-size: 16px;
+                        font-size: 12px;
                         padding: 5px 10px;
                     }
 
@@ -564,7 +577,7 @@
             }
 
             @media screen and (max-width: $bp-LG){
-                width: 80%;
+                width: 65%;
                 margin: 0 auto;
                 opacity: .7;
             }

@@ -78,7 +78,7 @@
                 letter-spacing: 3px;
 
                 @media screen and (max-width: $bp-LG){
-                   font-size: 50px;
+                   font-size: 40px;
                 }
 
                 &.ml-n{
@@ -98,7 +98,7 @@
                     order: 2;
                 }
                 @media screen and (max-width: $bp-MD){
-                    font-size: 11px;
+                    font-size: 10px;
                     line-height: 1.3;
                 }
             }

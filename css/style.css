@@ -1968,6 +1968,7 @@ select.form-control {
 @media screen and (max-width: 992px) {
   .footer__brand img {
     width: 65px;
+    margin-bottom: 0;
   }
 }
 
@@ -4226,8 +4227,8 @@ select.form-control {
 @media screen and (max-width: 576px) {
   .quem-somos__header .title {
     font-size: 40px;
-    margin-left: -94px;
-    margin-bottom: 0px;
+    margin-left: -105px;
+    margin-bottom: 5px;
     margin-top: 50px;
   }
 }
@@ -4258,7 +4259,7 @@ select.form-control {
   .quem-somos__header .title::after {
     width: 155px;
     height: 155px;
-    bottom: -60px;
+    bottom: -64px;
     right: -74px;
   }
 }
@@ -4676,7 +4677,7 @@ select.form-control {
 
 @media screen and (max-width: 380px) {
   .quem-somos__content .trees img {
-    width: 70%;
+    width: 60%;
   }
 }
 
@@ -4952,7 +4953,7 @@ select.form-control {
 
 @media screen and (max-width: 992px) {
   .resultados-alcancados__content .text .number {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
@@ -4977,7 +4978,7 @@ select.form-control {
 
 @media screen and (max-width: 768px) {
   .resultados-alcancados__content .text .desc {
-    font-size: 11px;
+    font-size: 10px;
     line-height: 1.3;
   }
 }
@@ -5096,7 +5097,7 @@ select.form-control {
 
 @media screen and (max-width: 576px) {
   .como-trabalhamos__header .title {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 
@@ -5146,6 +5147,13 @@ select.form-control {
 @media screen and (max-width: 992px) {
   .como-trabalhamos__carousel .owl-dots {
     margin-top: -14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .como-trabalhamos__carousel .owl-dots {
+    margin-top: -40px;
+    margin-bottom: 15px;
   }
 }
 
@@ -5270,15 +5278,15 @@ select.form-control {
 
 @media screen and (max-width: 768px) {
   .como-trabalhamos__item {
-    max-width: 370px;
-    height: 340px;
+    max-width: 310px;
+    height: 300px;
   }
 }
 
 .como-trabalhamos__item .number {
   color: #fff;
   font-family: 'FB';
-  font-size: 80px;
+  font-size: 70px;
   margin-top: -19%;
 }
 
@@ -5319,7 +5327,7 @@ select.form-control {
 
 @media screen and (max-width: 576px) {
   .como-trabalhamos__item .desc li {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -5329,7 +5337,7 @@ select.form-control {
 
 @media screen and (max-width: 576px) {
   .como-trabalhamos__item .desc li.md {
-    font-size: 21px;
+    font-size: 19px;
   }
 }
 
@@ -5339,7 +5347,7 @@ select.form-control {
 
 @media screen and (max-width: 576px) {
   .como-trabalhamos__item .desc li.lg {
-    font-size: 21px;
+    font-size: 19px;
   }
 }
 
@@ -5356,7 +5364,7 @@ select.form-control {
 
 @media screen and (max-width: 576px) {
   .como-trabalhamos__item .desc li.xl {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 

@@ -37,7 +37,7 @@
                 font-size: 38px;
             }
             @media screen and (max-width: $bp-SM) {
-                font-size: 28px;
+                font-size: 26px;
             }
         }
 
@@ -80,8 +80,14 @@
 
         .owl-dots {
             margin-top: -36px;
+
             @media screen and (max-width: $bp-LG) {
                 margin-top: -14px;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                margin-top: -40px;
+                margin-bottom: 15px;
             }
 
             .owl-dot {
@@ -186,14 +192,14 @@
         max-width: 400px;
 
         @media screen and (max-width: $bp-MD) {
-            max-width: 370px;
-            height: 340px;
+            max-width: 310px;
+            height: 300px;
         }
 
         .number {
             color: #fff;
             font-family: 'FB';
-            font-size: 80px;
+            font-size: 70px;
             margin-top: -19%;
         }
 
@@ -229,20 +235,20 @@
                 margin-bottom: 4px;
 
                 @media screen and (max-width: $bp-SM) {
-                    font-size: 18px;
+                    font-size: 16px;
                 }
 
                 &.md {
                     font-size: 20px;
                     @media screen and (max-width: $bp-SM) {
-                        font-size: 21px;
+                        font-size: 19px;
                     }
                 }
 
                 &.lg {
                     font-size: 21px;
                     @media screen and (max-width: $bp-SM) {
-                        font-size: 21px;
+                        font-size: 19px;
                     }
                 }
 
@@ -256,7 +262,7 @@
                         }
                     }
                     @media screen and (max-width: $bp-SM) {
-                        font-size: 28px;
+                        font-size: 24px;
                     }
                 }
             }

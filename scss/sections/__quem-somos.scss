@@ -94,8 +94,8 @@
             }
             @media screen and (max-width: $bp-SM) {
                 font-size: 40px;
-                margin-left: -94px;
-                margin-bottom: 0px;
+                margin-left: -105px;
+                margin-bottom: 5px;
                 margin-top: 50px;
             }
 
@@ -120,7 +120,7 @@
                 @media screen and (max-width: $bp-MD) {
                     width: 155px;
                     height: 155px;
-                    bottom: -60px;
+                    bottom: -64px;
                     right: -74px;
                 }
             }
@@ -466,7 +466,7 @@
                     max-width: 40px;
                 }
                 @media screen and (max-width: 380px) {
-                    width: 70%;
+                    width: 60%;
                 }
             }
 

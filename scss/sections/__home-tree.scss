@@ -29,6 +29,7 @@
     }
 
     &__banner {
+        position: relative;
         background-color: #000000;
         padding: 0 70px;
         padding-bottom: 40px;
@@ -39,6 +40,48 @@
             padding: 0 30px;
             padding-bottom: 0;
             margin-top: 7px;
+        }
+
+        .popup-contact{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 6;
+            pointer-events: none;
+            opacity: 0;
+            transition: all 0.4s ease-in;
+
+            &.active{
+                opacity: 1;
+                pointer-events: all;
+            }
+
+            .bg{
+                height: 95%;
+                top: 30px;
+                right: 10%;
+                position: absolute;
+                opacity: .52;
+            }
+
+            .content{
+                max-width: 500px;
+                border: 3px solid $color-primary;
+                padding: 30px 60px;
+                border-radius: 50px;
+
+                .close{
+                    color: #fff;
+                    font-family: 'FO';
+                }
+                
+            }
         }
     }
 

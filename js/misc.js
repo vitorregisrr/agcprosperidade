@@ -82,6 +82,11 @@
         $(target).siblings().removeClass('active');
     });
 
+    $('[data-toggle="popup-contact"]').click( function(e){
+        e.preventDefault();
+        $('.popup-contact').toggleClass('active');
+    });
+
 
     // Cookies tab function
     function acceptCookies(){

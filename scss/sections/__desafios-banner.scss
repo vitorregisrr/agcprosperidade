@@ -81,12 +81,6 @@
                 background-size: contain !important;
                 @include transition();
 
-                &:hover{
-                    @media screen and (min-width: $bp-LG){
-                        transform: scale(1.04) translateY(-50%);
-                    }
-                }
-
                 &::after, &::before{
                     display: none !important;
                 }
@@ -132,7 +126,9 @@
         @include transition();
 
         &:hover{
-            @include scale(1.05);
+            @media screen and (min-width: $bp-LG){
+                transform: scale(1.04) translateY(-50%);
+            }
         }
 
         .title {

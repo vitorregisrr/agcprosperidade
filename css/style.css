@@ -6009,12 +6009,6 @@ select.form-control {
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (min-width: 992px) {
-  .desafios-banner__carousel .owl-nav .owl-prev:hover, .desafios-banner__carousel .owl-nav .owl-next:hover {
-    transform: scale(1.04) translateY(-50%);
-  }
-}
-
 .desafios-banner__carousel .owl-nav .owl-prev::after, .desafios-banner__carousel .owl-nav .owl-prev::before, .desafios-banner__carousel .owl-nav .owl-next::after, .desafios-banner__carousel .owl-nav .owl-next::before {
   display: none !important;
 }
@@ -6070,12 +6064,10 @@ select.form-control {
   transition: all 0.3s ease-in-out;
 }
 
-.desafios-banner__item:hover {
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transform: scale(1.05);
+@media screen and (min-width: 992px) {
+  .desafios-banner__item:hover {
+    transform: scale(1.04) translateY(-50%);
+  }
 }
 
 .desafios-banner__item .title {

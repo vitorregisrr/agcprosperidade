@@ -6084,7 +6084,7 @@ select.form-control {
 
 @media screen and (min-width: 992px) {
   .desafios-banner__item:hover {
-    transform: scale(1.04) translateY(-50%);
+    transform: scale(1.04);
   }
 }
 

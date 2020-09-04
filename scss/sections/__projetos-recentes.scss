@@ -105,20 +105,22 @@
             .more {
                 font-family: 'FB';
                 background-color: black;
-                border-radius: 15px;
-                padding: 4px 11px;
+                border-radius: 13px;
+                padding: 3px 6px;
                 color: #fff;
                 font-weight: bold;
-                font-size: 14px;
+                font-size: 13px;
                 text-transform: lowercase;
                 margin-top: 10px;
                 letter-spacing: 1px;
                 margin-bottom: 60px;
                 @include transition();
+
                 @media screen and (max-width: $bp-MD) {
                     margin-bottom: 20px;
                     font-size: 12px;
                 }
+
                 &:hover {
                     @include scale(1.1);
                 }

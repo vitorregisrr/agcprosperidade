@@ -4830,6 +4830,7 @@ select.form-control {
     margin-top: 14px;
     font-size: 15px;
     border-radius: 10px;
+    margin-left: 0;
     letter-spacing: 3px;
     padding: 2px 17px;
   }
@@ -5762,6 +5763,7 @@ select.form-control {
 @media screen and (max-width: 768px) {
   .projetos-recentes__item .content {
     padding: 30px;
+    justify-content: flex-start;
   }
 }
 

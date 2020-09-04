@@ -5763,7 +5763,6 @@ select.form-control {
 @media screen and (max-width: 768px) {
   .projetos-recentes__item .content {
     padding: 30px;
-    justify-content: flex-start;
   }
 }
 
@@ -5879,6 +5878,12 @@ select.form-control {
 @media screen and (max-width: 992px) {
   .projetos-recentes__item .content .img {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projetos-recentes__item .content .img {
+    align-items: flex-start;
   }
 }
 

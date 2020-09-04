@@ -45,7 +45,6 @@
 
             @media screen and (max-width: $bp-MD) {
                 padding: 30px;
-                justify-content: flex-start;
             }
 
             .tag {
@@ -140,6 +139,10 @@
 
                 @media screen and (max-width: $bp-LG){
                     width: 90%;
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    align-items: flex-start;
                 }
 
                 img {

@@ -4201,6 +4201,21 @@ select.form-control {
   }
 }
 
+.gray-header {
+  position: relative;
+}
+
+.gray-header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #c4c4c4;
+  height: 110%;
+  width: 100%;
+  z-index: 1;
+}
+
 .clientes-banner {
   background-color: #8169a7;
   padding-top: 100px;

@@ -112,12 +112,12 @@ $treewidthlg: 80px;
         .overlay{
             display: none;
             position: absolute;
-            top: -10px;
+            top: -15px;
             right: 0;
             z-index: 1;
             background-color: $color-secondary;
             width: 100vw;
-            height: 110%;
+            height: 90vh;
 
             @media screen and (max-width: $bp-LG){
                 display: block;

@@ -14,7 +14,6 @@
             $('.nossas-solucoes__item .line').attr('data-wow-delay', '1s');
             $('.nossas-solucoes__item .desc').attr('data-wow-delay', '1.4s');
         }
-        
     }
     replaceStyles();
 
@@ -152,4 +151,5 @@
     })
 
     window.addEventListener("resize", replaceStyles);
+    replaceStyles();
 })();

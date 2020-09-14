@@ -159,13 +159,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
         @media screen and (max-width: $bp-LG) {
-            &:not(:last-child) {
+            &:not(:last-child), &:not(.last){
                 margin-bottom: 90px;
             }
         }
 
-        &:not(:last-child) {
+        &:not(:last-child), &.has-plus {
             &::after {
                 content: '';
                 position: absolute;

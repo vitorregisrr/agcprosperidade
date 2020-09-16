@@ -6,6 +6,10 @@
     padding: 30px 30px;
     overflow: hidden;
 
+    @media screen and (max-width: $bp-MD){
+        padding: 5px;
+    }
+
     .bg{
         position: absolute;
         top: 0;
@@ -18,7 +22,7 @@
         z-index: 4;
 
         @media screen and (max-width: $bp-MD){
-            width: 100%;
+            width: 100% !important;
         }
     }
 
@@ -43,6 +47,10 @@
             margin-bottom: 35px;
             text-align: center;
             letter-spacing: 1px;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 20px;
+            }
         }
 
         input, select{
@@ -70,6 +78,10 @@
             letter-spacing: 3.5px;
             margin-left: 15px;
             border: none;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 15px;
+            }
         }
 
         .line {

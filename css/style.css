@@ -6713,6 +6713,12 @@ select {
   overflow: hidden;
 }
 
+@media screen and (max-width: 768px) {
+  .banner-campanha-3 {
+    padding: 5px;
+  }
+}
+
 .banner-campanha-3 .bg {
   position: absolute;
   top: 0;
@@ -6727,7 +6733,7 @@ select {
 
 @media screen and (max-width: 768px) {
   .banner-campanha-3 .bg {
-    width: 100%;
+    width: 100% !important;
   }
 }
 
@@ -6757,6 +6763,12 @@ select {
   letter-spacing: 1px;
 }
 
+@media screen and (max-width: 768px) {
+  .banner-campanha-3 .form .title {
+    font-size: 20px;
+  }
+}
+
 .banner-campanha-3 .form input, .banner-campanha-3 .form select {
   background-color: #fff;
   margin-bottom: 15px;
@@ -6782,6 +6794,12 @@ select {
   letter-spacing: 3.5px;
   margin-left: 15px;
   border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-campanha-3 .line-wrapper .submit {
+    font-size: 15px;
+  }
 }
 
 .banner-campanha-3 .line-wrapper .line {

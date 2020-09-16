@@ -6232,6 +6232,25 @@ select {
   }
 }
 
+.blog-interna .markup .custom-list li {
+  position: relative;
+  padding-left: 30px;
+  font-family: 'FBO';
+}
+
+.blog-interna .markup .custom-list li::before {
+  content: "\2022";
+  color: #0077ff;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.blog-interna .markup .text-md {
+  font-size: 18px;
+}
+
 .blog-interna .markup h4 {
   color: #8169a7;
   font-family: 'FH';
@@ -6729,6 +6748,7 @@ select {
   object-position: center center;
   object-fit: cover;
   z-index: 4;
+  margin: 0 !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -6754,7 +6774,7 @@ select {
 }
 
 .banner-campanha-3 .form .title {
-  font-size: 27px;
+  font-size: 23px;
   color: #8169a7;
   text-transform: uppercase;
   font-family: 'FH';
@@ -6772,7 +6792,7 @@ select {
 .banner-campanha-3 .form input, .banner-campanha-3 .form select {
   background-color: #fff;
   margin-bottom: 15px;
-  height: 45px;
+  height: 40px;
 }
 
 .banner-campanha-3 .line-wrapper {

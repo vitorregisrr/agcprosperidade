@@ -20,6 +20,7 @@
         object-position: center center;
         object-fit: cover;
         z-index: 4;
+        margin: 0 !important;
 
         @media screen and (max-width: $bp-MD){
             width: 100% !important;
@@ -40,7 +41,7 @@
         }
 
         .title{
-            font-size: 27px;
+            font-size: 23px;
             color: $color-secondary;
             text-transform: uppercase;
             font-family: 'FH';
@@ -56,7 +57,7 @@
         input, select{
             background-color: #fff;
             margin-bottom: 15px;
-            height: 45px;
+            height: 40px;
         }
     }
 

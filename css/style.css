@@ -6145,6 +6145,13 @@ select {
   margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .blog-interna__body .header .title {
+    font-size: 28px;
+    margin-top: -20px;
+  }
+}
+
 .blog-interna__body .header .map {
   display: flex;
   font-size: 15px;
@@ -6160,11 +6167,23 @@ select {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .blog-interna__body .header .map {
+    font-size: 13px;
+  }
+}
+
 .blog-interna__body .header .map .arrow {
   display: inline-block;
   font-size: 23px;
   font-family: 'FB';
   margin: 0 4px 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-interna__body .header .map .arrow {
+    font-size: 19px;
+  }
 }
 
 .blog-interna__body .content img {

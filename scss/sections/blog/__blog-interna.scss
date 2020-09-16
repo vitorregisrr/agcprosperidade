@@ -70,12 +70,18 @@
                 letter-spacing: 3.6px;
                 text-transform: uppercase;
                 margin: 0;
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 28px;
+                    margin-top: -20px;
+                }
             }
 
             .map {
                 display: flex;
                 font-size: 15px;
                 color: rgba(0,0,0,.48);
+
                 @media screen and (max-width: $bp-MD) {
                     display: block;
 
@@ -84,11 +90,19 @@
                     }
                 }
 
+                @media screen and (max-width: $bp-MD){
+                    font-size: 13px;
+                }
+
                 .arrow {
                     display: inline-block;
                     font-size: 23px;
                     font-family: 'FB';
                     margin: 0 4px 0 5px;
+
+                    @media screen and (max-width: $bp-MD){
+                        font-size: 19px;
+                    }
                 }
             }
 

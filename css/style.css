@@ -1178,9 +1178,9 @@ button:focus {
   padding: 2.8px 14px;
 }
 
-input.error, textarea.error {
+input.error, textarea.error, select.error {
   border: 1px solid #e07777 !important;
-  background-color: #fae7e7;
+  background-color: #fae7e7 !important;
 }
 
 input:focus, textarea:focus {
@@ -5931,6 +5931,12 @@ select {
 @media screen and (max-width: 992px) {
   .blog-header {
     height: 400px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .blog-header {
+    height: 720px;
   }
 }
 

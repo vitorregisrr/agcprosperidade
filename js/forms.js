@@ -56,4 +56,48 @@ $("#popup-contact-form").validate({
 
     messages: {
     }
+
+});
+// Formulário banner campanha 3
+$("#form-campanha-3").validate({
+    rules: {
+        email: {
+            required: true,
+            email: true
+        },
+        nome: {
+            required: true,
+        },
+        sobrenome: {
+            required: true,
+        },
+        empresa: {
+            required: true,
+        },
+        cidade: {
+            required: true,
+        },
+        termos: {
+            required: true,
+        },
+    },
+
+    messages: {
+    }
+});
+
+// Formulário banner campanha subscribe
+$("#subscribe-form").validate({
+    rules: {
+        email: {
+            required: true,
+            email: true
+        },
+        nome: {
+            required: true,
+        },
+    },
+
+    messages: {
+    }
 });

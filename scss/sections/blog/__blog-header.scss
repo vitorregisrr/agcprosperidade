@@ -10,9 +10,12 @@
     z-index: 3;
     background-position: center center;
 
-
     @media screen and (max-width: $bp-LG){
         height: 400px;
+    }
+
+    @media screen and (min-width: 2000px){
+        height: 720px;
     }
 
     &__caption{

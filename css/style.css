@@ -6859,6 +6859,19 @@ select {
   }
 }
 
+.interna-header {
+  position: relative;
+  background-color: #c4c4c4;
+  height: 280px;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .interna-header {
+    height: 210px;
+  }
+}
+
 .banner-campanha-1 {
   width: 102%;
   margin-left: -1%;

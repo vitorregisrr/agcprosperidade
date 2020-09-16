@@ -1,10 +1,10 @@
-.blog-interna{
+.blog-interna {
 
-    &-body{
+    &-body {
         padding-top: 20px;
     }
 
-    .blog-list-title{
+    .blog-list-title {
         color: $color-secondary;
         font-family: 'FH';
         font-size: 32px;
@@ -15,5 +15,230 @@
         border-bottom: 1px solid rgb(201, 201, 201);
         margin-bottom: 45px;
     }
-    
+
+    &__header {
+        position: relative;
+        z-index: 3;
+        background-color: $color-secondary;
+        padding: 40px 60px 1px;
+        margin-top: -130px;
+        @media screen and (max-width: $bp-LG) {
+            padding: 30px 40px 6px 30px;
+        }
+
+        .title {
+            color: #fff;
+            font-size: 40px;
+            text-transform: uppercase;
+            font-family: 'FH';
+            letter-spacing: 4px;
+            line-height: 1.6;
+            width: 100%;
+            margin-bottom: 30px;
+            @media screen and (max-width: $bp-MD) {
+                font-size: 18px;
+            }
+        }
+
+        .desc {
+            color: $color-primary;
+            letter-spacing: 1px;
+            @media screen and (max-width: $bp-MD) {
+                font-size: 11px;
+            }
+        }
+    }
+
+    &__body {
+        position: relative;
+        .header {
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid rgb(201, 201, 201);
+            margin-bottom: 45px;
+            @media screen and (max-width: $bp-MD) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .title {
+                color: $color-secondary;
+                font-family: 'FH';
+                font-size: 32px;
+                letter-spacing: 3.6px;
+                text-transform: uppercase;
+                margin: 0;
+            }
+
+            .map {
+                display: flex;
+                font-size: 15px;
+                color: rgba(0,0,0,.48);
+                @media screen and (max-width: $bp-MD) {
+                    display: block;
+
+                    li {
+                        display: inline;
+                    }
+                }
+
+                .arrow {
+                    display: inline-block;
+                    font-size: 23px;
+                    font-family: 'FB';
+                    margin: 0 4px 0 5px;
+                }
+            }
+
+        }
+        .content {
+
+            img {
+                width: 100%;
+            }
+
+            .social-share {
+                position: absolute;
+                left: -6%;
+                top: 5%;
+                @media screen and (max-width: $bp-MD) {
+                    position: relative;
+                    left: unset;
+                    top: unset;
+                    width: 100%;
+                    margin-bottom: 15px;
+                    margin-top: -15px;
+
+                    ul {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+
+                img {
+                    width: 35px;
+                    height: 35px;
+                    object-fit: contain;
+                    margin-bottom: 20px;
+                    @media screen and (max-width: $bp-MD) {
+                        margin-bottom: 0;
+                        margin-right: 10px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .content-container{
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .markup{
+
+        h5 {
+            color: $color-secondary;
+            font-family: 'FB';
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 2px;
+            line-height: 1.4;
+            margin-top: 35px;
+            margin-bottom: 35px;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 14px;
+            }
+        }
+
+        h4 {
+            color: $color-secondary;
+            font-family: 'FH';
+            text-transform: uppercase;
+            font-size: 22px;
+            letter-spacing: 1.6px;
+            line-height: 1.4;
+            margin-bottom: 35px;
+            margin-top: 35px;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 14px;
+            }
+        }
+
+        p{
+            font-family: 'FO';
+            letter-spacing: 1.2px;
+            font-size: 14px;
+        }
+
+        img{
+            display: block;
+            margin: 60px 0;
+            
+            @media screen and (max-width: $bp-MD){
+                margin: 30px 0;
+            }
+            
+            &.img-md{
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        
+    }
+
+    .sub-header {
+        color: $color-secondary;
+        font-family: 'FH';
+        font-size: 25px;
+        letter-spacing: 3.6px;
+        text-transform: uppercase;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid rgba(0,0,0,.1);
+        margin-bottom: 45px;
+    }
+
+    hr {
+        height: 2.7px;
+        background-color: rgba(0,0,0,.1);
+        border: none;
+    }
+
+    .artigo-thumb {
+        position: relative;
+        @media screen and (max-width: $bp-MD) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 230px;
+            margin-bottom: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .title {
+            color: $color-secondary;
+            text-transform: uppercase;
+            font-family: 'FB';
+            font-size: 17px;
+            margin-left: 5px;
+            max-width: 220px;
+        }
+    }
 }

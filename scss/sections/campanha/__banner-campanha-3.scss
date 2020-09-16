@@ -1,0 +1,108 @@
+.banner-campanha-3{
+    position: relative;
+    width: 102%;
+    margin-left: -1%;
+    background-color: $color-secondary;
+    padding: 30px 30px;
+    overflow: hidden;
+
+    .bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 49% !important;
+        height: 100%;
+        display: block;
+        object-position: center center;
+        object-fit: cover;
+        z-index: 4;
+
+        @media screen and (max-width: $bp-MD){
+            width: 100%;
+        }
+    }
+
+    .form{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: #c4c4c4;
+        margin-left: -60px;
+        z-index: 7;
+        padding: 50px 40px 30px 40px;
+
+        @media screen and (max-width: $bp-MD){
+            margin: 0;
+        }
+
+        .title{
+            font-size: 27px;
+            color: $color-secondary;
+            text-transform: uppercase;
+            font-family: 'FH';
+            margin-bottom: 35px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        input, select{
+            background-color: #fff;
+            margin-bottom: 15px;
+            height: 45px;
+        }
+    }
+
+    .line-wrapper{
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 0 auto;
+        width: 93%;
+
+        .submit{
+            background-color: $color-primary;
+            color: #fff;
+            padding: 2px 14px;
+            text-transform: uppercase;
+            border-radius: 20px;
+            font-family: 'FB';
+            font-size: 21px;
+            letter-spacing: 3.5px;
+            margin-left: 15px;
+            border: none;
+        }
+
+        .line {
+            position: relative;
+            height: 2.4px;
+            width: 70%;
+            background-color: $color-secondary;
+            margin-right: 10px;
+            max-width: 0;
+            animation: slideIn100perc 3s;
+            animation-fill-mode: forwards;
+
+            @media screen and (max-width: $bp-LG){
+                height: 1.6px;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                width: 8px;
+                height: 8px;
+                background-color: $color-secondary;
+                border-radius: 50%;
+
+                @media screen and (max-width: $bp-LG){
+                    width: 6px;
+                    height: 6px;
+                }
+            }
+        }
+    }
+
+}

@@ -66,4 +66,22 @@
             }
         }
     }
+
+    &.v-sm{
+        .title{
+            font-size: 13px;
+        }
+
+        input{
+            font-size: 14px;
+        }
+
+        .submit{
+            font-size: 12px;
+        }
+
+        .line{
+            animation-duration: 3s;
+        }
+    }
 }

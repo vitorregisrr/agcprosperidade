@@ -21,6 +21,11 @@
     .brand{
         max-width: 140px;
         margin: 0 !important;
+
+        @media screen and (max-width: $bp-MD){
+            max-width: 110px;
+            margin-bottom: 15px !important;
+        }
     }
 
     .banner{

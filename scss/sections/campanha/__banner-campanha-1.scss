@@ -1,0 +1,74 @@
+.banner-campanha-1{
+    width: 102%;
+    margin-left: -2.5%;
+    margin-right: -2.5%;
+    background-color: $color-secondary;
+    padding: 30px 30px;
+
+    @media screen and (max-width: $bp-MD){
+        padding-bottom: 20px;
+    }
+
+    .title{
+        font-size: 23.4px;
+        color: #fff;
+        margin-bottom: 0px;
+        letter-spacing: 5px;
+        font-family: 'FB';
+        text-transform: uppercase;
+
+        @media screen and (max-width: $bp-MD){
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+    }
+
+    .line-wrapper{
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .link{
+            background-color: $color-primary;
+            color: #fff;
+            padding: 2px 12px;
+            text-transform: uppercase;
+            border-radius: 20px;
+            font-family: 'FB';
+            font-size: 18px;
+            letter-spacing: 3.5px;
+            margin-left: 15px;
+        }
+
+        .line {
+            position: relative;
+            height: 2.4px;
+            width: 90%;
+            background-color: #fff;
+            max-width: 0;
+            animation: slideIn100perc 3s;
+            animation-fill-mode: forwards;
+
+            @media screen and (max-width: $bp-LG){
+                height: 1.6px;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                width: 8px;
+                height: 8px;
+                background-color: #fff;
+                border-radius: 50%;
+
+                @media screen and (max-width: $bp-LG){
+                    width: 6px;
+                    height: 6px;
+                }
+            }
+        }
+    }
+}

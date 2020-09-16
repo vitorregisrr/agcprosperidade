@@ -1,0 +1,27 @@
+.tags-box{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 330px;
+    margin: 0 auto;
+
+    span, a{
+        margin-right: 7px;
+        margin-bottom: 4px;
+    }
+
+}
+
+.tag-primary{
+    background-color: $color-primary;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 11px;
+    padding: 3px 10px;
+    @include transition();
+
+    &:hover{
+        color: #fff;
+        @include scale(1.1);
+    }
+}

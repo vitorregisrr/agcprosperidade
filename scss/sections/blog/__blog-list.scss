@@ -1,0 +1,110 @@
+.blog-list {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1.5px solid rgb(201, 201, 201);
+        margin-right: 30px;
+        padding-bottom: 40px;
+        margin-bottom: 50px;
+
+        .top {
+            display: flex;
+
+            @media screen and (max-width: $bp-SM){
+                flex-direction: column;
+            }
+
+            .img {
+                width: 180px;
+                height: 180px;
+                object-fit: cover;
+                margin-right: 40px;
+            }
+
+            .caption {
+                display: flex;
+                flex-direction: column;
+                padding-top: 10px;
+
+                .tag {
+                    font-size: 10px;
+                    letter-spacing: 1px;
+                    color: rgba(0,0,0,.48);
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                }
+
+                .title {
+                    color: $color-secondary;
+                    text-transform: uppercase;
+                    font-family: 'FB';
+                    font-size: 19px;
+                    max-width: 380px;
+                    letter-spacing: 1.5px;
+                    line-height: 1.2;
+                }
+
+                .desc {
+                    font-family: 'FBO';
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    max-width: 410px;
+                }
+            }
+
+        }
+
+        .date{
+            font-family: 'FM';
+        }
+
+        .line-wrapper {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            width: 100%;
+            padding-top: 30px;
+
+            .more {
+                text-transform: uppercase;
+                color: $color-secondary;
+                font-family: 'FB';
+                letter-spacing: 3px;
+                margin-top: -5px;
+                margin-left: 8px;
+            }
+
+            .line {
+                position: relative;
+                width: 76%;
+                height: 2px;
+                max-width: 0;
+                animation: slideIn100perc 3s;
+                animation-fill-mode: forwards;
+                background-color: $color-primary;
+                margin: 0;
+                
+                &:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    right: -.7px;
+                    top: 41%;
+                    transform: translateY(-50%);
+                    width: 9px;
+                    height: 9px;
+                    border-radius: 50%;
+                    background-color: $color-primary;
+                    @media screen and (min-width: 2000px) {
+                        width: 11px;
+                        height: 11px;
+                    }
+                }
+
+            }
+        }
+    }
+}

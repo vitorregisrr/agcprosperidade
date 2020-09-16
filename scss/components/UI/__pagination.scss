@@ -1,62 +1,48 @@
-.pagination{
+.pagination {
     display: flex;
     justify-content: center;
     padding-top: 30px;
-    
-    @media screen and (max-width: $bp-MD){
+    @media screen and (max-width: $bp-MD) {
         padding-top: 20px;
     }
 
-    ul{
+    ul {
         display: flex;
-        
-        li{
+
+        .item {
             display: flex;
-            justify-content: center;
             align-items: center;
-            transition: all 0.4s;
-            margin: 0 10px;
-
-            @media screen and (max-width: $bp-MD){
-                margin: 0 5px;
-
-                &:first-child, &:last-child{
-                    display: none;
-                }
+            justify-content: center;
+            color: $color-primary;
+            border: 2px solid $color-primary;
+            padding: 1px 9px;
+            border-radius: 40px;
+            height: 100%;
+            @include transition();
+            &:not(:first-child) {
+                border-left: none;
+                margin-left: -12px;
+                padding-left: 14px;
+                border-radius: 0 40px 40px 0;
             }
 
-            i.fa.fa-chevron-left,  i.fa.fa-chevron-right{
-                display: block;
-                margin:0 20px;
-    
-                @media screen and (max-width: $bp-MD){
-                    margin: 0 10px;
-                }
-            }
-
-            a{
-                color: $color-dark;
-            }
-
-            &.number{
-                width: 41px;
-                height: 41px;
-                border-radius: 5px;
+            &.active {
+                background-color: $color-primary;
                 color: #fff;
-                background-color: transparent;
-             
-                &.active, &:hover{
-                    background-color: $color-secondary;
+            }
 
-                    a{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 100%;
-                        height: 100%;
-                        color: #fff;
-                    }
-                }
+            &.hover {
+                background-color: opacify($color-primary, .4);
+                color: #fff;
+            }
+
+            &.last {
+                font-size: 11px;
+                padding-left: 16px;
+            }
+
+            a {
+                color: inherit;
             }
         }
     }

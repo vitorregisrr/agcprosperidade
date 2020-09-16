@@ -8,6 +8,7 @@
     color: #383838;
     font-weight: 400;
     border-radius: 5px;
+
     &:focus {
         box-shadow: none;
         border: 1px solid #636363;
@@ -23,6 +24,7 @@
     }
 
 }
+
 input.error, textarea.error {
     border: 1px solid rgb(224, 119, 119) !important;
     background-color: rgb(250, 231, 231);
@@ -35,16 +37,6 @@ input:focus, textarea:focus{
 label.error {
     display: none !important;
 }
-
-.select-transparent {
-    background: transparent !important;
-    background-color: transparent !important;
-    border: none !important;
-    font-weight: bold;
-    padding: 0 !important;
-    margin-left: -3px;
-}
-
 .form-group {
     label {
         display: block;
@@ -60,130 +52,46 @@ label.error {
     }
 }
 
-.form-password {
-    position: relative;
-    width: 100%;
-
-    .btn-eye {
-        position: absolute;
-        top: 24px;
-        font-size: 13px;
-        right: 20px;
-        opacity: 0.8;
-        background: none;
-        background-color: none;
-        border: none;
-        color: #707070;
-
-        .fa {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            opacity: 0;
-            transform: translate(-50%, -50%);
-            transition: opacity 0.2s;
-        }
-
-        .fa-eye-slash {
-            opacity: 0;
-        }
-
-        .fa-eye {
-            opacity: 1;
-        }
-
-        &[data-active="false"] {
-            .fa-eye {
-                opacity: 0;
-            }
-
-            .fa-eye-slash {
-                opacity: 1;
-            }
-        }
-    }
-}
-
-.input-search {
-    display: flex;
-    align-items: center;
-    display: flex;
-    margin-right: 120px;
-    width: auto;
-
-    button {
-        background: none;
-        border: none;
-        color: #414292;
-        margin-right: 6px;
-    }
-
-    input {
-        background: none;
-        border: none;
-        color: #909090;
-        width: 300px;
-        @media screen and (max-width: $bp-LG) {
-            width: 110px;
-        }
-        &:active,
-        &:focus {
-            border: none;
-            outline: none;
-            box-shadow: none;
-        }
-    }
-}
-
-.quantity-input {
-    display: flex;
-    border: 1.3px solid $color-primary;
-    border-radius: 10px;
-
-    button,
-    input {
-        height: 41px;
-    }
-
-    input {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: none;
-        border: none;
-        width: 90px;
-        background-color: #fff;
-        font-size: 24px;
-        color: $color-dark;
-        font-weight: 500;
-
-        /* Chrome, Safari, Edge, Opera */
-        &::-webkit-inner-spin-button,
-        &::-webkit-outer-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-
-        /* Firefox */
-        &[type=number] {
-            -moz-appearance: textfield;
-        }
-    }
-
-    button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        background-color: $color-primary;
-        border: none;
-        height: 41px;
-        width: 41px;
-        color: #fff;
-    }
-}
-
 select.form-control {
     min-height: 50px;
+}
+
+.search-input{
+    position: relative;
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
+
+    button{
+        background: none;
+        border: none;
+        position: absolute;
+        height: 23px;
+        width: 23px;
+        right: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../images/ico/search.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    input{
+        width: 100%;
+    }
+}
+
+input{
+    font-family: 'FO';
+    background-color: transparent;
+    border-radius: 13px;
+    padding: 4px 8px;
+    letter-spacing: 1.7px;
+    border: 1px solid rgba(136, 91, 91, 0.3);
+    font-size: 18px;
+
+    &::placeholder{
+        color: rgba(0,0,0,.5);
+    }
 }

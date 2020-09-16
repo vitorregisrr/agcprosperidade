@@ -1,0 +1,19 @@
+.blog-interna{
+
+    &-body{
+        padding-top: 20px;
+    }
+
+    .blog-list-title{
+        color: $color-secondary;
+        font-family: 'FH';
+        font-size: 32px;
+        letter-spacing: 3.6px;
+        text-transform: uppercase;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgb(201, 201, 201);
+        margin-bottom: 45px;
+    }
+    
+}

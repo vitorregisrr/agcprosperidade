@@ -1,0 +1,10 @@
+.interna-header {
+    position: relative;
+    background-color: #c4c4c4;
+    height: 280px;
+    width: 100%;
+
+    @media screen and (max-width: $bp-LG){
+        height: 210px;
+    }
+}

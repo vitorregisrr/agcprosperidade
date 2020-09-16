@@ -1,0 +1,69 @@
+.subscribe-form-box{
+    background-color: #c4c4c4;
+    padding: 35px 30px;
+
+    .title{
+        font-family: 'FB';
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 3.5px;
+        margin-bottom: 25px;
+    }
+
+    input{
+        margin-bottom: 20px;
+        background-color: #fff;
+        width: 95%;
+    }
+
+    .line-wrapper{
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+
+        .submit{
+            background-color: $color-primary;
+            color: #fff;
+            padding: 2px 12px;
+            text-transform: uppercase;
+            border-radius: 20px;
+            font-family: 'FB';
+            font-size: 15px;
+            letter-spacing: 3.5px;
+            margin-left: 15px;
+            border: none;
+        }
+
+        .line {
+            position: relative;
+            height: 2.4px;
+            width: 90%;
+            max-width: 0;
+            background-color: $color-secondary;
+            animation: slideIn100perc 1s;
+            animation-fill-mode: forwards;
+
+            @media screen and (max-width: $bp-LG){
+                height: 1.6px;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                width: 8px;
+                height: 8px;
+                background-color: $color-secondary;
+                border-radius: 50%;
+
+                @media screen and (max-width: $bp-LG){
+                    width: 6px;
+                    height: 6px;
+                }
+            }
+        }
+    }
+}

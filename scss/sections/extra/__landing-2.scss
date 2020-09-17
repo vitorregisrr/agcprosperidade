@@ -219,4 +219,16 @@
         }
     }
 
+    .report-steps{  
+        padding-top: 50px;
+
+        .list{
+            display: flex;
+
+            .item{
+                display: flex;
+            }
+        }
+    }
+
 }

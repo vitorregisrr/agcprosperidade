@@ -7425,6 +7425,18 @@ select {
   }
 }
 
+.landing-2 .report-steps {
+  padding-top: 50px;
+}
+
+.landing-2 .report-steps .list {
+  display: flex;
+}
+
+.landing-2 .report-steps .list .item {
+  display: flex;
+}
+
 .interna-header {
   position: relative;
   background-color: #c4c4c4;

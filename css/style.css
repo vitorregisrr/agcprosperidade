@@ -167,6 +167,10 @@
   background-color: #EDEDED !important;
 }
 
+.bg-secondary {
+  background-color: #8169a7 !important;
+}
+
 .img-thumb {
   display: block;
   position: relative;

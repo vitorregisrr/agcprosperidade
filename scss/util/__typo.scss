@@ -52,6 +52,14 @@
             color: rgba(129,105,157, 1);
         }
     }
+    @keyframes fillInSecondary {
+        0% {
+            color: #ffb84d00;
+        }
+        100% {
+            color: #ffb84d;
+        }
+    }
     
     @keyframes fillInDark{
         0% {
@@ -94,6 +102,14 @@
         -webkit-text-stroke-width: 1px;
         color: rgba(250,250,250, 0);
         animation: fillInWhite 2s;
+        animation-fill-mode: forwards;
+    }
+
+    &.secondary{
+        -webkit-text-stroke-color: $color-primary;
+        -webkit-text-stroke-width: 1px;
+        color: rgba(250,250,250, 0);
+        animation: fillInSecondary 2s;
         animation-fill-mode: forwards;
     }
 }

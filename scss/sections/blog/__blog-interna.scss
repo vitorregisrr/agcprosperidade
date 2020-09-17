@@ -157,6 +157,50 @@
 
     .markup {
 
+        .table-of-contents{
+            background-color: #c4c4c4;
+            padding: 33px 70px 20px 70px;
+            max-width: 600px;
+            margin: 50px auto;
+
+            @media screen and (max-width: $bp-MD){
+                padding: 33px 50px 10px 50px;
+            }
+
+            .title{
+                font-size: 18px;
+                margin-bottom: 23px;
+                text-transform: uppercase;
+                text-decoration: underline;
+                color: $color-secondary;
+                font-family: 'FB';
+                letter-spacing: 2px;
+            }
+
+            ul{
+                li{
+                    font-size: 15px;
+                    position: relative;
+                    margin-bottom: 15px;
+                    letter-spacing: 2px;
+
+                    @media screen and (max-width: $bp-MD){
+                        font-size: 14px;
+                    }
+
+                    &::after{
+                        content: '>';
+                        position: absolute;
+                        top: -2px;
+                        font-family: 'FB';
+                        font-size: 20px;
+                        color: $color-secondary;
+                        left: -23px;
+                    }
+                }
+            }
+        }
+
         h5 {
             color: $color-secondary;
             font-family: 'FB';

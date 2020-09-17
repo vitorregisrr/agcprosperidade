@@ -1,0 +1,27 @@
+.artigo-thumb {
+    position: relative;
+    @media screen and (max-width: $bp-MD) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 230px;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title {
+        color: $color-secondary;
+        text-transform: uppercase;
+        font-family: 'FB';
+        font-size: 17px;
+        margin-left: 5px;
+        max-width: 220px;
+    }
+}

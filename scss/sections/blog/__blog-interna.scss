@@ -272,49 +272,29 @@
 
     }
 
-    .sub-header {
-        color: $color-secondary;
-        font-family: 'FH';
-        font-size: 25px;
-        letter-spacing: 3.6px;
-        text-transform: uppercase;
-        padding-top: 20px;
-        padding-bottom: 15px;
-        border-bottom: 2px solid rgba(0,0,0,.1);
-        margin-bottom: 45px;
-    }
+    
 
     hr {
         height: 2.7px;
         background-color: rgba(0,0,0,.1);
         border: none;
     }
+}
 
-    .artigo-thumb {
-        position: relative;
-        @media screen and (max-width: $bp-MD) {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
-        }
 
-        img {
-            width: 100%;
-            max-width: 230px;
-            margin-bottom: 15px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+.sub-header {
+    color: $color-secondary;
+    font-family: 'FH';
+    font-size: 25px;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(0,0,0,.1);
+    margin-bottom: 45px;
 
-        .title {
-            color: $color-secondary;
-            text-transform: uppercase;
-            font-family: 'FB';
-            font-size: 17px;
-            margin-left: 5px;
-            max-width: 220px;
-        }
+    @media screen and (max-width: $bp-MD){
+        text-align: center;
+        font-size: 21px;
     }
 }

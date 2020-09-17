@@ -71,57 +71,65 @@
     </head>
 
     <body class="wow fadeIn">
-        <header id="interna-header" class="interna-header">
+        <header id="interna-header" class="interna-header landing-1__nav">
             <div class="container">
                 <div class="img interna-header__brand">
-                    <img src="../../images/brands/tree-black-2.png" alt="#">
+                    <a href="#">
+                        <img src="../../images/brands/tree-black-2.png" alt="#">
+                    </a>
                 </div>
             </div>
         </header>
 
-        <main class="landing-1" id="landing-1">
+        <main class="landing-1" id="landing-1" style="overflow: visible;">
             <div class="container">
                 <div
-                    class="landing-1__header"
+                    class="landing-1__header wow fadeInUp"
                     style="background-image: url('../../images/backgrounds/landing-1.png');">
                     <div class="row">
-                        <div class="col-lg-8">
+                        <div class="col-lg-7">
                             <div class="caption">
-                                <h1 class="title">
-                                    E-book
-                                    <br/>
-                                    Gratuíto
+                                <h1 class="title wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="stroke-lettering white wow" data-wow-delay="1s">
+                                        E-book
+                                        <br/>
+                                        Gratuíto
+                                    </div>
                                 </h1>
-                                <h2 class="desc">
+                                <h2 class="desc wow fadeInUp" data-wow-delay="0.4s">
                                     Ebook gratuito: como gerar resultados com vídeo marketing
                                 </h2>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="form-box">
                                 <h4 class="title">
                                     Quero gerar resultados.
                                 </h4>
-                                <p class="desc">
+                                <p class="desc mb-3">
                                     Preencha o formulário para acessar o material
                                 </p>
 
-                                <form action="#" id="landing-1__form">
-                                    <input type="text" placeholder="*Nome">
-                                    <input type="text" placeholder="*Email">
-                                    <input type="text" placeholder="*Empresa">
-                                    <input type="text" placeholder="*Site">
-                                    <select name="#" id="">
-                                        <option value="#">*Tipo de negócio</option>
-                                        <option value="#">*Cargo</option>
+                                <form id="form-landing-1" action="#" id="landing-1__form">
+                                    <input type="text" name="nome" placeholder="*Nome">
+                                    <input type="text" name="email" placeholder="*Email">
+                                    <input type="text" name="empresa" placeholder="*Empresa">
+                                    <input type="text" name="site" placeholder="*Site">
+                                    <select id="" name="tiponegocio">
+                                        <option value="" selected disabled>*Tipo de negócio</option>
                                     </select>
-                                    <button class="submit">Baixe o e-book</button>
+                                    <select id="" name="cargo">
+                                        <option value="" selected disabled>*Cargo</option>
+                                    </select>
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <button class="submit">Baixe o e-book</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="landing-1__caption">
+                <div class="landing-1__caption wow fadeInLeft" data-wow-delay="0.5s">
                     <h3 class="title">
                         Explore o potencial dos vídeos em sua estratégia de marketing digital
                     </h3>
@@ -134,10 +142,10 @@
             </div>
         </main>
 
-        <footer class="footer">
+        <footer class="footer pb-5">
             <div class="container">
-                <div class="footer__brand wow fadeIn" data-wow-delay="0.2s">
-                    <img src="../../images/brands/tree-white.png" alt="">
+                <div class="footer__brand wow fadeIn pt-5" data-wow-delay="0.2s">
+                    <img class="mb-0" src="../../images/brands/tree-white.png" alt="">
                 </div>
             </div>
         </footer>

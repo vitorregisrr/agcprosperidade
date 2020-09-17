@@ -101,3 +101,31 @@ $("#subscribe-form").validate({
     messages: {
     }
 });
+
+// Formulário landing page 1
+$("#form-landing-1").validate({
+    rules: {
+        email: {
+            required: true,
+            email: true
+        },
+        nome: {
+            required: true,
+        },
+        empresa: {
+            required: true,
+        },
+        site: {
+            required: true,
+        },
+        tiponegocio: {
+            required: true,
+        },
+        cargo: {
+            required: true,
+        },
+    },
+
+    messages: {
+    }
+});

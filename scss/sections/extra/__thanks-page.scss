@@ -9,6 +9,10 @@
         transform: translateY(-130px);
         margin-bottom: -80px;
 
+        @media screen and (min-width: $bp-MD) and (max-width: $bp-LG){
+            transform: translateY(-90px);
+            margin-bottom: -60px;
+        }
         @media screen and (max-width: $bp-MD){
             padding: 60px 0;
             margin-bottom: -100px;

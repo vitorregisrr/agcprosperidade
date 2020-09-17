@@ -7698,6 +7698,13 @@ select {
   margin-bottom: -80px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .thanks-page__header {
+    transform: translateY(-90px);
+    margin-bottom: -60px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .thanks-page__header {
     padding: 60px 0;
@@ -7828,7 +7835,7 @@ select {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .banner-newsletter .content .title {
     font-size: 25px;
     margin-bottom: 43px;

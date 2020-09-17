@@ -198,6 +198,10 @@
             &::after {
                 right: 4px;
 
+                @media screen and (min-width: 1200px) and (max-width: 1400px){
+                    right: -6px;
+                }
+
                 @media screen and (min-width: 2000px) {
                     right: -50px;
                 }
@@ -208,8 +212,20 @@
             &::after {
                 right: -18px;
 
+                @media screen and (min-width: 1200px) and (max-width: 1400px){
+                    right: -25px;
+                }
+
                 @media screen and (min-width: 2000px) {
                     right: -57px;
+                }
+            }
+        }
+
+        &:nth-child(4){
+            &::after{
+                @media screen and (min-width: 1200px) and (max-width: 1400px){
+                    right: -24px;
                 }
             }
         }

@@ -2016,6 +2016,22 @@ select {
   }
 }
 
+.footer .link-campanha {
+  border: 2px solid #8169a7;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 30px;
+  padding: 4px 14px;
+  margin: 0 auto;
+  transition: all 0.4s;
+}
+
+.footer .link-campanha:hover {
+  background-color: #8169a7;
+}
+
 .blog-header {
   position: relative;
   width: 100%;

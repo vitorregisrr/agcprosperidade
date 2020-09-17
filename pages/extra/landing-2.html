@@ -84,28 +84,27 @@
                     <div class="row">
                         <div class="col-lg-7">
                             <div class="caption">
-                                <h1 class="title">
+                                <h1 class="title wow fadeInUp" data-wow-delay="0.2s">
                                     <div class="stroke-lettering white wow" data-wow-delay="1s">
                                         E-book
                                         <br/>
                                         Gratuíto
                                     </div>
                                 </h1>
-                                <h2 class="desc">
+                                <h2 class="desc wow fadeInUp" data-wow-delay="0.4s">
                                     Ebook gratuito: como gerar resultados com vídeo marketing
                                 </h2>
-
                                 <div class="report-steps">
-                                    <h5 class="title">
+                                    <h5 class="subtitle">
                                         In the report you'll find:
                                     </h5>
-            
+
                                     <ul class="list">
                                         <li class="item">
                                             <span class="number">
                                                 1.
                                             </span>
-                                            <p class="desc">
+                                            <p class="subdesc">
                                                 A complete overview of targeting benchmarks for the auto industry
                                             </p>
                                         </li>
@@ -113,7 +112,7 @@
                                             <span class="number">
                                                 2.
                                             </span>
-                                            <p class="desc">
+                                            <p class="subdesc">
                                                 Tips and tactics on testing audiences and publisher sites
                                             </p>
                                         </li>
@@ -121,7 +120,7 @@
                                             <span class="number">
                                                 3.
                                             </span>
-                                            <p class="desc">
+                                            <p class="subdesc">
                                                 Data-driven insights to power your campaigns across 17 countries
                                             </p>
                                         </li>
@@ -130,25 +129,27 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="form-box">
                                 <h4 class="title">
                                     Quero gerar resultados.
                                 </h4>
-                                <p class="desc">
+                                <p class="desc mb-3">
                                     Preencha o formulário para acessar o material
                                 </p>
 
-                                <form action="#" id="landing-2__form">
-                                    <input type="text" placeholder="*Nome">
-                                    <input type="text" placeholder="*Email">
-                                    <input type="text" placeholder="*Empresa">
-                                    <input type="text" placeholder="*Site">
-                                    <select name="#" id="">
-                                        <option value="#">*Tipo de negócio</option>
-                                        <option value="#">*Cargo</option>
+                                <form id="form-landing-1" action="#" id="landing-1__form">
+                                    <input type="text" name="nome" placeholder="*Nome">
+                                    <input type="text" name="email" placeholder="*Email">
+                                    <input type="text" name="empresa" placeholder="*Empresa">
+                                    <input type="text" name="site" placeholder="*Site">
+                                    <select id="" name="tiponegocio">
+                                        <option value="" selected disabled>*Tipo de negócio</option>
                                     </select>
-                                    <div class="d-flex justify-content-center">
+                                    <select id="" name="cargo">
+                                        <option value="" selected disabled>*Cargo</option>
+                                    </select>
+                                    <div class="d-flex justify-content-center mt-3">
                                         <button class="submit">Baixe o e-book</button>
                                     </div>
                                 </form>
@@ -203,7 +204,9 @@
                 <div class="footer__brand wow fadeIn pt-5" data-wow-delay="0.2s">
                     <img src="../../images/brands/tree-white.png" alt="">
                 </div>
-                <a href="#" class="link-campanha">Crie sua campanha</a>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="link-campanha">Crie sua campanha</a>
+                </div>
             </div>
         </footer>
     </body>

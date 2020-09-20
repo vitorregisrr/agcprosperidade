@@ -117,12 +117,16 @@
                 padding-top: 19px;
                 color: #fff;
                 max-width: 425px;
-                font-size: 13px;
+                font-size: 14px;
                 letter-spacing: 2.3px;
 
                 @media screen and (max-width: $bp-LG){
                     margin: 0 auto !important;
                     max-width: 600px !important;
+
+                    br{
+                        display: none;
+                    }
                 }
 
                 @media screen and (max-width: $bp-MD){

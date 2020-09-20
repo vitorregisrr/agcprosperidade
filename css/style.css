@@ -7942,7 +7942,7 @@ select {
   padding-top: 19px;
   color: #fff;
   max-width: 425px;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 2.3px;
 }
 
@@ -7950,6 +7950,9 @@ select {
   .portfolio-pg__item-caption .desc {
     margin: 0 auto !important;
     max-width: 600px !important;
+  }
+  .portfolio-pg__item-caption .desc br {
+    display: none;
   }
 }
 

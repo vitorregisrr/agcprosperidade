@@ -8076,6 +8076,9 @@ select {
 }
 
 @media screen and (min-width: 992px) {
+  .portfolio-pg__item-img.ipad {
+    width: 107%;
+  }
   .portfolio-pg__item-img.ipad.v-right img {
     margin-left: -100px;
   }

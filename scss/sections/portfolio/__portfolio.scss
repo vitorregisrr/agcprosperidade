@@ -248,6 +248,8 @@
             }
             @media screen and (min-width: $bp-LG) {
                 &.ipad {
+                    width: 107%;
+
                     &.v-right {
                         img {
                             margin-left: -100px;

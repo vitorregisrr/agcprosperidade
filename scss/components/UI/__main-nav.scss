@@ -24,6 +24,10 @@ $treewidthlg: 80px;
         }
     }  
     
+    &.bg-secondary{
+        margin-bottom: -1px;
+    }
+
     .container {
         @media screen and (max-width: $bp-LG) {
             display: flex;

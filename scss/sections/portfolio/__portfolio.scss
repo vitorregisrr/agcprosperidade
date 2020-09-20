@@ -1,0 +1,261 @@
+.portfolio-pg {
+
+    &__header {
+        margin-top: -1px;
+        background-color: $color-secondary;
+        padding-top: 90px;
+        padding-bottom: 40px;
+        @media screen and (max-width: $bp-MD) {
+            padding-top: 60px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            max-width: 1100px;
+            margin: 0 auto;
+
+            .title {
+                font-size: 25px;
+                font-family: 'FH';
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                @media screen and (max-width: $bp-LG) {
+                    font-size: 18px;
+                }
+            }
+
+            .desc {
+                display: block;
+                font-size: 15px;
+                font-family: 'FO';
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            
+                @media screen and (max-width: $bp-LG) {
+                    font-size: 11px;
+                }
+                @media screen and (max-width: $bp-SM) {
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+
+    &__item {
+        padding: 100px 0;
+        @media screen and (max-width: $bp-MD) {
+            padding: 50px 0;
+        }
+
+        &-caption {
+            padding-top: 60px;
+            @media screen and (max-width: $bp-LG) {
+                padding-top: 30px;
+            }
+
+            &.v-left {
+                text-align: right;
+                .desc{
+                    margin-left: auto;
+                }
+            }
+
+            &.v-right {
+                text-align: left;
+            }
+
+            @media screen and (max-width: $bp-LG) {
+                text-align: center !important;
+            }
+
+            .tag {
+                display: block;
+                font-family: 'FO';
+                color: #fff;
+                font-size: 11px;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+                line-height: 1.8;
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 9px;
+                }
+            }
+
+            .title {
+                font-family: 'FB';
+                font-size: 30px;
+                letter-spacing: 6px;
+                text-transform: uppercase;
+
+                &.font-black {
+                    font-family: 'FH';
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 25px;
+                }
+            }
+
+            .desc {
+                font-family: 'FO';
+                margin-bottom: 5px;
+                padding-top: 19px;
+                color: #fff;
+                max-width: 400px;
+                font-size: 13px;
+                letter-spacing: 3px;
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 12px;
+                }
+            }
+
+            .line-wrapper {
+                display: flex;
+                align-items: center;
+                flex: 1;
+                width: 100%;
+                padding-top: 13px;
+
+                @media screen and (max-width: $bp-LG) {
+                    margin: 0 auto;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    .more{
+                        order: 3;
+                    }
+
+                }
+
+                &.v-left{
+                    justify-content: flex-end;
+                }
+
+                .line {
+                    position: relative;
+                    width: 39%;
+                    height: 1.6px;
+                    max-width: 0;
+                    animation: slideIn100perc 3s;
+                    animation-fill-mode: forwards;
+                    background-color: #fff;
+                    margin: 0;
+
+                    &.v-left{
+                        margin-left: 15px;
+                        
+                        &::after{
+                            right: unset;
+                            left: 0px;
+                        }
+                    }
+
+                    &.v-right{
+                        margin-right: 15px;
+
+                    }
+
+                    &:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        right: -.7px;
+                        top: 41%;
+                        transform: translateY(-50%);
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background-color: #fff;
+
+                        @media screen and (min-width: 2000px) {
+                            width: 11px;
+                            height: 11px;
+                        }
+                    }
+
+                    @media screen and (max-width: $bp-LG) {
+                        animation: slideIn120h 2s;
+                        animation-fill-mode: forwards;
+                        width: 1.6px;
+                        max-width: unset;
+                        max-height: 0;
+                        height: 50px;
+                        margin: -15px 0 14px !important;
+
+                        &:after {
+                            right: unset;
+                            transform: translateX(-50%);
+                            left: 50%;
+                            top: unset;
+                            bottom: 0;
+                        }
+                    }
+                }
+
+                .more{
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                    padding: 0px 8px;
+                    font-family: 'FB';
+                    color: #fff !important;
+                    background-color: black;
+                    border-radius: 15px;
+                    text-transform: lowercase;
+
+                    @media screen and (max-width: $bp-MD){
+                        font-size: 12px;
+                        padding: 1px 8px;
+                    }
+                }
+            }
+        }
+
+        &-img {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 90%;
+            }
+            @media screen and (min-width: $bp-LG) {
+                &.v-right {
+                    justify-content: flex-start;
+
+                    &.mac {
+                        padding-left: 30px;
+                    }
+                }
+
+                &.v-left {
+                    justify-content: flex-end;
+
+                    &.mac {
+                        padding-right: 30px;
+                    }
+                }
+            }
+            @media screen and (min-width: $bp-LG) {
+                &.ipad {
+                    &.v-right {
+                        img {
+                            margin-left: -100px;
+                        }
+                    }
+
+                    &.v-left {
+                        img {
+                            margin-right: -100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

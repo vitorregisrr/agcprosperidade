@@ -76,11 +76,15 @@
                 display: block;
                 font-family: 'FO';
                 color: #fff;
-                font-size: 11px;
+                font-size: 14px;
                 letter-spacing: 4px;
                 text-transform: uppercase;
                 margin-bottom: 8px;
                 line-height: 1.8;
+
+                &.sm{
+                    font-size: 11px;
+                }
 
                 @media screen and (max-width: $bp-MD){
                     font-size: 9px;
@@ -103,16 +107,17 @@
             }
 
             .desc {
-                font-family: 'FO';
+                font-family: 'MPL';
                 margin-bottom: 5px;
                 padding-top: 19px;
                 color: #fff;
-                max-width: 400px;
-                font-size: 13px;
-                letter-spacing: 3px;
+                max-width: 425px;
+                font-size: 14px;
+                letter-spacing: 2.7px;
 
                 @media screen and (max-width: $bp-MD){
                     font-size: 12px;
+                    letter-spacing: 2px;
                 }
             }
 

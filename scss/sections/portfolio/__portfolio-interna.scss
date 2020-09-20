@@ -1,0 +1,149 @@
+.portfolio-i {
+
+    &__boxes {
+        border-top: 6px solid #fff;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 70px 0;
+            width: 100%;
+            text-align: center;
+            height: 100%;
+
+            @media screen and (max-width: $bp-MD){
+                padding: 50px 0;
+            }
+
+            .tag {
+                display: block;
+                font-family: 'FO';
+                color: #fff;
+                font-size: 14px;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+                line-height: 1.8;
+
+                &.sm {
+                    font-size: 10px;
+                }
+                @media screen and (max-width: $bp-MD) {
+                    font-size: 9px;
+                }
+            }
+
+            .subtitle {
+                font-family: 'FO';
+                font-size: 15px;
+                letter-spacing: 4px;
+                color: #fff;
+                text-transform: uppercase;
+
+                &.sm {
+                    font-size: 10px;
+                    line-height: 1.6;
+                }
+            }
+
+            .title {
+                font-family: 'FB';
+                font-size: 33px;
+                letter-spacing: 6px;
+                text-transform: uppercase;
+
+                &.font-black {
+                    font-family: 'FH';
+                }
+                @media screen and (max-width: $bp-MD) {
+                    font-size: 25px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .desc {
+                font-family: 'MPL';
+                margin-bottom: 5px;
+                padding-top: 19px;
+                color: #fff;
+                max-width: 425px;
+                font-size: 14px;
+                letter-spacing: 2.7px;
+                @media screen and (max-width: $bp-MD) {
+                    font-size: 12px;
+                    letter-spacing: 2px;
+                }
+            }
+
+            .line-wrapper {
+                display: flex;
+                width: 100%;
+                padding-top: 13px;
+                margin: 0 auto;
+                justify-content: center;
+
+                &.v-left {
+                    justify-content: flex-end;
+                }
+
+                .line {
+                    position: relative;
+                    animation: slideIn100perc 3s;
+                    animation-fill-mode: forwards;
+                    background-color: #fff;
+                    animation: slideIn120h 2s;
+                    animation-fill-mode: forwards;
+                    width: 1.6px;
+                    max-width: unset;
+                    max-height: 0;
+                    height: 50px;
+                    margin-bottom: 10px;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        right: unset;
+                        transform: translateX(-50%);
+                        left: 50%;
+                        top: unset;
+                        bottom: 0;
+                    }
+                }
+
+            }
+            .more {
+                font-size: 15px;
+                letter-spacing: 1.4px;
+                padding: 4px 12px;
+                font-family: 'FB';
+                color: #fff !important;
+                background-color: black;
+                border-radius: 15px;
+                text-transform: lowercase;
+
+                @media screen and (max-width: $bp-MD) {
+                    font-size: 15px;
+                    padding: 3px 11px;
+                }
+            }
+
+            &.purple {
+                background-color: $color-secondary;
+            }
+
+            &.primary {
+                background-color: $color-primary;
+
+            }
+
+            &.gray {
+                background-color: #c4c4c4;
+            }
+        }
+    }
+}

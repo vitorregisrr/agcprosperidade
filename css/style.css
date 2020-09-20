@@ -495,6 +495,12 @@ button:focus {
   src: url("../fonts/helvetica-black.woff") format("woff");
 }
 
+@font-face {
+  font-family: "MPL";
+  src: url("//db.onlinewebfonts.com/t/a89cf050c859a23e4b6d9cf5989acf9e.eot");
+  src: url("//db.onlinewebfonts.com/t/a89cf050c859a23e4b6d9cf5989acf9e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a89cf050c859a23e4b6d9cf5989acf9e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a89cf050c859a23e4b6d9cf5989acf9e.woff") format("woff"), url("//db.onlinewebfonts.com/t/a89cf050c859a23e4b6d9cf5989acf9e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a89cf050c859a23e4b6d9cf5989acf9e.svg#Myriad Pro") format("svg");
+}
+
 .owl-carousel.nav-center .owl-nav {
   display: flex;
   justify-content: center;
@@ -7890,11 +7896,15 @@ select {
   display: block;
   font-family: 'FO';
   color: #fff;
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 4px;
   text-transform: uppercase;
   margin-bottom: 8px;
   line-height: 1.8;
+}
+
+.portfolio-pg__item-caption .tag.sm {
+  font-size: 11px;
 }
 
 @media screen and (max-width: 768px) {
@@ -7921,18 +7931,19 @@ select {
 }
 
 .portfolio-pg__item-caption .desc {
-  font-family: 'FO';
+  font-family: 'MPL';
   margin-bottom: 5px;
   padding-top: 19px;
   color: #fff;
-  max-width: 400px;
-  font-size: 13px;
-  letter-spacing: 3px;
+  max-width: 425px;
+  font-size: 14px;
+  letter-spacing: 2.7px;
 }
 
 @media screen and (max-width: 768px) {
   .portfolio-pg__item-caption .desc {
     font-size: 12px;
+    letter-spacing: 2px;
   }
 }
 
@@ -8073,6 +8084,166 @@ select {
   }
 }
 
+.portfolio-i__boxes {
+  border-top: 6px solid #fff;
+}
+
+.portfolio-i__boxes-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-i__boxes-item {
+    padding: 50px 0;
+  }
+}
+
+.portfolio-i__boxes-item .tag {
+  display: block;
+  font-family: 'FO';
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  line-height: 1.8;
+}
+
+.portfolio-i__boxes-item .tag.sm {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-i__boxes-item .tag {
+    font-size: 9px;
+  }
+}
+
+.portfolio-i__boxes-item .subtitle {
+  font-family: 'FO';
+  font-size: 15px;
+  letter-spacing: 4px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.portfolio-i__boxes-item .subtitle.sm {
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.portfolio-i__boxes-item .title {
+  font-family: 'FB';
+  font-size: 33px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.portfolio-i__boxes-item .title.font-black {
+  font-family: 'FH';
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-i__boxes-item .title {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+}
+
+.portfolio-i__boxes-item .desc {
+  font-family: 'MPL';
+  margin-bottom: 5px;
+  padding-top: 19px;
+  color: #fff;
+  max-width: 425px;
+  font-size: 14px;
+  letter-spacing: 2.7px;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-i__boxes-item .desc {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+}
+
+.portfolio-i__boxes-item .line-wrapper {
+  display: flex;
+  width: 100%;
+  padding-top: 13px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.portfolio-i__boxes-item .line-wrapper.v-left {
+  justify-content: flex-end;
+}
+
+.portfolio-i__boxes-item .line-wrapper .line {
+  position: relative;
+  animation: slideIn100perc 3s;
+  animation-fill-mode: forwards;
+  background-color: #fff;
+  animation: slideIn120h 2s;
+  animation-fill-mode: forwards;
+  width: 1.6px;
+  max-width: unset;
+  max-height: 0;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.portfolio-i__boxes-item .line-wrapper .line:after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  right: unset;
+  transform: translateX(-50%);
+  left: 50%;
+  top: unset;
+  bottom: 0;
+}
+
+.portfolio-i__boxes-item .more {
+  font-size: 15px;
+  letter-spacing: 1.4px;
+  padding: 4px 12px;
+  font-family: 'FB';
+  color: #fff !important;
+  background-color: black;
+  border-radius: 15px;
+  text-transform: lowercase;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-i__boxes-item .more {
+    font-size: 15px;
+    padding: 3px 11px;
+  }
+}
+
+.portfolio-i__boxes-item.purple {
+  background-color: #8169a7;
+}
+
+.portfolio-i__boxes-item.primary {
+  background-color: #ffb84d;
+}
+
+.portfolio-i__boxes-item.gray {
+  background-color: #c4c4c4;
+}
+
 .interna-header {
   position: relative;
   background-color: #c4c4c4;
@@ -8162,7 +8333,7 @@ select {
 .banner-orcamento__content .title .line-wrapper .line {
   position: relative;
   width: 100%;
-  height: 1.4px;
+  height: 1.8px;
   max-width: 0;
   animation: slideIn100perc 2s;
   animation-fill-mode: forwards;
@@ -8886,7 +9057,6 @@ body {
 }
 
 main {
-  background-color: #F7F7F8;
   max-width: 100vw;
   min-height: 100vh;
   overflow: hidden;

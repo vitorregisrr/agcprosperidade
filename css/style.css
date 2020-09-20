@@ -7943,7 +7943,7 @@ select {
   color: #fff;
   max-width: 425px;
   font-size: 13px;
-  letter-spacing: 3px;
+  letter-spacing: 2.3px;
 }
 
 @media screen and (max-width: 992px) {

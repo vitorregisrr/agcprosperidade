@@ -83,7 +83,7 @@
                 line-height: 1.8;
 
                 &.sm{
-                    font-size: 11px;
+                    font-size: 10px;
                 }
 
                 @media screen and (max-width: $bp-MD){
@@ -101,6 +101,11 @@
                     font-family: 'FH';
                 }
 
+                @media screen and (max-width: $bp-LG){
+                    text-align: center;
+                }
+
+
                 @media screen and (max-width: $bp-MD){
                     font-size: 25px;
                 }
@@ -112,8 +117,13 @@
                 padding-top: 19px;
                 color: #fff;
                 max-width: 425px;
-                font-size: 14px;
-                letter-spacing: 2.7px;
+                font-size: 13px;
+                letter-spacing: 3px;
+
+                @media screen and (max-width: $bp-LG){
+                    margin: 0 auto !important;
+                    max-width: 600px !important;
+                }
 
                 @media screen and (max-width: $bp-MD){
                     font-size: 12px;
@@ -260,6 +270,21 @@
                         img {
                             margin-right: -100px;
                         }
+                    }
+                }
+
+                &.macbook {
+                   img{
+                    width: 97%;
+                   }
+                }
+            }
+
+            @media screen and (max-width: $bp-MD){
+                &.ipad{
+                    img{
+                        width: 120%;
+                        margin-bottom: -30px;
                     }
                 }
             }

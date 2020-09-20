@@ -7904,7 +7904,7 @@ select {
 }
 
 .portfolio-pg__item-caption .tag.sm {
-  font-size: 11px;
+  font-size: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -7924,6 +7924,12 @@ select {
   font-family: 'FH';
 }
 
+@media screen and (max-width: 992px) {
+  .portfolio-pg__item-caption .title {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .portfolio-pg__item-caption .title {
     font-size: 25px;
@@ -7936,8 +7942,15 @@ select {
   padding-top: 19px;
   color: #fff;
   max-width: 425px;
-  font-size: 14px;
-  letter-spacing: 2.7px;
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 992px) {
+  .portfolio-pg__item-caption .desc {
+    margin: 0 auto !important;
+    max-width: 600px !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -8084,6 +8097,16 @@ select {
   }
   .portfolio-pg__item-img.ipad.v-left img {
     margin-right: -100px;
+  }
+  .portfolio-pg__item-img.macbook img {
+    width: 97%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-pg__item-img.ipad img {
+    width: 120%;
+    margin-bottom: -30px;
   }
 }
 

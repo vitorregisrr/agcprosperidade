@@ -3014,6 +3014,10 @@ select {
   border: none;
 }
 
+.home-tree__banner .popup-contact .content input.error, .home-tree__banner .popup-contact .content textarea.error {
+  margin-bottom: -3px;
+}
+
 @media screen and (min-width: 2000px) {
   .home-tree__banner .popup-contact .content input, .home-tree__banner .popup-contact .content textarea {
     margin-bottom: 25px;

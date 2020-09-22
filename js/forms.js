@@ -1,3 +1,14 @@
+jQuery.extend(jQuery.validator.messages, {
+    required: "Este campo é obrigatório.",
+    email: "E-mail inválido.",
+    number: "Por favor insira um número válido.",
+    maxlength: jQuery.validator.format("Por favor insira no máximo {0} caracteres."),
+    minlength: jQuery.validator.format("Por favor insira no minímo {0} caracteres."),
+    rangelength: jQuery.validator.format("Please enter a value between {0} and {1} characters long."),
+    range: jQuery.validator.format("Por favor insira entre {0} e {1} caractéres.")
+});
+
+
 // Formulário acessar (LOGIN)
 $("#form-newsletter").validate({
     rules: {
@@ -83,6 +94,7 @@ $("#form-campanha-3").validate({
     },
 
     messages: {
+        termos: "Você precisa aceitar os termos para prosseguir."
     }
 });
 
@@ -127,5 +139,34 @@ $("#form-landing-1").validate({
     },
 
     messages: {
+    }
+});
+
+// Formulário orcamento 2
+$("#form-orcamento-2").validate({
+    rules: {
+        email: {
+            required: true,
+            email: true
+        },
+        nome: {
+            required: true,
+        },
+        empresa: {
+            required: true,
+        },
+        site: {
+            required: true,
+        },
+        mensagem: {
+            required: true
+        },
+        termos: {
+            required: true
+        }
+    },
+
+    messages: {
+        termos: "Você precisa aceitar os termos para prosseguir."
     }
 });

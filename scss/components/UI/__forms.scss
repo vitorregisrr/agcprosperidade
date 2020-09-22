@@ -29,6 +29,10 @@ input.error, textarea.error, select.error {
     transition: all 0.4s;
     border: 1px solid rgb(224, 119, 119) !important;
     background-color: rgb(250, 231, 231) !important;
+
+    &[type="checkbox"]{
+        position: relative;
+    }
 }
 
 input:focus, textarea:focus, select:focus{
@@ -36,8 +40,33 @@ input:focus, textarea:focus, select:focus{
 }
 
 label.error {
-    display: none !important;
+    font-size: 11px;
+    color: rgb(224, 119, 119);
+    text-align: left;
+    margin-top: -13px;
+    padding-left: 10px;
+
 }
+
+.hide-error-label{
+    position: relative;
+
+    label.error{
+        font-size: 10px;
+        position: absolute;
+        bottom: -19px;
+        left: 0;
+        left: 3px;
+    }
+
+    &.label-2{
+        label.error{
+            bottom: -10px;
+        }
+    }
+}
+
+
 .form-group {
     label {
         display: block;

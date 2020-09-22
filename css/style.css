@@ -1223,12 +1223,36 @@ input.error, textarea.error, select.error {
   background-color: #fae7e7 !important;
 }
 
+input.error[type="checkbox"], textarea.error[type="checkbox"], select.error[type="checkbox"] {
+  position: relative;
+}
+
 input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
 label.error {
-  display: none !important;
+  font-size: 11px;
+  color: #e07777;
+  text-align: left;
+  margin-top: -13px;
+  padding-left: 10px;
+}
+
+.hide-error-label {
+  position: relative;
+}
+
+.hide-error-label label.error {
+  font-size: 10px;
+  position: absolute;
+  bottom: -19px;
+  left: 0;
+  left: 3px;
+}
+
+.hide-error-label.label-2 label.error {
+  bottom: -10px;
 }
 
 .form-group label {
@@ -5802,18 +5826,18 @@ select {
   }
 }
 
-.nossas-solucoes__item:first-child::after {
+.nossas-solucoes__item .nossas-solucoes__item:first-child::after {
   right: 4px;
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
-  .nossas-solucoes__item:first-child::after {
+  .nossas-solucoes__item .nossas-solucoes__item:first-child::after {
     right: -6px;
   }
 }
 
 @media screen and (min-width: 2000px) {
-  .nossas-solucoes__item:first-child::after {
+  .nossas-solucoes__item .nossas-solucoes__item:first-child::after {
     right: -50px;
   }
 }

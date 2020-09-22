@@ -404,14 +404,14 @@
                                 </div>
 
                                 <form id="form-orcamento-2" action="#" class="form">
-                                    <input type="text" placeholder="*Nome">
-                                    <input type="text" placeholder="*E-mail">
-                                    <input type="text" placeholder="*Empresa">
-                                    <input type="text" placeholder="*Site">
-                                    <textarea name="#" id="#" placeholder="* Do que você precisa"></textarea>
+                                    <input type="text" name="nome" placeholder="*Nome">
+                                    <input type="text" name="email" placeholder="*E-mail">
+                                    <input type="text" name="empresa" placeholder="*Empresa">
+                                    <input type="text" name="site" placeholder="*Site">
+                                    <textarea name="mensagem" id="#" placeholder="* Do que você precisa"></textarea>
 
-                                    <div class="checkbox-labeled pt-1">
-                                        <input class="mr-2 mt-0" type="checkbox" name="termos">
+                                    <div class="checkbox-labeled pt-1 hide-error-label">
+                                        <input class="mr-2 mt-0 mb-if-error" type="checkbox" required name="termos">
                                         <small class="text-left">Eu concordo em participar da newsletter
                                             <br/>
                                             e receber conteúdos gratuitamente.</small>

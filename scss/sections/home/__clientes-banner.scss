@@ -169,6 +169,48 @@
         justify-content: center;
         text-align: center;
 
+        &.quotes-primary {
+            &::after {
+                content: '';
+                position: absolute;
+                top: -9px;
+                right: 90px;
+                transform: translateX(100%);
+                width: 67px;
+                height: 67px;
+                background-image: url("../images/ico/quote-r-primary.png");
+                background-size: contain;
+                background-position: center center;
+                background-repeat: no-repeat;
+                @media screen and (max-width: $bp-MD) {
+                    width: 35px;
+                    height: 35px;
+                    right: 40px;
+                    top: -18px;
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -9px;
+                left: -30px;
+                transform: translateX(100%);
+                width: 67px;
+                height: 67px;
+                background-image: url("../images/ico/quote-l-primary.png");
+                background-size: contain;
+                background-position: center center;
+                background-repeat: no-repeat;
+                @media screen and (max-width: $bp-MD) {
+                    width: 35px;
+                    left: -30px;
+                    top: -18px;
+                    height: 35px;
+                }
+            }
+
+        }
         .desc {
             font-family: 'FBO';
             font-size: 15px;
@@ -192,11 +234,11 @@
 
     &.bg-gray {
         .owl-dots {
-          
+
             .owl-dot {
                 border: 2px solid $color-secondary;
-              
-                &.active{
+
+                &.active {
                     background-color: $color-secondary;
                 }
             }

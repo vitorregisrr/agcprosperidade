@@ -1,0 +1,25 @@
+.solucoes-pg{
+    &__header{
+        background-color: $color-secondary;
+        padding: 90px 0 55px 0;
+
+        @media screen and (max-width: $bp-MD){
+            padding: 40px 0 25px 0;
+        }
+
+        .title{
+            font-size: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            letter-spacing: 3px;
+            font-family: 'FH';
+            line-height: 1.4;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 20px;
+                padding: 0 10px;
+            }
+        }
+    }
+}

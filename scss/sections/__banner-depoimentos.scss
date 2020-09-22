@@ -1,0 +1,43 @@
+.banner-depoimentos{
+    padding: 60px 0;
+
+    @media screen and (max-width: $bp-MD){
+        padding: 40px 0;
+    }
+
+    &__title{
+        font-size: 35px;
+        letter-spacing: 4px;
+        line-height: 1.3;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'FH';
+        color: $color-secondary;
+        margin-bottom: 60px;
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 24px;
+        }
+    }
+
+    .border-left{
+        border-color: black !important;
+
+        @media screen and (max-width: $bp-LG){
+            position: relative;
+            border-left: none !important;
+            padding-top: 40px !important;
+
+            &::after{
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 0px;
+                transform: translateX(-50%);
+                height: 1px;
+                background-color: black;
+                width: 70%;
+            }
+        }
+    }
+}

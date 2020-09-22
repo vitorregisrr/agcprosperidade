@@ -5,7 +5,6 @@
     &__header {
         background-color: #c4c4c4;
         padding: 54px 0;
-        
         @media screen and (max-width: $bp-MD) {
             padding: 20px 0;
         }
@@ -18,10 +17,24 @@
             text-align: center;
             color: #fff;
             margin-bottom: -2px;
-
             @media screen and (max-width: $bp-MD) {
                 font-size: 24px;
                 letter-spacing: 4px;
+            }
+        }
+
+        .desc {
+            font-family: 'FO';
+            font-size: 16px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
+            margin-bottom: 0;
+            @media screen and (max-width: $bp-MD) {
+                font-size: 9px;
+                padding: 0 10px;
+                letter-spacing: 2px;
             }
         }
     }
@@ -29,8 +42,7 @@
     &__item {
         height: 100%;
         padding-top: 15px;
-
-        @media screen and (max-width: $bp-LG){
+        @media screen and (max-width: $bp-LG) {
             padding-top: 0;
         }
 
@@ -42,7 +54,6 @@
             justify-content: center;
             padding: 70px 0 140px;
             height: 100%;
-
             @media screen and (max-width: $bp-MD) {
                 padding: 30px;
             }
@@ -115,12 +126,10 @@
                 letter-spacing: 1px;
                 margin-bottom: 60px;
                 @include transition();
-
                 @media screen and (max-width: $bp-MD) {
                     margin-bottom: 20px;
                     font-size: 12px;
                 }
-
                 &:hover {
                     @include scale(1.1);
                 }
@@ -132,16 +141,13 @@
                 display: flex;
                 justify-content: center;
                 width: 70%;
-
                 @media screen and (min-width: 2000px) {
                     width: 70%;
                 }
-
-                @media screen and (max-width: $bp-LG){
+                @media screen and (max-width: $bp-LG) {
                     width: 90%;
                 }
-
-                @media screen and (max-width: $bp-MD){
+                @media screen and (max-width: $bp-MD) {
                     align-items: flex-start;
                 }
 
@@ -176,8 +182,8 @@
                 }
             }
 
-            .content{
-                @media screen and (min-width: $bp-LG){
+            .content {
+                @media screen and (min-width: $bp-LG) {
                     margin-left: -60px;
                 }
             }

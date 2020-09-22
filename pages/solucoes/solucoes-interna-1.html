@@ -733,17 +733,16 @@
                     </div>
                 </div>
             </section>
+
             <section id="projetos-recentes" class="projetos-recentes">
-                <div class="projetos-recentes__header">
-                    <div class="container">
-                        <h2 class="title wow fadeInUp" data-wow-delay="0.4s">
-                            Projetos Recentes
-                        </h2>
-                        <p class="desc">
-                            confira clientes satisfeitos com nossas soluções<br/>
-                            e seus resultados incríveis de marketing digital.
-                        </p>
-                    </div>
+                <div class="projetos-recentes__header py-4 py-lg-5">
+                    <h2 class="title mb-2 wow fadeInUp" data-wow-delay="0.4s">
+                        Projetos Recentes
+                    </h2>
+                    <p class="desc wow fadeInUp" data-wow-delay="0.5s">
+                        Confira clientes satisfeitos com nossas soluções<br/>
+                        e seus resultados incríveis de marketing digital.
+                    </p>
                 </div>
 
                 <div class="row position-relative align-items-stretch">
@@ -797,41 +796,38 @@
                 </div>
             </section>
 
-            <section id="banner-depoimentos">
-                <img
-                    src="../../images/backgrounds/triangle-purple-bottom.png"
-                    alt="Triangulo de fundo"
-                    class="triangle-bottom">
+            <section id="banner-depoimentos" class="banner-depoimentos">
                 <div class="container">
                     <header>
                         <h3 class="banner-depoimentos__title">
-                            O que dizem nossos clientes
+                            O que dizem<br/>
+                            nossos clientes
                         </h3>
                     </header>
 
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="banner-depoimentos__item">
-                                <div class="clientes-banner__depoimento">
-                                    <p class="desc">
+                            <div class="banner-depoimentos__item py-2 py-lg-5">
+                                <div class="clientes-banner__depoimento quotes-primary">
+                                    <p class="desc color-dark font-regular font-italic">
                                         Tem uma visão de conteúdo<br/>
                                         rara no mercado. Contar com esta parceria<br/>
                                         é algo que eu faço de olhos fechados.
                                     </p>
-                                    <p class="author">
+                                    <p class="author color-secondary">
                                         Carol Giacon, Coordenadora de Digital, Omiexperience SA
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="clientes-banner__depoimento">
-                                <p class="desc">
+                        <div class="col-lg-6 border-left py-2 py-lg-5">
+                            <div class="clientes-banner__depoimento quotes-primary">
+                                <p class="desc color-dark font-regular font-italic">
                                     O workshop audiovisual foi excelente,<br/>
                                     com ótima didática, tudo de forma extremamente
                                     <br/>clara e fácil de entender.
                                 </p>
-                                <p class="author">
+                                <p class="author color-secondary">
                                     Tânia Oliveira, Analista de Marketin, Arteris
                                 </p>
                             </div>
@@ -841,14 +837,20 @@
             </section>
 
             <section id="banner-orcamento2" class="banner-orcamento2">
+                <img
+                    src="../../images/backgrounds/triangle-purple-bottom.png"
+                    alt=""
+                    class="img-top">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="banner-orcamento2__caption">
+                            <div class="banner-orcamento2__caption wow fadeInLeft">
                                 <h1 class="title">
-                                    Quer<br class="d-none d-lg-block"/>
-                                    Saber<br class="d-none d-lg-block"/>
-                                    Mais?
+                                    <span class="stroke-lettering white wow" data-wow-delay="2s">
+                                        Quer<br/>
+                                        Saber<br class="d-none d-lg-block"/>
+                                        Mais?
+                                    </span>
                                 </h1>
 
                                 <h2 class="subtitle">
@@ -862,35 +864,38 @@
                                     <br/>
                                     que podems
                                     <br/>
-                                    alcançar juntos
+                                    alcançar juntos.
                                     <br/>
                                 </h2>
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="banner-orcamento2__box">
-                                <h3 class="title">
-                                    Preencha o formulário
-                                    <br/>
-                                    para receber nosso contato.
-                                </h3>
+                            <div class="banner-orcamento2__box wow fadeInUp">
+                                <div class="w-100">
+                                    <h3 class="title">
+                                        Preencha o formulário
+                                        <br/>
+                                        para receber nosso contato.
+                                    </h3>
+                                </div>
 
                                 <form id="form-orcamento-2" action="#" class="form">
-                                    <input type="text" placeholder="*Nome">
-                                    <input type="text" placeholder="*E-mail">
-                                    <input type="text" placeholder="*Empresa">
-                                    <input type="text" placeholder="*Site">
-                                    <textarea name="#" id="#" placeholder="* Do que você precisa"></textarea>
+                                    <input type="text" name="nome" placeholder="*Nome">
+                                    <input type="text" name="email" placeholder="*E-mail">
+                                    <input type="text" name="empresa" placeholder="*Empresa">
+                                    <input type="text" name="site" placeholder="*Site">
+                                    <textarea name="mensagem" id="#" placeholder="* Do que você precisa"></textarea>
 
-                                    <div class="d-flex align-items-center">
-                                        <label class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <div class="mask"></div>
-                                        </label>
-                                        <small>Yes, send me your newsletter with news, tips and best pratices</small>
+                                    <div class="checkbox-labeled pt-1 hide-error-label">
+                                        <input class="mr-2 mt-0 mb-if-error" type="checkbox" required name="termos">
+                                        <small class="text-left">Eu concordo em participar da newsletter
+                                            <br/>
+                                            e receber conteúdos gratuitamente.</small>
                                     </div>
 
-                                    <button class="more" type="submit">Solicite orçamento</button>
+                                    <div>
+                                        <button class="submit" type="submit">Solicite orçamento</button>
+                                    </div>
                                 </form>
 
                             </div>

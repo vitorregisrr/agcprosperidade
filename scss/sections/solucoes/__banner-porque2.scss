@@ -1,3 +1,99 @@
 .banner-porque2{
-    
+    background-color: black;
+    color: #fff;
+    padding: 70px 0;
+
+    @media screen and (max-width: $bp-MD){
+        padding: 50px 0 30px 0;
+    }
+
+    &__header{
+        text-align: center;
+        margin-bottom: 70px;
+
+        @media screen and (max-width: $bp-MD){
+            margin-bottom: 40px;
+        }
+
+        .title{
+            font-size: 29px;
+            font-family: 'FH';
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: $color-primary;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 20px;
+            }
+        }
+
+        .desc{
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #fff;
+            max-width: 680px;
+            letter-spacing: 2px;
+            line-height: 2;
+            margin: 0 auto;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 8px;
+            }
+        }
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        @media screen and (max-width: $bp-MD){
+            margin-bottom: 30px;
+        }
+
+        .title{
+            display: flex;
+            flex-direction: column;
+
+            .number{
+                font-family: 'FH';
+                color: $color-primary;
+                font-size: 61px;
+                margin-bottom: -3px;
+                letter-spacing: 0px;
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 42px;
+                }
+            }
+
+            .text{
+                font-family: 'FB';
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 22px;
+                letter-spacing: 2px;
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 17px;
+                }
+            }
+        }
+
+        .desc{
+            font-size: 15px;
+            font-family: 'FO';
+            letter-spacing: 1.5px;
+            max-width: 180px;
+            margin: 0 auto;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 13px;
+                max-width: 140px;
+            }
+        }
+    }
 }

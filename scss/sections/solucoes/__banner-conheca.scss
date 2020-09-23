@@ -1,0 +1,51 @@
+.banner-conheca{
+    background-color: $color-primary;
+    
+    &__caption{
+        .has-line {
+        position: relative;
+        display: inline;
+
+        @keyframes slideIn130per {
+            0% {
+                max-width: 0;
+            }
+            100% {
+                max-width: 130%;
+            }
+        }
+
+        .text {
+            position: relative;
+            display: inline;
+            z-index: 4;
+        }
+
+        .line {
+            position: absolute;
+            width: 124%;
+            height: 3px;
+            max-width: 0;
+            background-color: $color-primary;
+            z-index: 1;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            animation: slideIn130per 2s;
+            animation-fill-mode: forwards;
+            z-index: -1;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: $color-primary;
+            }
+        }
+    }
+    }
+}

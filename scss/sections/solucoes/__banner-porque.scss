@@ -1,0 +1,153 @@
+.banner-porque {
+    padding-bottom: 30px;
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        padding-top: 24px;
+
+        @media screen and (max-width: $bp-MD){
+            padding-top: 14px;
+        }
+
+        .quote,
+        .title {
+            position: relative;
+            z-index: 3;
+        }
+
+        .title {
+            font-size: 20px;
+            text-align: center;
+            font-family: 'FH';
+            line-height: 1.5;
+            letter-spacing: 3px;
+            color: #fff;
+            text-transform: uppercase;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 14px;
+
+            }
+        }
+
+        .triangle-bg {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            width: 520px;
+
+            @media screen and (max-width: $bp-MD){
+                width: 370px;
+            }
+        }
+
+        .quote {
+            font-family: 'FH';
+            font-size: 152px;
+            margin-left: 5px;
+            margin-top: -10px;
+            background-color: transparent !important;
+            -webkit-text-stroke-width: 1.5px;
+            -webkit-text-stroke-color: $color-primary;
+            color: rgba(129,105,157, 0);
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 114px;
+            }
+        }
+    }
+
+    .desc{
+        font-size: 14px;
+        color: black;
+        line-height: 1.9;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 40px;
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 9px;
+        }
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+
+        @media screen and (max-width: $bp-MD){
+            margin-bottom: 20px;
+        }
+
+        .title{
+            margin-bottom: 0;
+
+            .number{
+                font-family: 'FH';
+                font-size: 69px;
+                -webkit-text-stroke-width: 1.5px;
+                -webkit-text-stroke-color: black;
+                color: rgba(129,105,157, 0);
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 54px;
+
+                    &.lg{
+                        font-size: 64px !important;
+                    }
+                }
+
+                &.lg{
+                    font-size: 77px;
+                }
+            }
+
+            .percent{
+                font-size: 34px;
+                font-family: 'FH';
+                margin-left: -32px;
+
+                @media screen and (max-width: $bp-MD){
+                    margin-left: -27px;
+                    font-size: 30px;
+                }
+            }
+
+            .text{
+                font-family: 'FH';
+                text-transform: uppercase;
+                font-size: 28px;
+                margin-left: -10px;
+                letter-spacing: 2px;
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .desc{
+            font-size: 13px;
+            letter-spacing: 1.1px;
+            text-transform: lowercase;
+            max-width: 220px;
+            margin: 0 auto;
+            line-height: 1.5;
+            text-align: center;
+            
+            @media screen and (max-width: $bp-MD){
+                font-size: 11px;
+            }
+        }
+    }
+}

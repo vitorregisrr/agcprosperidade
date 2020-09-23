@@ -1,0 +1,180 @@
+.banner-beneficios {
+    position: relative;
+    background-color: $color-secondary;
+    margin-top: 100px;
+    padding: 60px 0 10px 0;
+
+    @media screen and (max-width: $bp-SM){
+        padding: 30px 0 10px;
+        margin-top: 20px;
+    }
+
+    .img-top {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        transform: translateY(-100%);
+    }
+
+    &__caption {
+        
+        .title{
+            font-size: 37px;
+            font-family: 'FB';
+            color: #fff;
+            text-transform: uppercase;
+            line-height: 1.5;
+            letter-spacing: 6px;
+            padding-left: 70px;
+
+            @media screen and (max-width: 1300px){
+                font-size: 34px;
+            }
+            
+            @media screen and (max-width: 1200px){
+                font-size: 30px;
+                padding-left: 0;
+            }
+
+            @media screen and (max-width: $bp-LG){
+                font-size: 32px;
+                margin-bottom: 30px;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 26px;
+            }
+        }
+
+        .has-line {
+            position: relative;
+            display: inline;
+
+            @keyframes slideIn200px {
+                0% {
+                    max-width: 0;
+                }
+                100% {
+                    max-width: 100px;
+                }
+            }
+
+            .text {
+                position: relative;
+                display: inline;
+                z-index: 4;
+            }
+
+            .line {
+                position: absolute;
+                width: 60px;
+                height: 3px;
+                max-width: 0;
+                background-color: $color-primary;
+                z-index: 1;
+                top: 50%;
+                right: 10px;
+                transform: translate(100%, -50%);
+                animation: slideIn200px 1s;
+                animation-fill-mode: forwards;
+                z-index: 2;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background-color: $color-primary;
+                }
+            }
+        }
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 50px;
+
+        @media screen and (max-width: $bp-SM){
+            margin-bottom: 20px;
+        }
+
+        @keyframes slideInV60 {
+            0% {
+                max-height: 0;
+            }
+            100% {
+                max-height: 54px;
+            }
+        }
+
+        .ico{
+            width: 90px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: $bp-SM){
+                width: 60px;
+            }
+        }
+
+        .title{
+            font-family: 'FB';
+            max-width: 200px;
+            font-size: 19px;
+            line-height: 1.4;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+
+            @media screen and (max-width: $bp-SM){
+                font-size: 16px;
+            }
+        }
+
+        .desc{
+            font-size: 15px;
+            letter-spacing: 1px;
+
+            @media screen and (max-width: $bp-SM){
+                font-size: 12px;
+            }
+        }
+
+        .line {
+            position: relative;
+            height: 60px;
+            width: 2.8px;
+            background-color: $color-primary;
+            margin-top: 9px;
+            margin-bottom: 17px;
+            max-height: 0;
+            animation: slideInV60 1s;
+            animation-fill-mode: forwards;
+
+            @media screen and (max-width: $bp-SM){
+                height: 40px;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 8px;
+                height: 8px;
+                background-color: $color-primary;
+                border-radius: 50%;
+            }
+        }
+    }
+}

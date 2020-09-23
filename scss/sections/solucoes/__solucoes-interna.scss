@@ -1,0 +1,148 @@
+.solucoes-i {
+
+    &__header {
+        padding: 100px 0 60px 0;
+
+        @media screen and (max-width: $bp-LG){
+            padding: 70px 0 40px;
+        }
+
+        @media screen and (max-width: $bp-SM){
+            padding: 40px 0 30px;
+         }
+
+        
+    }
+
+    &__caption {
+        display: flex;
+        justify-content: flex-end;
+
+        @media screen and (max-width: $bp-MD){
+            justify-content: flex-start;
+        }
+
+        &-desc {
+            font-size: 15px;
+            padding-left: 90px;
+            margin-top: 318px;
+            max-width: 400px;
+            letter-spacing: 2px;
+
+            @media screen and (max-width: $bp-LG){
+                margin-top: 270px;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                text-align: left;
+                padding-left: 0;
+                margin-top: 0;
+            }
+        }
+
+        .title {
+            position: relative;
+            text-align: right;
+            width: auto;
+            font-size: 29px;
+            color: $color-secondary;
+            text-transform: uppercase;
+            line-height: 1.5;
+            letter-spacing: 6px;
+            font-family: 'FH';
+
+            @media screen and (max-width: $bp-LG){
+                font-size: 25px;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                text-align: left;
+                margin-bottom: 20px;
+            }
+
+            @media screen and (max-width: $bp-SM){
+               font-size: 21px;
+            }
+
+            .ico {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+
+                &.movie {
+                    top: 45%;
+                    width: 160px;
+                    left: -100px;
+
+                    @media screen and (max-width: $bp-LG){
+                        width: 110px;
+                        left: -30px;
+                    }
+
+                    @media screen and (max-width: $bp-MD){
+                        left: unset;
+                        right: -40px;
+                    }
+
+                    @media screen and (max-width: $bp-SM){
+                        width: 90px;
+                        right: -10px;
+                    }
+                }
+            }
+
+            .has-line {
+                display: inline;
+                position: relative;
+                @keyframes slideIn130per {
+                    0% {
+                        max-width: 0;
+                    }
+                    100% {
+                        max-width: 130%;
+                    }
+                }
+
+                .text {
+                    position: relative;
+                    display: inline;
+                    z-index: 4;
+                }
+
+                .line {
+                    position: absolute;
+                    width: 124%;
+                    height: 3px;
+                    max-width: 0;
+                    background-color: $color-primary;
+                    z-index: 1;
+                    top: 50%;
+                    left: 10px;
+                    transform: translateY(-50%);
+                    animation: slideIn130per 2s;
+                    animation-fill-mode: forwards;
+                    z-index: -1;
+
+                    @media screen and (max-width: $bp-SM){
+                        height: 2px;
+                        width: 105%;
+                     }
+         
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background-color: $color-primary;
+                    }
+                }
+            }
+        }
+
+    }
+}

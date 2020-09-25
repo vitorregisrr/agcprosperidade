@@ -44,6 +44,7 @@
 
             @media screen and (max-width: $bp-MD){
                 font-size: 26px;
+                padding-left: 0 !important;
             }
         }
 
@@ -119,11 +120,14 @@
 
         .ico{
             width: 90px;
+            height: 90px;
+            object-fit: contain;
             margin: 0 auto;
             margin-bottom: 20px;
 
             @media screen and (max-width: $bp-SM){
                 width: 60px;
+                height: 70px;
             }
         }
 
@@ -141,6 +145,8 @@
         }
 
         .desc{
+            font-family: 'FO';
+            font-weight: lighter;
             font-size: 15px;
             letter-spacing: 1px;
 
@@ -174,6 +180,37 @@
                 height: 8px;
                 background-color: $color-primary;
                 border-radius: 50%;
+            }
+        }
+    }
+
+    &.v-2{
+        .banner-beneficios__caption{
+            .title{
+                padding-left: 40px;
+                letter-spacing: 5px;
+            }
+
+            @keyframes slideIn300px {
+                0% {
+                    max-width: 0;
+                }
+                100% {
+                    max-width: 300px;
+                }
+            }
+
+            .has-line{
+                .line{
+                    right: 14px;
+                    animation: slideIn300px 1s;
+                    animation-fill-mode: forwards;
+                    width: 240px;
+
+                    @media screen and (max-width: $bp-MD){
+                        width: 160px;
+                    }
+                }
             }
         }
     }

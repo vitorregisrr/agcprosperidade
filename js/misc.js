@@ -13,7 +13,11 @@
             $('.nossas-solucoes__item').attr('data-wow-delay', '0.8s');
             $('.nossas-solucoes__item .line').attr('data-wow-delay', '1s');
             $('.nossas-solucoes__item .desc').attr('data-wow-delay', '1.4s');
+            $('.banner-conheca__item').attr('data-wow-delay', '0.5s');
+            $('.banner-conheca__item .line').attr('data-wow-delay', '0.6s');
         }
+
+        
     }
     replaceStyles();
 

@@ -110,6 +110,12 @@
                 &.lg{
                     font-size: 77px;
                 }
+
+                &.md-small{
+                    @media screen and (max-width: $bp-MD){
+                        font-size: 40px !important;
+                    }
+                }
             }
 
             .percent{

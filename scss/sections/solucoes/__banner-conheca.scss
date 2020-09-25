@@ -3,7 +3,7 @@
     padding: 80px 0 100px;
 
     @media screen and (max-width: $bp-LG){
-        padding: 50px 0 70px;
+        padding: 50px 0 40px;
     }
 
     &__caption {
@@ -72,7 +72,7 @@
         font-family: 'FH';
         font-size: 30px;
         text-align: left;
-        margin-right: -20px;
+        margin-right: -40px;
         letter-spacing: 4.3px;
         line-height: 1.4;
         text-transform: uppercase;
@@ -85,6 +85,10 @@
 
         @media screen and (max-width: $bp-LG){
             font-size: 27px;
+        }
+
+        @media screen and (max-width: $bp-SM){
+            font-size: 25px;
         }
     }
 
@@ -104,6 +108,12 @@
             font-size: 14px;
             max-width: 300px;
             margin-bottom: 70px;
+        }
+
+        @media screen and (max-width: $bp-SM){
+            font-size: 11px;
+            letter-spacing: 2.1px;
+            max-width: 270px;
         }
     }
 
@@ -160,11 +170,19 @@
                 right: -50px;
                 bottom: -115px;
                 width: 268%;
+
+                @media screen and (max-width: $bp-XL){
+                    width: 147%;
+                }
             }
         }
 
         &.item-2 {
             margin-top: 307px;
+
+            @media screen and (max-width: $bp-XL){
+                margin-top: 255px;
+            }
         }
 
         &.item-3,
@@ -174,18 +192,26 @@
         }
 
         &.item-6 {
-            margin-top: 90px;
+            margin-top: 106px;
         }
 
         &.item-3{
             .line-left{
                 width: 166% !important;
+
+                @media screen and (max-width: $bp-XL){
+                    width: 92% !important;
+                }
             }
         }
 
         &.item-4{
             .line-left{
                 width: 226% !important;
+
+                @media screen and (max-width: $bp-XL){
+                    width: 127% !important;
+                }
             }
         }
 
@@ -340,6 +366,63 @@
             letter-spacing: 0.5px;
             padding-top: 9px;
             margin: 0 -30px;
+        }
+    }
+
+    &.v-2{
+        .banner-conheca__item{
+            &.item-1{
+                .line-right {
+                    position: absolute;
+                    right: -90px;
+                    bottom: -115px;
+                    width: 232%;
+    
+                    @media screen and (max-width: $bp-XL){
+                        width: 119%;
+                    }
+                }
+            }
+
+            &.item-3{
+                .line-left {
+                    position: absolute;
+                    width: 118% !important;
+                    left: -27px !important;
+    
+                    @media screen and (max-width: $bp-XL){
+                        width: 119%;
+                    }
+                }
+            }
+            &.item-4{
+                .line-left {
+                    position: absolute;
+                    width: 165% !important;
+                    left: -27px !important;
+    
+                    @media screen and (max-width: $bp-XL){
+                        width: 119%;
+                    }
+                }
+
+                .big-letter{
+                    left: -29px;
+                }
+            }
+            &.item-5{
+                
+                .big-letter{
+                    left: -29px;
+                }
+            }
+            &.item-6{
+                
+                .big-letter{
+                    left: -17px;
+                    top: 7px;
+                }
+            }
         }
     }
 

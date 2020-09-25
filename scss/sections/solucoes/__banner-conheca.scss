@@ -59,8 +59,8 @@
                     top: 50%;
                     right: 0;
                     transform: translateY(-50%);
-                    width: 9px;
-                    height: 9px;
+                    width: 7.6px;
+                    height: 7.6px;
                     border-radius: 50%;
                     background-color: #fff;
                 }
@@ -120,15 +120,15 @@
     &__footer {
         display: flex;
         justify-content: center;
-        margin-top: -110px;
+        margin-top: -104px;
 
         @media screen and (max-width: $bp-MD){
             margin-top: -50px;
         }
 
         img {
-            width: 65px;
-            margin-right: 90px;
+            width: 60px;
+            margin-right: 100px;
 
             @media screen and (max-width: $bp-XL){
                 width: 58px;
@@ -364,7 +364,7 @@
         .desc {
             font-size: 13px;
             letter-spacing: 0.5px;
-            padding-top: 9px;
+            padding-top: 2px;
             margin: 0 -30px;
         }
     }
@@ -421,6 +421,153 @@
                 .big-letter{
                     left: -17px;
                     top: 7px;
+                }
+            }
+        }
+    }
+
+    &.v-3{
+        .banner-conheca__caption{
+           
+            .banner-conheca__title{
+                white-space: nowrap;
+            }
+
+            .has-line{
+                width: 187%;
+
+                @media screen and (max-width: $bp-XL){
+                    width: 182%;
+                }
+
+                @media screen and (max-width: $bp-LG){
+                    width: 120%;
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    width: 80%;
+                }
+            }
+        }
+
+        .banner-conheca__item{
+            &.item-1{
+                margin-top: 187px;
+
+                @media screen and (max-width: $bp-XL){
+                    margin-top: 144px;
+                }
+
+                .line-right {
+                    position: absolute;
+                    right: -60px;
+                    bottom: -114px;
+                    width: 256%;
+    
+                    @media screen and (max-width: $bp-XL){
+                        width: 140%;
+                    }
+                }
+
+                .big-letter{
+                    position: absolute;
+                    top: 18px;
+                    left: -34px;
+                }
+            }
+
+            &.item-2{
+                margin-top: 305px;
+
+                @media screen and (max-width: $bp-XL){
+                    margin-top: 270px;
+                }
+
+                .desc{
+                    margin-top: -5px;
+                }
+
+                .line-right {
+                    position: absolute;
+                    right: -60px;
+                    bottom: -114px;
+                    width: 219%;
+    
+                    @media screen and (max-width: $bp-XL){
+                        width: 119%;
+                    }
+                }
+
+                .big-letter{
+                    position: absolute;
+                    top: -2px;
+                    left: 11px;
+                }
+            }
+
+            &.item-3{
+                .line-left {
+                    position: absolute;
+                    width: 147% !important;
+                    left: -21px !important;
+    
+                    @media screen and (max-width: $bp-XL){
+                        width: 74% !important;
+                    }
+                }
+
+                .desc{
+                    margin-top: -4px;
+                }
+
+                .big-letter{
+                    position: absolute;
+                    top: -4px;
+                    left: -8px;
+                }
+            }
+
+            &.item-4{
+                .line-left {
+                    position: absolute;
+                    width: 151% !important;
+                    left: -35px !important;
+    
+                    @media screen and (max-width: $bp-XL){
+                        width: 77% !important;
+                    }
+                }
+
+                .desc{
+                    margin-top: 3px;
+                }
+
+                .big-letter{
+                    left: -29px;
+                }
+            }
+            &.item-5{
+                .title{
+                    @media screen and (min-width: $bp-LG){
+                        margin-top: -15px;
+                    }
+                }
+
+                .big-letter{
+                    top: 12px;
+                    left: -37px;
+                }
+            }
+            &.item-6{
+                
+                .title{
+                    @media screen and (min-width: $bp-LG){
+                        margin-top: -45px;
+                    }
+                }
+
+                .desc{
+                    margin-top: 5px;
                 }
             }
         }

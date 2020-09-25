@@ -95,7 +95,7 @@
             .number{
                 font-family: 'FH';
                 font-size: 69px;
-                -webkit-text-stroke-width: 1.5px;
+                -webkit-text-stroke-width: 1.8px;
                 -webkit-text-stroke-color: black;
                 color: rgba(129,105,157, 0);
 
@@ -122,6 +122,8 @@
                 font-size: 34px;
                 font-family: 'FH';
                 margin-left: -32px;
+                -webkit-text-stroke-width: 1.5px;
+                -webkit-text-stroke-color: black;
 
                 @media screen and (max-width: $bp-MD){
                     margin-left: -27px;

@@ -119,25 +119,34 @@
         }
 
         .ico{
-            width: 90px;
-            height: 90px;
+            width: 80px;
+            height: 80px;
             object-fit: contain;
             margin: 0 auto;
-            margin-bottom: 20px;
+            margin-bottom: 13px;
+
+            &.lg{
+                width: 100px;
+            }
 
             @media screen and (max-width: $bp-SM){
                 width: 60px;
                 height: 70px;
+
+                &.lg{
+                    width: 80px;
+                }
             }
         }
 
         .title{
             font-family: 'FB';
             max-width: 200px;
-            font-size: 19px;
+            font-size: 17px;
             line-height: 1.4;
             text-transform: uppercase;
             letter-spacing: 3px;
+            
 
             @media screen and (max-width: $bp-SM){
                 font-size: 16px;
@@ -147,7 +156,7 @@
         .desc{
             font-family: 'FO';
             font-weight: lighter;
-            font-size: 15px;
+            font-size: 13px;
             letter-spacing: 1px;
 
             @media screen and (max-width: $bp-SM){
@@ -209,6 +218,62 @@
 
                     @media screen and (max-width: $bp-MD){
                         width: 160px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.v-3{
+        .banner-beneficios__item{
+            &.is-top{
+                @media screen and (min-width: $bp-XL){
+                    margin-top: 37px;
+                }
+            }
+        }
+
+        .banner-beneficios__caption{
+            .title{
+                font-size: 33px;
+                padding-left: 30px;
+                letter-spacing: 5px;
+                margin-right: -200px;
+
+                @media screen and (max-width: 1202px){
+                    font-size: 25px;
+                    padding-left: 0;
+                    margin-left: -40px;
+                    margin-top: 5px;
+                }
+
+                @media screen and (max-width: $bp-LG){
+                    margin-left: 0;
+                }
+            }
+
+            @keyframes slideIn300px {
+                0% {
+                    max-width: 0;
+                }
+                100% {
+                    max-width: 300px;
+                }
+            }
+
+            .has-line{
+                .line{
+                    right: 11px;
+                    animation: slideIn300px 1s;
+                    animation-fill-mode: forwards;
+                    width: 150px;
+
+                    @media screen and (max-width: 1270px){
+                        width: 90px;
+                    }
+
+                    @media screen and (max-width: $bp-MD){
+                        width: 40px;
                     }
                 }
             }

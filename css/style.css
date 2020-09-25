@@ -6597,6 +6597,7 @@ select {
   font-size: 14px;
   margin-bottom: 5px;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -6711,6 +6712,22 @@ select {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .projetos-recentes__item .content .img.tablet {
+    width: 74%;
+  }
+}
+
+.projetos-recentes__item .content .img.macbook {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .projetos-recentes__item .content .img.macbook {
+    width: 120%;
+  }
+}
+
 .projetos-recentes__item .content .img img {
   width: 100%;
 }
@@ -6724,20 +6741,12 @@ select {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: #ffb84d;
 }
 
 .projetos-recentes__item.right {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: #8169a7;
-}
-
-@media screen and (min-width: 1200px) {
-  .projetos-recentes__item.right .tablet {
-    width: 74%;
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -6746,12 +6755,45 @@ select {
   }
 }
 
-.projetos-recentes__item.right .nome {
+.projetos-recentes__item.v-secondary {
+  background-color: #8169a7;
+}
+
+.projetos-recentes__item.v-secondary .nome {
   color: #ffb84d;
 }
 
-.projetos-recentes__item.right .more {
+.projetos-recentes__item.v-secondary .more {
   background-color: #ffb84d;
+}
+
+.projetos-recentes__item.v-primary {
+  background-color: #ffb84d;
+}
+
+.projetos-recentes__item.v-primary .nome {
+  color: black;
+}
+
+.projetos-recentes__item.v-primary .more {
+  background-color: black;
+}
+
+.projetos-recentes__item.v-gray {
+  background-color: #c4c4c47e;
+}
+
+.projetos-recentes__item.v-gray .nome {
+  color: #8169a7;
+}
+
+.projetos-recentes__item.v-gray .more {
+  background-color: #8169a7;
+}
+
+.projetos-recentes__item.v-gray .tag {
+  font-size: 13px;
+  color: black;
 }
 
 .desafios-banner {
@@ -7940,7 +7982,7 @@ select {
 }
 
 .solucoes-i__header {
-  padding: 100px 0 30px 0;
+  padding: 100px 0 30px;
 }
 
 @media screen and (max-width: 992px) {
@@ -7987,6 +8029,38 @@ select {
   }
 }
 
+.solucoes-i__header.v-3 {
+  padding-bottom: 70px;
+}
+
+@media screen and (max-width: 992px) {
+  .solucoes-i__header.v-3 {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .solucoes-i__header.v-3 {
+    padding-bottom: 40px;
+  }
+}
+
+.solucoes-i__header.v-3 .solucoes-i__caption-desc {
+  margin-top: 449px;
+}
+
+@media screen and (max-width: 992px) {
+  .solucoes-i__header.v-3 .solucoes-i__caption-desc {
+    margin-top: 381px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .solucoes-i__header.v-3 .solucoes-i__caption-desc {
+    margin-top: 0;
+  }
+}
+
 .solucoes-i__caption {
   display: flex;
   justify-content: flex-end;
@@ -8028,8 +8102,12 @@ select {
   color: #8169a7;
   text-transform: uppercase;
   line-height: 1.5;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   font-family: 'FH';
+}
+
+.solucoes-i__caption .title .stroke-lettering {
+  letter-spacing: 6px;
 }
 
 @media screen and (max-width: 992px) {
@@ -8109,6 +8187,34 @@ select {
     width: 100px;
     right: -30px;
     top: 38%;
+  }
+}
+
+.solucoes-i__caption .title .ico.equipe {
+  top: 58%;
+  width: 180px;
+  left: -100px;
+}
+
+@media screen and (max-width: 992px) {
+  .solucoes-i__caption .title .ico.equipe {
+    width: 110px;
+    left: -30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .solucoes-i__caption .title .ico.equipe {
+    left: unset;
+    right: -40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .solucoes-i__caption .title .ico.equipe {
+    width: 100px;
+    right: -36px;
+    top: 58%;
   }
 }
 
@@ -8414,11 +8520,15 @@ select {
 }
 
 .banner-beneficios__item .ico {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
+}
+
+.banner-beneficios__item .ico.lg {
+  width: 100px;
 }
 
 @media screen and (max-width: 576px) {
@@ -8426,12 +8536,15 @@ select {
     width: 60px;
     height: 70px;
   }
+  .banner-beneficios__item .ico.lg {
+    width: 80px;
+  }
 }
 
 .banner-beneficios__item .title {
   font-family: 'FB';
   max-width: 200px;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 1.4;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -8446,7 +8559,7 @@ select {
 .banner-beneficios__item .desc {
   font-family: 'FO';
   font-weight: lighter;
-  font-size: 15px;
+  font-size: 13px;
   letter-spacing: 1px;
 }
 
@@ -8510,6 +8623,62 @@ select {
 @media screen and (max-width: 768px) {
   .banner-beneficios.v-2 .banner-beneficios__caption .has-line .line {
     width: 160px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-beneficios.v-3 .banner-beneficios__item.is-top {
+    margin-top: 37px;
+  }
+}
+
+.banner-beneficios.v-3 .banner-beneficios__caption .title {
+  font-size: 33px;
+  padding-left: 30px;
+  letter-spacing: 5px;
+  margin-right: -200px;
+}
+
+@media screen and (max-width: 1202px) {
+  .banner-beneficios.v-3 .banner-beneficios__caption .title {
+    font-size: 25px;
+    padding-left: 0;
+    margin-left: -40px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner-beneficios.v-3 .banner-beneficios__caption .title {
+    margin-left: 0;
+  }
+}
+
+@keyframes slideIn300px {
+  0% {
+    max-width: 0;
+  }
+  100% {
+    max-width: 300px;
+  }
+}
+
+.banner-beneficios.v-3 .banner-beneficios__caption .has-line .line {
+  right: 11px;
+  animation: slideIn300px 1s;
+  animation-fill-mode: forwards;
+  width: 150px;
+}
+
+@media screen and (max-width: 1270px) {
+  .banner-beneficios.v-3 .banner-beneficios__caption .has-line .line {
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-beneficios.v-3 .banner-beneficios__caption .has-line .line {
+    width: 40px;
   }
 }
 
@@ -8584,8 +8753,8 @@ select {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  width: 9px;
-  height: 9px;
+  width: 7.6px;
+  height: 7.6px;
   border-radius: 50%;
   background-color: #fff;
 }
@@ -8654,7 +8823,7 @@ select {
 .banner-conheca__footer {
   display: flex;
   justify-content: center;
-  margin-top: -110px;
+  margin-top: -104px;
 }
 
 @media screen and (max-width: 768px) {
@@ -8664,8 +8833,8 @@ select {
 }
 
 .banner-conheca__footer img {
-  width: 65px;
-  margin-right: 90px;
+  width: 60px;
+  margin-right: 100px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -8917,7 +9086,7 @@ select {
 .banner-conheca__item .desc {
   font-size: 13px;
   letter-spacing: 0.5px;
-  padding-top: 9px;
+  padding-top: 2px;
   margin: 0 -30px;
 }
 
@@ -8969,6 +9138,157 @@ select {
 .banner-conheca.v-2 .banner-conheca__item.item-6 .big-letter {
   left: -17px;
   top: 7px;
+}
+
+.banner-conheca.v-3 .banner-conheca__caption .banner-conheca__title {
+  white-space: nowrap;
+}
+
+.banner-conheca.v-3 .banner-conheca__caption .has-line {
+  width: 187%;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-3 .banner-conheca__caption .has-line {
+    width: 182%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner-conheca.v-3 .banner-conheca__caption .has-line {
+    width: 120%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-conheca.v-3 .banner-conheca__caption .has-line {
+    width: 80%;
+  }
+}
+
+.banner-conheca.v-3 .banner-conheca__item.item-1 {
+  margin-top: 187px;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-3 .banner-conheca__item.item-1 {
+    margin-top: 144px;
+  }
+}
+
+.banner-conheca.v-3 .banner-conheca__item.item-1 .line-right {
+  position: absolute;
+  right: -60px;
+  bottom: -114px;
+  width: 256%;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-3 .banner-conheca__item.item-1 .line-right {
+    width: 140%;
+  }
+}
+
+.banner-conheca.v-3 .banner-conheca__item.item-1 .big-letter {
+  position: absolute;
+  top: 18px;
+  left: -34px;
+}
+
+.banner-conheca.v-3 .banner-conheca__item.item-2 {
+  margin-top: 305px;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-3 .banner-conheca__item.item-2 {
+    margin-top: 270px;
+  }
+}
+
+.banner-conheca.v-3 .banner-conheca__item.item-2 .desc {
+  margin-top: -5px;
+}
+
+.banner-conheca.v-3 .banner-conheca__item.item-2 .line-right {
+  position: absolute;
+  right: -60px;
+  bottom: -114px;
+  width: 219%;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-3 .banner-conheca__item.item-2 .line-right {
+    width: 119%;
+  }
+}
+
+.banner-conheca.v-3 .banner-conheca__item.item-2 .big-letter {
+  position: absolute;
+  top: -2px;
+  left: 11px;
+}
+
+.banner-conheca.v-3 .banner-conheca__item.item-3 .line-left {
+  position: absolute;
+  width: 147% !important;
+  left: -21px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-3 .banner-conheca__item.item-3 .line-left {
+    width: 74% !important;
+  }
+}
+
+.banner-conheca.v-3 .banner-conheca__item.item-3 .desc {
+  margin-top: -4px;
+}
+
+.banner-conheca.v-3 .banner-conheca__item.item-3 .big-letter {
+  position: absolute;
+  top: -4px;
+  left: -8px;
+}
+
+.banner-conheca.v-3 .banner-conheca__item.item-4 .line-left {
+  position: absolute;
+  width: 151% !important;
+  left: -35px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-3 .banner-conheca__item.item-4 .line-left {
+    width: 77% !important;
+  }
+}
+
+.banner-conheca.v-3 .banner-conheca__item.item-4 .desc {
+  margin-top: 3px;
+}
+
+.banner-conheca.v-3 .banner-conheca__item.item-4 .big-letter {
+  left: -29px;
+}
+
+@media screen and (min-width: 992px) {
+  .banner-conheca.v-3 .banner-conheca__item.item-5 .title {
+    margin-top: -15px;
+  }
+}
+
+.banner-conheca.v-3 .banner-conheca__item.item-5 .big-letter {
+  top: 12px;
+  left: -37px;
+}
+
+@media screen and (min-width: 992px) {
+  .banner-conheca.v-3 .banner-conheca__item.item-6 .title {
+    margin-top: -45px;
+  }
+}
+
+.banner-conheca.v-3 .banner-conheca__item.item-6 .desc {
+  margin-top: 5px;
 }
 
 .banner-segredo {
@@ -9237,7 +9557,7 @@ select {
 .banner-porque__item .title .number {
   font-family: 'FH';
   font-size: 69px;
-  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-width: 1.8px;
   -webkit-text-stroke-color: black;
   color: rgba(129, 105, 157, 0);
 }
@@ -9265,6 +9585,8 @@ select {
   font-size: 34px;
   font-family: 'FH';
   margin-left: -32px;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
 }
 
 @media screen and (max-width: 768px) {

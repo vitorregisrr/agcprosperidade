@@ -66,6 +66,8 @@
                 font-size: 14px;
                 margin-bottom: 5px;
                 letter-spacing: 2px;
+                text-align: center;
+                
                 @media screen and (max-width: $bp-MD) {
                     font-size: 12px;
                 }
@@ -152,6 +154,20 @@
                     align-items: flex-start;
                 }
 
+                &.tablet {
+                    @media screen and (min-width: $bp-XL) {
+                        width: 74%;
+                    }
+                }
+
+                &.macbook{
+                    margin-top: 20px;
+
+                    @media screen and (max-width: $bp-LG){
+                        width: 120%;
+                    }
+                }
+
                 img {
                     width: 100%;
 
@@ -167,34 +183,56 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            background-color: $color-primary;
-
         }
 
         &.right {
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            background-color: $color-secondary;
-
-            .tablet {
-                @media screen and (min-width: $bp-XL) {
-                    width: 74%;
-                }
-            }
-
+            
             .content {
                 @media screen and (min-width: $bp-LG) {
                     margin-left: -60px;
                 }
             }
+        }
 
+        &.v-secondary{
+            background-color: $color-secondary;
             .nome {
                 color: $color-primary;
             }
 
             .more {
                 background-color: $color-primary;
+            }
+        }
+
+        &.v-primary{
+            background-color: $color-primary;
+            .nome {
+                color:black;
+            }
+
+            .more {
+                background-color:black;
+            }
+        }
+
+        &.v-gray{
+            background-color: #c4c4c47e;
+
+            .nome{
+               color: $color-secondary;
+            }
+
+            .more{
+                background-color: $color-secondary;
+            }
+
+            .tag{
+                font-size: 13px;
+                color: black;
             }
         }
     }

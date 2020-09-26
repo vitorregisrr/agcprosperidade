@@ -50,6 +50,47 @@
                 }
             }
         }
+
+        &.v-4 {
+            padding-bottom: 70px;
+
+            @media screen and (max-width: $bp-LG) {
+                padding-bottom: 10px;
+            }
+
+            @media screen and (max-width: $bp-MD) {
+                padding-bottom: 40px;
+            }
+
+            .title{
+                font-size: 37px;
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 29px;
+                }
+
+                .has-line{
+                    .line{
+                        width: 170%;
+
+                        @media screen and (max-width: $bp-MD){
+                            width: 140%;
+                        }
+                    }
+                }
+            }  
+
+            .solucoes-i__caption-desc {
+                margin-top: 372px;
+
+                @media screen and (max-width: $bp-LG) {
+                    margin-top: 381px;
+                }
+                @media screen and (max-width: $bp-MD) {
+                    margin-top: 0;
+                }
+            }
+        }
     }
 
     &__caption {
@@ -161,17 +202,36 @@
                         top: 58%;
                     }
                 }
+
+                &.strategy {
+                    display: block;
+                    position: relative;
+                    top: 0%;
+                    left: -10px;
+                    transform: unset;
+                    width: 200px;
+                    margin-bottom: 10px;
+
+                    @media screen and (max-width: $bp-MD){
+                        position: absolute;
+                        top: 80%;
+                        right: -34px;
+                        width: 120px;
+                        left: unset;
+                        padding-left: 10px;
+                    }
+                }
             }
 
             .has-line {
                 display: inline;
                 position: relative;
-                @keyframes slideIn130per {
+                @keyframes slideIn170per {
                     0% {
                         max-width: 0;
                     }
                     100% {
-                        max-width: 130%;
+                        max-width: 170%;
                     }
                 }
 
@@ -191,13 +251,15 @@
                     top: 50%;
                     left: 10px;
                     transform: translateY(-50%);
-                    animation: slideIn130per 2s;
+                    animation: slideIn170per 2s;
                     animation-fill-mode: forwards;
                     z-index: -1;
+                    
                     @media screen and (max-width: $bp-SM) {
                         height: 2px;
                         width: 105%;
                     }
+
                     &:after {
                         content: '';
                         position: absolute;

@@ -8061,6 +8061,58 @@ select {
   }
 }
 
+.solucoes-i__header.v-4 {
+  padding-bottom: 70px;
+}
+
+@media screen and (max-width: 992px) {
+  .solucoes-i__header.v-4 {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .solucoes-i__header.v-4 {
+    padding-bottom: 40px;
+  }
+}
+
+.solucoes-i__header.v-4 .title {
+  font-size: 37px;
+}
+
+@media screen and (max-width: 768px) {
+  .solucoes-i__header.v-4 .title {
+    font-size: 29px;
+  }
+}
+
+.solucoes-i__header.v-4 .title .has-line .line {
+  width: 170%;
+}
+
+@media screen and (max-width: 768px) {
+  .solucoes-i__header.v-4 .title .has-line .line {
+    width: 140%;
+  }
+}
+
+.solucoes-i__header.v-4 .solucoes-i__caption-desc {
+  margin-top: 372px;
+}
+
+@media screen and (max-width: 992px) {
+  .solucoes-i__header.v-4 .solucoes-i__caption-desc {
+    margin-top: 381px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .solucoes-i__header.v-4 .solucoes-i__caption-desc {
+    margin-top: 0;
+  }
+}
+
 .solucoes-i__caption {
   display: flex;
   justify-content: flex-end;
@@ -8218,17 +8270,38 @@ select {
   }
 }
 
+.solucoes-i__caption .title .ico.strategy {
+  display: block;
+  position: relative;
+  top: 0%;
+  left: -10px;
+  transform: unset;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .solucoes-i__caption .title .ico.strategy {
+    position: absolute;
+    top: 80%;
+    right: -34px;
+    width: 120px;
+    left: unset;
+    padding-left: 10px;
+  }
+}
+
 .solucoes-i__caption .title .has-line {
   display: inline;
   position: relative;
 }
 
-@keyframes slideIn130per {
+@keyframes slideIn170per {
   0% {
     max-width: 0;
   }
   100% {
-    max-width: 130%;
+    max-width: 170%;
   }
 }
 
@@ -8248,7 +8321,7 @@ select {
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
-  animation: slideIn130per 2s;
+  animation: slideIn170per 2s;
   animation-fill-mode: forwards;
   z-index: -1;
 }
@@ -8679,6 +8752,63 @@ select {
 @media screen and (max-width: 768px) {
   .banner-beneficios.v-3 .banner-beneficios__caption .has-line .line {
     width: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-beneficios.v-4 .banner-beneficios__item {
+    margin-top: 21px;
+  }
+}
+
+.banner-beneficios.v-4 .banner-beneficios__caption .title {
+  font-size: 36px;
+  padding-left: 30px;
+  letter-spacing: 5px;
+  margin-right: -200px;
+}
+
+@media screen and (max-width: 1202px) {
+  .banner-beneficios.v-4 .banner-beneficios__caption .title {
+    font-size: 25px;
+    padding-left: 0;
+    margin-left: -40px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner-beneficios.v-4 .banner-beneficios__caption .title {
+    margin-left: 0;
+  }
+}
+
+@keyframes slideIn300px {
+  0% {
+    max-width: 0;
+  }
+  100% {
+    max-width: 300px;
+  }
+}
+
+.banner-beneficios.v-4 .banner-beneficios__caption .has-line .line {
+  right: 11px;
+  animation: slideIn300px 1s;
+  animation-fill-mode: forwards;
+  width: 290px;
+}
+
+@media screen and (max-width: 1270px) {
+  .banner-beneficios.v-4 .banner-beneficios__caption .has-line .line {
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-beneficios.v-4 .banner-beneficios__caption .has-line .line {
+    width: 110px;
+    right: 6px;
   }
 }
 
@@ -9291,10 +9421,177 @@ select {
   margin-top: 5px;
 }
 
+.banner-conheca.v-4 .banner-conheca__caption .banner-conheca__title {
+  white-space: nowrap;
+}
+
+.banner-conheca.v-4 .banner-conheca__caption .has-line {
+  width: 184%;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-4 .banner-conheca__caption .has-line {
+    width: 177%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner-conheca.v-4 .banner-conheca__caption .has-line {
+    width: 120%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-conheca.v-4 .banner-conheca__caption .has-line {
+    width: 80%;
+  }
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-1 {
+  margin-top: 207px;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-4 .banner-conheca__item.item-1 {
+    margin-top: 164px;
+  }
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-1 .line-right {
+  position: absolute;
+  right: -48px;
+  bottom: -113px;
+  width: 188.6%;
+}
+
+@media screen and (max-width: 1300px) {
+  .banner-conheca.v-4 .banner-conheca__item.item-1 .line-right {
+    width: 183%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-4 .banner-conheca__item.item-1 .line-right {
+    width: 101%;
+  }
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-1 .desc {
+  margin-top: 5px;
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-1 .big-letter {
+  position: absolute;
+  top: 1px;
+  left: -25px;
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-2 {
+  margin-top: 305px;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-4 .banner-conheca__item.item-2 {
+    margin-top: 260px;
+  }
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-2 .desc {
+  margin-top: -5px;
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-2 .line-right {
+  position: absolute;
+  right: -60px;
+  bottom: -114px;
+  width: 219%;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-4 .banner-conheca__item.item-2 .line-right {
+    width: 119%;
+  }
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-2 .desc {
+  margin-top: 7px;
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-2 .big-letter {
+  position: absolute;
+  top: 1px;
+  left: -25px;
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-3 .line-left {
+  position: absolute;
+  width: 137% !important;
+  left: -21px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-4 .banner-conheca__item.item-3 .line-left {
+    width: 65% !important;
+  }
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-3 .desc {
+  margin-top: -4px;
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-3 .big-letter {
+  position: absolute;
+  top: -2px;
+  left: 1px;
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-4 .line-left {
+  position: absolute;
+  width: 127% !important;
+  left: -9px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-4 .banner-conheca__item.item-4 .line-left {
+    width: 60% !important;
+  }
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-4 .title {
+  white-space: nowrap;
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-4 .desc {
+  margin-top: 3px;
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-4 .big-letter {
+  position: absolute;
+  top: -2px;
+  left: 10px;
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-5 .desc {
+  margin-top: 10px;
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-5 .big-letter {
+  top: 5px;
+  left: -50px;
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-6 .line-vertical {
+  padding-top: 10px;
+}
+
+.banner-conheca.v-4 .banner-conheca__item.item-6 .desc {
+  margin-top: 5px;
+}
+
 .banner-segredo {
   position: relative;
   background-color: #c4c4c4;
-  padding: 50px 0 10px;
+  padding: 65px 0 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -9481,6 +9778,18 @@ select {
   text-transform: uppercase;
 }
 
+.banner-porque__header .title.lg {
+  font-size: 19px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-porque__header .title.lg {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .banner-porque__header .title {
     font-size: 14px;
@@ -9494,6 +9803,16 @@ select {
   transform: translateX(-50%);
   z-index: 1;
   width: 520px;
+}
+
+.banner-porque__header .triangle-bg.lg {
+  width: 610px;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-porque__header .triangle-bg.lg {
+    width: 520px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -9511,6 +9830,17 @@ select {
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #ffb84d;
   color: rgba(129, 105, 157, 0);
+}
+
+.banner-porque__header .quote.lg {
+  font-size: 164px;
+  margin-top: -15px;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-porque__header .quote.lg {
+    font-size: 147px;
+  }
 }
 
 @media screen and (max-width: 768px) {

@@ -28,6 +28,16 @@
             color: #fff;
             text-transform: uppercase;
 
+            &.lg{
+                font-size: 19px;
+                margin-top: 5px;
+                margin-bottom: 15px;
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 16px;
+                }
+            }
+
             @media screen and (max-width: $bp-MD){
                 font-size: 14px;
 
@@ -41,6 +51,14 @@
             transform: translateX(-50%);
             z-index: 1;
             width: 520px;
+
+            &.lg{
+                width: 610px;
+
+                @media screen and (max-width: $bp-MD){
+                    width: 520px;
+                }
+            }
 
             @media screen and (max-width: $bp-MD){
                 width: 370px;
@@ -56,6 +74,15 @@
             -webkit-text-stroke-width: 1.5px;
             -webkit-text-stroke-color: $color-primary;
             color: rgba(129,105,157, 0);
+
+            &.lg{
+                font-size: 164px;
+                margin-top: -15px;
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 147px;
+                }
+            }
 
             @media screen and (max-width: $bp-MD){
                 font-size: 114px;

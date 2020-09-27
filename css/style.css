@@ -5830,18 +5830,24 @@ select {
   }
 }
 
-.nossas-solucoes__item .nossas-solucoes__item:first-child::after {
+@media screen and (min-width: 992px) {
+  .nossas-solucoes__item.plus-only-bottom::after {
+    display: none;
+  }
+}
+
+.nossas-solucoes__item:first-child::after {
   right: 4px;
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
-  .nossas-solucoes__item .nossas-solucoes__item:first-child::after {
+  .nossas-solucoes__item:first-child::after {
     right: -6px;
   }
 }
 
 @media screen and (min-width: 2000px) {
-  .nossas-solucoes__item .nossas-solucoes__item:first-child::after {
+  .nossas-solucoes__item:first-child::after {
     right: -50px;
   }
 }

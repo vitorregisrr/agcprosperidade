@@ -195,7 +195,14 @@
             }
         }
 
-        &
+        &.plus-only-bottom{
+            &::after{
+                @media screen and (min-width: $bp-LG){
+                    display: none;
+                }
+            }
+        }
+
         &:first-child{
             &::after {
                 right: 4px;

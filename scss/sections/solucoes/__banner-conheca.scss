@@ -690,16 +690,14 @@
 
             .banner-conheca__title {
                 white-space: nowrap;
-
-                @media screen and (max-width: $bp-MD){
+                @media screen and (max-width: $bp-MD) {
                     font-size: 22px;
                 }
             }
 
             .banner-conheca__desc {
                 margin-right: -100px;
-
-                @media screen and (max-width: $bp-MD){
+                @media screen and (max-width: $bp-MD) {
                     max-width: unset;
                 }
             }
@@ -728,20 +726,27 @@
 
             &.item-1 {
                 margin-top: 167px;
+
                 @media screen and (max-width: $bp-XL) {
                     margin-top: 129px;
                 }
 
                 .line-wrapper {
-                    position: absolute;
-                    right: -33px;
-                    bottom: -113px;
-                    width: 186.4%;
+                    @media screen and (min-width: $bp-LG) {
+                        position: absolute;
+                        right: -33px;
+                        bottom: -113px;
+                        width: 186.4%;
+                    }
                     @media screen and (max-width: 1300px) {
                         width: 183%;
                     }
                     @media screen and (max-width: $bp-XL) {
                         width: 99%;
+                    }
+
+                    @media screen and (max-width: $bp-LG){
+                        width: 3px;
                     }
                 }
 
@@ -766,9 +771,13 @@
                     margin-top: -5px;
                 }
 
-                .line-wrapper{
+                .line-wrapper {
                     height: 118px;
                     bottom: -162px;
+                    @media screen and (max-width: $bp-LG) {
+                        height: 76px;
+                        bottom: -113px;
+                    }
                 }
 
                 .desc {
@@ -804,11 +813,33 @@
             }
 
             &.item-4 {
+                .caption {
+                    font-size: 15px;
+                    letter-spacing: 4.5px;
+                    font-family: 'FO';
+                    opacity: 0.7;
+                    position: absolute;
+                    top: -70px;
+                    left: 49%;
+                    color: #fff;
+                    transform: translateX(-50%);
+                    @media screen and (max-width: $bp-XL) {
+                        font-size: 12px;
+                        top: -50px;
+                    }
+                    @media screen and (max-width: $bp-LG) {
+                        font-size: 8px;
+                        letter-spacing: 2.3px;
+                        left: unset;
+                        right: -250px;
+                        top: -60px;
+                    }
+                }
+
                 .line-left {
                     position: absolute;
                     width: 162% !important;
                     left: -35px !important;
-
                     @media screen and (max-width: $bp-XL) {
                         width: 78% !important;
                     }
@@ -849,7 +880,7 @@
                     margin-top: 5px;
                 }
 
-                .big-letter{
+                .big-letter {
                     top: 1px;
                     left: -38px;
                 }

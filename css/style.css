@@ -9786,11 +9786,13 @@ select {
   }
 }
 
-.banner-conheca.v-5 .banner-conheca__item.item-1 .line-wrapper {
-  position: absolute;
-  right: -33px;
-  bottom: -113px;
-  width: 186.4%;
+@media screen and (min-width: 992px) {
+  .banner-conheca.v-5 .banner-conheca__item.item-1 .line-wrapper {
+    position: absolute;
+    right: -33px;
+    bottom: -113px;
+    width: 186.4%;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -9802,6 +9804,12 @@ select {
 @media screen and (max-width: 1200px) {
   .banner-conheca.v-5 .banner-conheca__item.item-1 .line-wrapper {
     width: 99%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner-conheca.v-5 .banner-conheca__item.item-1 .line-wrapper {
+    width: 3px;
   }
 }
 
@@ -9834,6 +9842,13 @@ select {
   bottom: -162px;
 }
 
+@media screen and (max-width: 992px) {
+  .banner-conheca.v-5 .banner-conheca__item.item-2 .line-wrapper {
+    height: 76px;
+    bottom: -113px;
+  }
+}
+
 .banner-conheca.v-5 .banner-conheca__item.item-2 .desc {
   margin-top: 7px;
 }
@@ -9864,6 +9879,35 @@ select {
   position: absolute;
   top: -2px;
   left: 1px;
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-4 .caption {
+  font-size: 15px;
+  letter-spacing: 4.5px;
+  font-family: 'FO';
+  opacity: 0.7;
+  position: absolute;
+  top: -70px;
+  left: 49%;
+  color: #fff;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-5 .banner-conheca__item.item-4 .caption {
+    font-size: 12px;
+    top: -50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner-conheca.v-5 .banner-conheca__item.item-4 .caption {
+    font-size: 8px;
+    letter-spacing: 2.3px;
+    left: unset;
+    right: -250px;
+    top: -60px;
+  }
 }
 
 .banner-conheca.v-5 .banner-conheca__item.item-4 .line-left {

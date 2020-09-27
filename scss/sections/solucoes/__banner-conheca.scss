@@ -1,28 +1,23 @@
 .banner-conheca {
     background-color: $color-primary;
     padding: 80px 0 100px;
-
-    @media screen and (max-width: $bp-LG){
+    @media screen and (max-width: $bp-LG) {
         padding: 50px 0 40px;
     }
 
     &__caption {
-        
 
         .has-line {
             position: relative;
             display: block;
             width: 184.6%;
             margin: 14px 0 30px;
-
-            @media screen and (max-width: $bp-XL){
+            @media screen and (max-width: $bp-XL) {
                 width: 178%;
             }
-
-            @media screen and (max-width: $bp-LG){
+            @media screen and (max-width: $bp-LG) {
                 width: 70%;
             }
-
             @keyframes slideIn110p {
                 0% {
                     max-width: 0;
@@ -44,15 +39,12 @@
                 animation: slideIn110p 1.4s;
                 animation-fill-mode: forwards;
                 margin-left: -15px;
-
                 @media screen and (min-width: 2000px) {
                     width: calc(100% + 50px);
                 }
-
                 @media screen and (max-width: $bp-LG) {
                     width: calc(100% + 4px);
                 }
-
                 &:after {
                     content: '';
                     position: absolute;
@@ -77,17 +69,14 @@
         line-height: 1.4;
         text-transform: uppercase;
         color: $color-secondary;
-
-        @media screen and (max-width: $bp-XL){
+        @media screen and (max-width: $bp-XL) {
             font-size: 20px;
             line-height: 1.6;
         }
-
-        @media screen and (max-width: $bp-LG){
+        @media screen and (max-width: $bp-LG) {
             font-size: 27px;
         }
-
-        @media screen and (max-width: $bp-SM){
+        @media screen and (max-width: $bp-SM) {
             font-size: 25px;
         }
     }
@@ -99,18 +88,15 @@
         text-transform: uppercase;
         margin-right: -30px;
         line-height: 1.8;
-
-        @media screen and (max-width: $bp-XL){
+        @media screen and (max-width: $bp-XL) {
             font-size: 12px;
         }
-
-        @media screen and (max-width: $bp-LG){
+        @media screen and (max-width: $bp-LG) {
             font-size: 14px;
             max-width: 300px;
             margin-bottom: 70px;
         }
-
-        @media screen and (max-width: $bp-SM){
+        @media screen and (max-width: $bp-SM) {
             font-size: 11px;
             letter-spacing: 2.1px;
             max-width: 270px;
@@ -121,25 +107,21 @@
         display: flex;
         justify-content: center;
         margin-top: -104px;
-
-        @media screen and (max-width: $bp-MD){
+        @media screen and (max-width: $bp-MD) {
             margin-top: -50px;
         }
 
         img {
             width: 60px;
             margin-right: 100px;
-
-            @media screen and (max-width: $bp-XL){
+            @media screen and (max-width: $bp-XL) {
                 width: 58px;
                 margin-right: 60px;
             }
-
-            @media screen and (max-width: $bp-MD){
+            @media screen and (max-width: $bp-MD) {
                 width: 40px;
                 margin-right: 40px;
             }
-
             &:last-child {
                 margin-right: 0;
             }
@@ -152,16 +134,14 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-
-        @media screen and (max-width: $bp-LG){
+        @media screen and (max-width: $bp-LG) {
             margin-top: 0 !important;
             margin-bottom: 100px !important;
         }
 
         &.item-1 {
             margin-top: 210px;
-
-            @media screen and (max-width: $bp-XL){
+            @media screen and (max-width: $bp-XL) {
                 margin-top: 160px;
             }
 
@@ -170,8 +150,7 @@
                 right: -50px;
                 bottom: -115px;
                 width: 268%;
-
-                @media screen and (max-width: $bp-XL){
+                @media screen and (max-width: $bp-XL) {
                     width: 147%;
                 }
             }
@@ -179,8 +158,7 @@
 
         &.item-2 {
             margin-top: 307px;
-
-            @media screen and (max-width: $bp-XL){
+            @media screen and (max-width: $bp-XL) {
                 margin-top: 255px;
             }
         }
@@ -195,21 +173,19 @@
             margin-top: 106px;
         }
 
-        &.item-3{
-            .line-left{
+        &.item-3 {
+            .line-left {
                 width: 166% !important;
-
-                @media screen and (max-width: $bp-XL){
+                @media screen and (max-width: $bp-XL) {
                     width: 92% !important;
                 }
             }
         }
 
-        &.item-4{
-            .line-left{
+        &.item-4 {
+            .line-left {
                 width: 226% !important;
-
-                @media screen and (max-width: $bp-XL){
+                @media screen and (max-width: $bp-XL) {
                     width: 127% !important;
                 }
             }
@@ -222,7 +198,6 @@
             transform: translateX(100%);
             width: 184.6%;
             margin: 14px 0 30px;
-
             @keyframes slideIn110p {
                 0% {
                     max-width: 0;
@@ -252,15 +227,12 @@
                 animation: slideIn110p 0.8s;
                 animation-fill-mode: forwards;
                 margin-left: -15px;
-
                 @media screen and (min-width: 2000px) {
                     width: calc(100% + 50px);
                 }
-
                 @media screen and (max-width: $bp-LG) {
                     width: calc(100% + 4px);
                 }
-
                 &:after {
                     content: '';
                     position: absolute;
@@ -282,7 +254,7 @@
                 top: unset;
                 bottom: -120px;
                 transform: translate(-50,0);
-                
+
                 .line {
                     width: 100%;
                     height: 100%;
@@ -292,8 +264,8 @@
                     top: unset;
                     transform: unset;
                     animation-fill-mode: forwards;
-                    
-                    &::after{
+
+                    &::after {
                         left: 50%;
                         top: unset;
                         transform: translateX(-50%);
@@ -315,10 +287,10 @@
                     position: relative;
                     top: unset;
                     transform: unset;
-                  &::after{
-                      right: unset;
-                      left: 0;
-                  }
+                    &::after {
+                        right: unset;
+                        left: 0;
+                    }
                 }
             }
         }
@@ -369,56 +341,53 @@
         }
     }
 
-    &.v-2{
-        .banner-conheca__item{
-            &.item-1{
+    &.v-2 {
+        .banner-conheca__item {
+            &.item-1 {
                 .line-right {
                     position: absolute;
                     right: -90px;
                     bottom: -115px;
                     width: 232%;
-    
-                    @media screen and (max-width: $bp-XL){
+                    @media screen and (max-width: $bp-XL) {
                         width: 119%;
                     }
                 }
             }
 
-            &.item-3{
+            &.item-3 {
                 .line-left {
                     position: absolute;
                     width: 118% !important;
                     left: -27px !important;
-    
-                    @media screen and (max-width: $bp-XL){
+                    @media screen and (max-width: $bp-XL) {
                         width: 119%;
                     }
                 }
             }
-            &.item-4{
+            &.item-4 {
                 .line-left {
                     position: absolute;
                     width: 165% !important;
                     left: -27px !important;
-    
-                    @media screen and (max-width: $bp-XL){
+                    @media screen and (max-width: $bp-XL) {
                         width: 119%;
                     }
                 }
 
-                .big-letter{
+                .big-letter {
                     left: -29px;
                 }
             }
-            &.item-5{
-                
-                .big-letter{
+            &.item-5 {
+
+                .big-letter {
                     left: -29px;
                 }
             }
-            &.item-6{
-                
-                .big-letter{
+            &.item-6 {
+
+                .big-letter {
                     left: -17px;
                     top: 7px;
                 }
@@ -426,35 +395,31 @@
         }
     }
 
-    &.v-3{
-        .banner-conheca__caption{
-           
-            .banner-conheca__title{
+    &.v-3 {
+        .banner-conheca__caption {
+
+            .banner-conheca__title {
                 white-space: nowrap;
             }
 
-            .has-line{
+            .has-line {
                 width: 187%;
-
-                @media screen and (max-width: $bp-XL){
+                @media screen and (max-width: $bp-XL) {
                     width: 182%;
                 }
-
-                @media screen and (max-width: $bp-LG){
+                @media screen and (max-width: $bp-LG) {
                     width: 120%;
                 }
-
-                @media screen and (max-width: $bp-MD){
+                @media screen and (max-width: $bp-MD) {
                     width: 80%;
                 }
             }
         }
 
-        .banner-conheca__item{
-            &.item-1{
+        .banner-conheca__item {
+            &.item-1 {
                 margin-top: 187px;
-
-                @media screen and (max-width: $bp-XL){
+                @media screen and (max-width: $bp-XL) {
                     margin-top: 144px;
                 }
 
@@ -463,27 +428,25 @@
                     right: -60px;
                     bottom: -114px;
                     width: 256%;
-    
-                    @media screen and (max-width: $bp-XL){
+                    @media screen and (max-width: $bp-XL) {
                         width: 140%;
                     }
                 }
 
-                .big-letter{
+                .big-letter {
                     position: absolute;
                     top: 18px;
                     left: -34px;
                 }
             }
 
-            &.item-2{
+            &.item-2 {
                 margin-top: 305px;
-
-                @media screen and (max-width: $bp-XL){
+                @media screen and (max-width: $bp-XL) {
                     margin-top: 270px;
                 }
 
-                .desc{
+                .desc {
                     margin-top: -5px;
                 }
 
@@ -492,116 +455,109 @@
                     right: -60px;
                     bottom: -114px;
                     width: 219%;
-    
-                    @media screen and (max-width: $bp-XL){
+                    @media screen and (max-width: $bp-XL) {
                         width: 119%;
                     }
                 }
 
-                .big-letter{
+                .big-letter {
                     position: absolute;
                     top: -2px;
                     left: 11px;
                 }
             }
 
-            &.item-3{
+            &.item-3 {
                 .line-left {
                     position: absolute;
                     width: 147% !important;
                     left: -21px !important;
-    
-                    @media screen and (max-width: $bp-XL){
+                    @media screen and (max-width: $bp-XL) {
                         width: 74% !important;
                     }
                 }
 
-                .desc{
+                .desc {
                     margin-top: -4px;
                 }
 
-                .big-letter{
+                .big-letter {
                     position: absolute;
                     top: -4px;
                     left: -8px;
                 }
             }
 
-            &.item-4{
+            &.item-4 {
                 .line-left {
                     position: absolute;
                     width: 151% !important;
                     left: -35px !important;
-    
-                    @media screen and (max-width: $bp-XL){
+                    @media screen and (max-width: $bp-XL) {
                         width: 77% !important;
                     }
                 }
 
-                .desc{
+                .desc {
                     margin-top: 3px;
                 }
 
-                .big-letter{
+                .big-letter {
                     left: -29px;
                 }
             }
-            &.item-5{
-                .title{
-                    @media screen and (min-width: $bp-LG){
+            &.item-5 {
+                .title {
+                    @media screen and (min-width: $bp-LG) {
                         margin-top: -15px;
                     }
                 }
 
-                .big-letter{
+                .big-letter {
                     top: 12px;
                     left: -37px;
                 }
             }
-            &.item-6{
-                
-                .title{
-                    @media screen and (min-width: $bp-LG){
+            &.item-6 {
+
+                .title {
+                    @media screen and (min-width: $bp-LG) {
                         margin-top: -45px;
                     }
                 }
 
-                .desc{
+                .desc {
                     margin-top: 5px;
                 }
             }
         }
     }
 
-    &.v-4{
-        .banner-conheca__caption{
-           
-            .banner-conheca__title{
+    &.v-4 {
+        .banner-conheca__caption {
+
+            .banner-conheca__title {
                 white-space: nowrap;
             }
 
-            .has-line{
+            .has-line {
                 width: 184%;
-
-                @media screen and (max-width: $bp-XL){
+                @media screen and (max-width: $bp-XL) {
                     width: 177%;
                 }
-
-                @media screen and (max-width: $bp-LG){
+                @media screen and (max-width: $bp-LG) {
                     width: 120%;
                 }
-
-                @media screen and (max-width: $bp-MD){
+                @media screen and (max-width: $bp-MD) {
                     width: 80%;
                 }
             }
         }
 
-        .banner-conheca__item{
-            &.item-1{
+        .banner-conheca__item {
+            &.item-1 {
                 margin-top: 207px;
-
-                @media screen and (max-width: $bp-XL){
+                @media screen and (max-width: $bp-XL) {
                     margin-top: 164px;
                 }
 
@@ -610,35 +566,32 @@
                     right: -48px;
                     bottom: -113px;
                     width: 188.6%;
-                    
-                    @media screen and (max-width: 1300px){
+                    @media screen and (max-width: 1300px) {
                         width: 183%;
                     }
-
-                    @media screen and (max-width: $bp-XL){
+                    @media screen and (max-width: $bp-XL) {
                         width: 101%;
                     }
                 }
 
-                .desc{
+                .desc {
                     margin-top: 5px;
                 }
 
-                .big-letter{
+                .big-letter {
                     position: absolute;
                     top: 1px;
                     left: -25px;
                 }
             }
 
-            &.item-2{
+            &.item-2 {
                 margin-top: 305px;
-
-                @media screen and (max-width: $bp-XL){
+                @media screen and (max-width: $bp-XL) {
                     margin-top: 260px;
                 }
 
-                .desc{
+                .desc {
                     margin-top: -5px;
                 }
 
@@ -647,89 +600,258 @@
                     right: -60px;
                     bottom: -114px;
                     width: 219%;
-    
-                    @media screen and (max-width: $bp-XL){
+                    @media screen and (max-width: $bp-XL) {
                         width: 119%;
                     }
                 }
 
-                .desc{
+                .desc {
                     margin-top: 7px;
                 }
 
-                .big-letter{
+                .big-letter {
                     position: absolute;
                     top: 1px;
                     left: -25px;
                 }
             }
 
-            &.item-3{
+            &.item-3 {
                 .line-left {
                     position: absolute;
                     width: 137% !important;
                     left: -21px !important;
-    
-                    @media screen and (max-width: $bp-XL){
+                    @media screen and (max-width: $bp-XL) {
                         width: 65% !important;
                     }
                 }
 
-                .desc{
+                .desc {
                     margin-top: -4px;
                 }
 
-                .big-letter{
+                .big-letter {
                     position: absolute;
                     top: -2px;
                     left: 1px;
                 }
             }
 
-            &.item-4{
+            &.item-4 {
                 .line-left {
                     position: absolute;
                     width: 127% !important;
                     left: -9px !important;
-    
-                    @media screen and (max-width: $bp-XL){
+                    @media screen and (max-width: $bp-XL) {
                         width: 60% !important;
                     }
-                    
+
                 }
 
-                .title{
+                .title {
                     white-space: nowrap;
                 }
 
-                .desc{
+                .desc {
                     margin-top: 3px;
                 }
 
-                .big-letter{
+                .big-letter {
                     position: absolute;
                     top: -2px;
                     left: 10px;
                 }
             }
-            &.item-5{
+            &.item-5 {
 
-                .desc{
-                    margin-top:10px;
+                .desc {
+                    margin-top: 10px;
                 }
 
-                .big-letter{
+                .big-letter {
                     top: 5px;
                     left: -50px;
                 }
             }
-            &.item-6{
-                .line-vertical{
+            &.item-6 {
+                .line-vertical {
                     padding-top: 10px;
                 }
 
-                .desc{
+                .desc {
                     margin-top: 5px;
+                }
+            }
+        }
+    }
+
+    &.v-5 {
+        .banner-conheca__caption {
+
+            .banner-conheca__title {
+                white-space: nowrap;
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 22px;
+                }
+            }
+
+            .banner-conheca__desc {
+                margin-right: -100px;
+
+                @media screen and (max-width: $bp-MD){
+                    max-width: unset;
+                }
+            }
+
+            .has-line {
+                width: 184%;
+                @media screen and (max-width: $bp-XL) {
+                    width: 177%;
+                }
+                @media screen and (max-width: $bp-LG) {
+                    width: 120%;
+                }
+                @media screen and (max-width: $bp-MD) {
+                    width: 80%;
+                }
+            }
+        }
+
+        .banner-conheca__item {
+
+            &.item-3,
+            &.item-4,
+            &.item-5 {
+                margin-top: 147px;
+            }
+
+            &.item-1 {
+                margin-top: 167px;
+                @media screen and (max-width: $bp-XL) {
+                    margin-top: 129px;
+                }
+
+                .line-wrapper {
+                    position: absolute;
+                    right: -33px;
+                    bottom: -113px;
+                    width: 186.4%;
+                    @media screen and (max-width: 1300px) {
+                        width: 183%;
+                    }
+                    @media screen and (max-width: $bp-XL) {
+                        width: 99%;
+                    }
+                }
+
+                .desc {
+                    margin-top: 5px;
+                }
+
+                .big-letter {
+                    position: absolute;
+                    top: 1px;
+                    left: -25px;
+                }
+            }
+
+            &.item-2 {
+                margin-top: 260px;
+                @media screen and (max-width: $bp-XL) {
+                    margin-top: 220px;
+                }
+
+                .desc {
+                    margin-top: -5px;
+                }
+
+                .line-wrapper{
+                    height: 118px;
+                    bottom: -162px;
+                }
+
+                .desc {
+                    margin-top: 7px;
+                }
+
+                .big-letter {
+                    position: absolute;
+                    top: 1px;
+                    left: -44px;
+                }
+            }
+
+            &.item-3 {
+                .line-left {
+                    position: absolute;
+                    width: 142% !important;
+                    left: -21px !important;
+                    @media screen and (max-width: $bp-XL) {
+                        width: 72% !important;
+                    }
+                }
+
+                .desc {
+                    margin-top: -4px;
+                }
+
+                .big-letter {
+                    position: absolute;
+                    top: -2px;
+                    left: 1px;
+                }
+            }
+
+            &.item-4 {
+                .line-left {
+                    position: absolute;
+                    width: 162% !important;
+                    left: -35px !important;
+
+                    @media screen and (max-width: $bp-XL) {
+                        width: 78% !important;
+                    }
+
+                }
+
+                .title {
+                    white-space: nowrap;
+                }
+
+                .desc {
+                    margin-top: -4px;
+                }
+
+                .big-letter {
+                    position: absolute;
+                    top: -2px;
+                    left: -12px;
+                }
+            }
+            &.item-5 {
+
+                .desc {
+                    margin-top: 10px;
+                }
+
+                .big-letter {
+                    top: 3px;
+                    left: -50px;
+                }
+            }
+            &.item-6 {
+                .line-vertical {
+                    padding-top: 10px;
+                }
+
+                .desc {
+                    margin-top: 5px;
+                }
+
+                .big-letter{
+                    top: 1px;
+                    left: -38px;
                 }
             }
         }

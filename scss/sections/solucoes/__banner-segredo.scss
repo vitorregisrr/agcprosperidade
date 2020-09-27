@@ -74,6 +74,7 @@
                 }
 
                 .title{
+                    font-size: 18px;
                     margin-bottom: 2px;
                 }
             }
@@ -99,14 +100,14 @@
 
             .title {
                 font-family: 'FB';
-                font-size: 19px;
+                font-size: 26px;
                 letter-spacing: 4px;
                 color: $color-primary;
                 text-transform: uppercase;
                 margin-bottom: 13px;
 
                 @media screen and (max-width: $bp-MD){
-                    font-size: 18px;
+                    font-size: 20px;
                 }
             }
 

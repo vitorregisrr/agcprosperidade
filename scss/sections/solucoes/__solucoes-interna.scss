@@ -91,6 +91,47 @@
                 }
             }
         }
+
+        &.v-5 {
+            padding-bottom: 70px;
+
+            @media screen and (max-width: $bp-LG) {
+                padding-bottom: 10px;
+            }
+
+            @media screen and (max-width: $bp-MD) {
+                padding-bottom: 40px;
+            }
+
+            .title{
+                font-size: 32px;
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 28px;
+                }
+
+                .has-line{
+                    .line{
+                        width: 124%;
+
+                        @media screen and (max-width: $bp-MD){
+                            width: 108%;
+                        }
+                    }
+                }
+            }  
+
+            .solucoes-i__caption-desc {
+                margin-top: 352px;
+
+                @media screen and (max-width: $bp-XL) {
+                    margin-top: 337px;
+                }
+                @media screen and (max-width: $bp-MD) {
+                    margin-top: 0;
+                }
+            }
+        }
     }
 
     &__caption {
@@ -216,6 +257,32 @@
                         position: absolute;
                         top: 80%;
                         right: -34px;
+                        width: 120px;
+                        left: unset;
+                        padding-left: 10px;
+                    }
+                }
+
+                &.share {
+                    display: block;
+                    position: relative;
+                    top: 50px;
+                    left: -53px;
+                    transform: unset;
+                    width: 180px;
+                    margin-bottom: 10px;
+                    margin-top: -70px;
+
+                    @media screen and (max-width: $bp-XL){
+                        width: 160px;
+                        left: -27px;
+                    }
+
+                    @media screen and (max-width: $bp-MD){
+                        right: -170px;
+                        top: 0;
+                        margin-bottom: -26px;
+                        margin-top: 0;
                         width: 120px;
                         left: unset;
                         padding-left: 10px;

@@ -8113,6 +8113,58 @@ select {
   }
 }
 
+.solucoes-i__header.v-5 {
+  padding-bottom: 70px;
+}
+
+@media screen and (max-width: 992px) {
+  .solucoes-i__header.v-5 {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .solucoes-i__header.v-5 {
+    padding-bottom: 40px;
+  }
+}
+
+.solucoes-i__header.v-5 .title {
+  font-size: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .solucoes-i__header.v-5 .title {
+    font-size: 28px;
+  }
+}
+
+.solucoes-i__header.v-5 .title .has-line .line {
+  width: 124%;
+}
+
+@media screen and (max-width: 768px) {
+  .solucoes-i__header.v-5 .title .has-line .line {
+    width: 108%;
+  }
+}
+
+.solucoes-i__header.v-5 .solucoes-i__caption-desc {
+  margin-top: 352px;
+}
+
+@media screen and (max-width: 1200px) {
+  .solucoes-i__header.v-5 .solucoes-i__caption-desc {
+    margin-top: 337px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .solucoes-i__header.v-5 .solucoes-i__caption-desc {
+    margin-top: 0;
+  }
+}
+
 .solucoes-i__caption {
   display: flex;
   justify-content: flex-end;
@@ -8291,6 +8343,36 @@ select {
   }
 }
 
+.solucoes-i__caption .title .ico.share {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: -53px;
+  transform: unset;
+  width: 180px;
+  margin-bottom: 10px;
+  margin-top: -70px;
+}
+
+@media screen and (max-width: 1200px) {
+  .solucoes-i__caption .title .ico.share {
+    width: 160px;
+    left: -27px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .solucoes-i__caption .title .ico.share {
+    right: -170px;
+    top: 0;
+    margin-bottom: -26px;
+    margin-top: 0;
+    width: 120px;
+    left: unset;
+    padding-left: 10px;
+  }
+}
+
 .solucoes-i__caption .title .has-line {
   display: inline;
   position: relative;
@@ -8387,7 +8469,7 @@ select {
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
-  max-width: 680px;
+  max-width: 700px;
   letter-spacing: 2px;
   line-height: 2;
   margin: 0 auto;
@@ -8809,6 +8891,66 @@ select {
   .banner-beneficios.v-4 .banner-beneficios__caption .has-line .line {
     width: 110px;
     right: 6px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-beneficios.v-5 .banner-beneficios__item {
+    margin-top: 21px;
+  }
+  .banner-beneficios.v-5 .banner-beneficios__item.is-top {
+    margin-top: 45px;
+  }
+}
+
+.banner-beneficios.v-5 .banner-beneficios__caption .title {
+  font-size: 40px;
+  padding-left: 50px;
+  letter-spacing: 5px;
+  margin-right: -200px;
+}
+
+@media screen and (max-width: 1202px) {
+  .banner-beneficios.v-5 .banner-beneficios__caption .title {
+    font-size: 35px;
+    padding-left: 0;
+    margin-left: -40px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner-beneficios.v-5 .banner-beneficios__caption .title {
+    margin-left: 0;
+  }
+}
+
+@keyframes slideIn300px {
+  0% {
+    max-width: 0;
+  }
+  100% {
+    max-width: 300px;
+  }
+}
+
+.banner-beneficios.v-5 .banner-beneficios__caption .has-line .line {
+  right: 11px;
+  animation: slideIn300px 1s;
+  animation-fill-mode: forwards;
+  width: 230px;
+}
+
+@media screen and (max-width: 1270px) {
+  .banner-beneficios.v-5 .banner-beneficios__caption .has-line .line {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-beneficios.v-5 .banner-beneficios__caption .has-line .line {
+    width: 80px;
+    right: 9px;
   }
 }
 
@@ -9588,6 +9730,190 @@ select {
   margin-top: 5px;
 }
 
+.banner-conheca.v-5 .banner-conheca__caption .banner-conheca__title {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-conheca.v-5 .banner-conheca__caption .banner-conheca__title {
+    font-size: 22px;
+  }
+}
+
+.banner-conheca.v-5 .banner-conheca__caption .banner-conheca__desc {
+  margin-right: -100px;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-conheca.v-5 .banner-conheca__caption .banner-conheca__desc {
+    max-width: unset;
+  }
+}
+
+.banner-conheca.v-5 .banner-conheca__caption .has-line {
+  width: 184%;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-5 .banner-conheca__caption .has-line {
+    width: 177%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner-conheca.v-5 .banner-conheca__caption .has-line {
+    width: 120%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-conheca.v-5 .banner-conheca__caption .has-line {
+    width: 80%;
+  }
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-3, .banner-conheca.v-5 .banner-conheca__item.item-4, .banner-conheca.v-5 .banner-conheca__item.item-5 {
+  margin-top: 147px;
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-1 {
+  margin-top: 167px;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-5 .banner-conheca__item.item-1 {
+    margin-top: 129px;
+  }
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-1 .line-wrapper {
+  position: absolute;
+  right: -33px;
+  bottom: -113px;
+  width: 186.4%;
+}
+
+@media screen and (max-width: 1300px) {
+  .banner-conheca.v-5 .banner-conheca__item.item-1 .line-wrapper {
+    width: 183%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-5 .banner-conheca__item.item-1 .line-wrapper {
+    width: 99%;
+  }
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-1 .desc {
+  margin-top: 5px;
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-1 .big-letter {
+  position: absolute;
+  top: 1px;
+  left: -25px;
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-2 {
+  margin-top: 260px;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-5 .banner-conheca__item.item-2 {
+    margin-top: 220px;
+  }
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-2 .desc {
+  margin-top: -5px;
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-2 .line-wrapper {
+  height: 118px;
+  bottom: -162px;
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-2 .desc {
+  margin-top: 7px;
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-2 .big-letter {
+  position: absolute;
+  top: 1px;
+  left: -44px;
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-3 .line-left {
+  position: absolute;
+  width: 142% !important;
+  left: -21px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-5 .banner-conheca__item.item-3 .line-left {
+    width: 72% !important;
+  }
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-3 .desc {
+  margin-top: -4px;
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-3 .big-letter {
+  position: absolute;
+  top: -2px;
+  left: 1px;
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-4 .line-left {
+  position: absolute;
+  width: 162% !important;
+  left: -35px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-conheca.v-5 .banner-conheca__item.item-4 .line-left {
+    width: 78% !important;
+  }
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-4 .title {
+  white-space: nowrap;
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-4 .desc {
+  margin-top: -4px;
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-4 .big-letter {
+  position: absolute;
+  top: -2px;
+  left: -12px;
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-5 .desc {
+  margin-top: 10px;
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-5 .big-letter {
+  top: 3px;
+  left: -50px;
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-6 .line-vertical {
+  padding-top: 10px;
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-6 .desc {
+  margin-top: 5px;
+}
+
+.banner-conheca.v-5 .banner-conheca__item.item-6 .big-letter {
+  top: 1px;
+  left: -38px;
+}
+
 .banner-segredo {
   position: relative;
   background-color: #c4c4c4;
@@ -9680,6 +10006,7 @@ select {
 }
 
 .banner-segredo__item.sm .content .title {
+  font-size: 18px;
   margin-bottom: 2px;
 }
 
@@ -9706,7 +10033,7 @@ select {
 
 .banner-segredo__item .content .title {
   font-family: 'FB';
-  font-size: 19px;
+  font-size: 26px;
   letter-spacing: 4px;
   color: #ffb84d;
   text-transform: uppercase;
@@ -9715,7 +10042,7 @@ select {
 
 @media screen and (max-width: 768px) {
   .banner-segredo__item .content .title {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 

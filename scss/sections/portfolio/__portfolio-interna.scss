@@ -117,14 +117,14 @@
 
             }
             .more {
-                font-size: 15px;
+                font-size: 14px;
                 letter-spacing: 1.4px;
                 padding: 4px 12px;
                 font-family: 'FB';
                 color: #fff !important;
                 background-color: black;
                 border-radius: 15px;
-                text-transform: lowercase;
+                text-transform: uppercase;
 
                 @media screen and (max-width: $bp-MD) {
                     font-size: 15px;

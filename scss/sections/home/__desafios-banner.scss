@@ -182,6 +182,8 @@
         }
 
         .more{
+            display: flex;
+            align-items: center;
             order: 4;
             background-color: $color-secondary;
             text-transform: uppercase;
@@ -196,6 +198,12 @@
             @media screen and (min-width: 2000px){
                 font-size: 14px;
             }
+        }
+
+        .img-wrapper{
+            display: flex;
+            align-items: center;
+            height: 110px;
         }
 
         .img {
@@ -219,6 +227,7 @@
             
             &.sm {
                 width: 70px;
+                margin-bottom: -1px;
 
                 @media screen and (min-width: 2000px){
                     width: 85px;

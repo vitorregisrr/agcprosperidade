@@ -82,7 +82,10 @@
         $('#desafios-boxes').show();
         var target = $(this).attr('data-target');
         $(target).addClass('active');
-        $(target).siblings().removeClass('active');
+
+        if(window.innerWidth < 992){
+            $(target).siblings().removeClass('active');
+        }
     });
 
     $('[data-toggle="popup-contact"]').click( function(e){

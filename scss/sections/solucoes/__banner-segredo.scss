@@ -54,6 +54,13 @@
             z-index: 1;
         }
 
+        &.xl{
+            .content{
+                min-height: 305px;
+            }
+        }
+        
+
         &.sm{
             margin-bottom: 110px;
 

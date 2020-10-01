@@ -198,6 +198,10 @@
             .title{
                 padding-left: 40px;
                 letter-spacing: 5px;
+                
+                @media screen and (min-width: $bp-LG){
+                    margin-bottom: 50px;
+                }
             }
 
             @keyframes slideIn300px {

@@ -8061,12 +8061,12 @@ select {
 }
 
 .solucoes-i__header.v-3 .solucoes-i__caption-desc {
-  margin-top: 449px;
+  margin-top: 274px;
 }
 
 @media screen and (max-width: 992px) {
   .solucoes-i__header.v-3 .solucoes-i__caption-desc {
-    margin-top: 381px;
+    margin-top: 234px;
   }
 }
 
@@ -8282,8 +8282,8 @@ select {
 }
 
 .solucoes-i__caption .title .ico.consulting {
-  top: 47%;
-  width: 190px;
+  top: 48%;
+  width: 160px;
   left: -100px;
 }
 
@@ -8310,8 +8310,8 @@ select {
 }
 
 .solucoes-i__caption .title .ico.equipe {
-  top: 58%;
-  width: 180px;
+  top: 19%;
+  width: 150px;
   left: -100px;
 }
 
@@ -8772,6 +8772,12 @@ select {
 .banner-beneficios.v-2 .banner-beneficios__caption .title {
   padding-left: 40px;
   letter-spacing: 5px;
+}
+
+@media screen and (min-width: 992px) {
+  .banner-beneficios.v-2 .banner-beneficios__caption .title {
+    margin-bottom: 50px;
+  }
 }
 
 @keyframes slideIn300px {
@@ -10039,6 +10045,10 @@ select {
   z-index: 1;
 }
 
+.banner-segredo__item.xl .content {
+  min-height: 305px;
+}
+
 .banner-segredo__item.sm {
   margin-bottom: 110px;
 }
@@ -10329,7 +10339,7 @@ select {
 .banner-porque__item .desc {
   font-size: 13px;
   letter-spacing: 1.1px;
-  text-transform: lowercase;
+  text-transform: unset;
   max-width: 220px;
   margin: 0 auto;
   line-height: 1.5;
@@ -11139,11 +11149,25 @@ select {
   }
 }
 
+.banner-newsletter .content .desc {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  color: #fff;
+  max-width: 200px;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-newsletter .content .desc {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
 .banner-newsletter .content .title {
   font-family: 'FB';
   font-size: 28px;
   letter-spacing: 3.5px;
-  margin-bottom: 27px;
+  margin-bottom: 7px;
   color: #fff;
   text-transform: uppercase;
 }
@@ -11151,7 +11175,6 @@ select {
 @media screen and (max-width: 992px) {
   .banner-newsletter .content .title {
     font-size: 25px;
-    margin-bottom: 43px;
     text-align: center;
   }
 }
@@ -11415,6 +11438,16 @@ select {
   line-height: 1.5;
 }
 
+.banner-campanha-1.v-sm .link {
+  font-size: 12px !important;
+  margin-left: 5px !important;
+  white-space: nowrap;
+}
+
+.banner-campanha-1.v-sm .line {
+  width: 18% !important;
+}
+
 @media screen and (max-width: 768px) {
   .banner-campanha-1 {
     padding-bottom: 20px;
@@ -11441,6 +11474,7 @@ select {
   display: flex;
   align-items: center;
   position: relative;
+  padding-top: 10px;
 }
 
 .banner-campanha-1 .line-wrapper .link {
@@ -11462,7 +11496,7 @@ select {
 .banner-campanha-1 .line-wrapper .line {
   position: relative;
   height: 2.4px;
-  width: 90%;
+  width: 54%;
   background-color: #fff;
   max-width: 0;
   animation: slideIn100perc 3s;

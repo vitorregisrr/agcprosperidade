@@ -4142,6 +4142,27 @@ select {
   opacity: 0;
 }
 
+.desafios-boxes__item .close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  background-color: transparent;
+  background: none;
+  border: none;
+  font-family: 'FM';
+  opacity: 1;
+  font-size: 14px;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .desafios-boxes__item .close {
+    top: 12px;
+    right: 15px;
+    font-size: 13px;
+  }
+}
+
 @media screen and (min-width: 1400px) {
   .desafios-boxes__item {
     padding: 36px 34px 26px 35px;
@@ -10045,8 +10066,10 @@ select {
   z-index: 1;
 }
 
-.banner-segredo__item.xl .content {
-  min-height: 305px;
+@media screen and (min-width: 992px) {
+  .banner-segredo__item.xl .content {
+    min-height: 305px;
+  }
 }
 
 .banner-segredo__item.sm {

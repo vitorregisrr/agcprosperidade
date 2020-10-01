@@ -56,7 +56,9 @@
 
         &.xl{
             .content{
-                min-height: 305px;
+                @media screen and (min-width: $bp-LG){
+                    min-height: 305px;
+                }
             }
         }
         

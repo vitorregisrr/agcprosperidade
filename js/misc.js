@@ -87,6 +87,9 @@
             $(target).siblings().removeClass('active');
         }
     });
+    $('.desafios-boxes__item .close').click( function(){
+        $(this).parent().removeClass('active');
+    });
 
     $('[data-toggle="popup-contact"]').click( function(e){
         e.preventDefault();

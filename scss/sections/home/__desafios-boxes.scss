@@ -35,6 +35,25 @@
         font-size: 15px;
         opacity: 0;
 
+        .close{
+            position: absolute;
+            top: 18px;
+            right: 20px;
+            background-color: transparent;
+            background: none;
+            border: none;
+            font-family: 'FM';
+            opacity: 1;
+            font-size: 14px;
+            color: #fff;
+
+            @media screen and (max-width: $bp-MD){
+                top: 12px;
+                right: 15px;
+                font-size: 13px;
+            }
+        }
+
         @media screen and (min-width: 1400px){
             padding: 36px 34px 26px 35px;
         }

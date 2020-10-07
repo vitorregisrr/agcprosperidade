@@ -38,6 +38,7 @@
 
         @media screen and (max-width: $bp-MD){
             line-height: 1.5;
+            font-size: 22px;
             margin-bottom: 10px;
         }
     }
@@ -58,6 +59,7 @@
             font-size: 18px;
             letter-spacing: 3.5px;
             margin-left: 15px;
+            text-align: center;
 
             &.sm{
                 font-size: 14px;
@@ -75,6 +77,7 @@
 
             @media screen and (max-width: $bp-LG){
                 height: 1.6px;
+                width: 20%;
             }
 
             &:after {

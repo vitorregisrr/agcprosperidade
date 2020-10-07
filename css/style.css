@@ -2313,6 +2313,7 @@ select {
   .blog-interna__body .header {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 20px;
   }
 }
 
@@ -8354,7 +8355,7 @@ select {
   .solucoes-i__caption .title .ico.equipe {
     width: 100px;
     right: -36px;
-    top: 58%;
+    top: 20%;
   }
 }
 
@@ -10647,6 +10648,7 @@ select {
 .portfolio-pg__item-img {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .portfolio-pg__item-img img {
@@ -11489,6 +11491,7 @@ select {
 @media screen and (max-width: 768px) {
   .banner-campanha-1 .title {
     line-height: 1.5;
+    font-size: 22px;
     margin-bottom: 10px;
   }
 }
@@ -11510,6 +11513,7 @@ select {
   font-size: 18px;
   letter-spacing: 3.5px;
   margin-left: 15px;
+  text-align: center;
 }
 
 .banner-campanha-1 .line-wrapper .link.sm {
@@ -11529,6 +11533,7 @@ select {
 @media screen and (max-width: 992px) {
   .banner-campanha-1 .line-wrapper .line {
     height: 1.6px;
+    width: 20%;
   }
 }
 
@@ -11570,6 +11575,13 @@ select {
     font-size: 14px !important;
     letter-spacing: 3px !important;
     margin-bottom: 0px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner-campanha-2 .maintitle {
+    font-size: 23px !important;
+    margin-bottom: 10px !important;
   }
 }
 

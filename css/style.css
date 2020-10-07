@@ -3270,7 +3270,7 @@ select {
 
 @media screen and (max-width: 768px) {
   .home-tree__caption .title {
-    font-size: 34px;
+    font-size: 30px;
     letter-spacing: 6px;
     margin-bottom: 20px;
   }
@@ -3278,7 +3278,10 @@ select {
 
 @media screen and (max-width: 430px) {
   .home-tree__caption .title {
-    font-size: 38px;
+    font-size: 28px;
+    line-height: 1.4;
+    padding-right: 0;
+    margin-top: 10px;
   }
 }
 
@@ -3329,31 +3332,31 @@ select {
   }
 }
 
-.home-tree__caption .desc span {
+.home-tree__caption .desc .phrase-2 {
   display: flex;
   flex-wrap: nowrap;
   margin-top: 24px;
 }
 
 @media screen and (max-width: 1200px) {
-  .home-tree__caption .desc span {
+  .home-tree__caption .desc .phrase-2 {
     margin-top: 17px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .home-tree__caption .desc span {
+  .home-tree__caption .desc .phrase-2 {
     margin-top: 1.3px;
   }
 }
 
 @media screen and (max-width: 444px) {
-  .home-tree__caption .desc span {
+  .home-tree__caption .desc .phrase-2 {
     flex-direction: column;
   }
 }
 
-.home-tree__caption .desc span .line {
+.home-tree__caption .desc .phrase-2 .line {
   position: relative;
   display: inline-block;
   width: 0;
@@ -3378,51 +3381,51 @@ select {
 }
 
 @media screen and (min-width: 2000px) {
-  .home-tree__caption .desc span .line {
+  .home-tree__caption .desc .phrase-2 .line {
     max-width: 200px;
     margin-bottom: 7px;
   }
 }
 
 @media screen and (max-width: 1300px) {
-  .home-tree__caption .desc span .line {
+  .home-tree__caption .desc .phrase-2 .line {
     max-width: 70px;
   }
 }
 
 @media screen and (max-width: 1230px) {
-  .home-tree__caption .desc span .line {
+  .home-tree__caption .desc .phrase-2 .line {
     max-width: 50px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .home-tree__caption .desc span .line {
+  .home-tree__caption .desc .phrase-2 .line {
     max-width: 105px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .home-tree__caption .desc span .line {
+  .home-tree__caption .desc .phrase-2 .line {
     max-width: 90px;
     height: 1.5px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .home-tree__caption .desc span .line {
+  .home-tree__caption .desc .phrase-2 .line {
     max-width: 50px;
     height: 1.5px;
   }
 }
 
 @media screen and (max-width: 444px) {
-  .home-tree__caption .desc span .line {
+  .home-tree__caption .desc .phrase-2 .line {
     max-width: 160px;
   }
 }
 
-.home-tree__caption .desc span .line:after {
+.home-tree__caption .desc .phrase-2 .line:after {
   content: '';
   position: absolute;
   right: 0;
@@ -3434,7 +3437,7 @@ select {
   transform: translateY(-50%);
 }
 
-.home-tree__caption .desc span .contact {
+.home-tree__caption .desc .phrase-2 .contact {
   display: inline-block;
   padding: 6px 14px;
   font-size: 15px;
@@ -3453,33 +3456,33 @@ select {
 }
 
 @media screen and (min-width: 2000px) {
-  .home-tree__caption .desc span .contact {
+  .home-tree__caption .desc .phrase-2 .contact {
     font-size: 19px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .home-tree__caption .desc span .contact {
+  .home-tree__caption .desc .phrase-2 .contact {
     font-size: 13px;
     padding: 5px 10px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .home-tree__caption .desc span .contact {
+  .home-tree__caption .desc .phrase-2 .contact {
     font-size: 12px;
     padding: 5px 10px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .home-tree__caption .desc span .contact {
+  .home-tree__caption .desc .phrase-2 .contact {
     font-size: 10px;
     padding: 4px 9px;
   }
 }
 
-.home-tree__caption .desc span .contact:hover {
+.home-tree__caption .desc .phrase-2 .contact:hover {
   -webkit-transform: scale(1.04);
   -moz-transform: scale(1.04);
   -ms-transform: scale(1.04);
@@ -3487,20 +3490,20 @@ select {
   transform: scale(1.04);
 }
 
-.home-tree__caption .desc span .icons {
+.home-tree__caption .desc .phrase-2 .icons {
   display: flex;
   align-items: center;
   margin-top: -4px;
 }
 
 @media screen and (min-width: 2000px) {
-  .home-tree__caption .desc span .icons {
+  .home-tree__caption .desc .phrase-2 .icons {
     margin-top: 4px;
   }
 }
 
 @media screen and (max-width: 444px) {
-  .home-tree__caption .desc span .icons {
+  .home-tree__caption .desc .phrase-2 .icons {
     margin-top: 15px;
   }
 }
@@ -6697,6 +6700,12 @@ select {
   border-radius: 50%;
   background-color: #fff;
   border-radius: 50%;
+}
+
+@media screen and (min-width: 992px) {
+  .projetos-recentes__item .content .line::after {
+    top: 0.6px;
+  }
 }
 
 .projetos-recentes__item .content .more {

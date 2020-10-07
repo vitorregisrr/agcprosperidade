@@ -340,12 +340,15 @@
                 margin-bottom: 20px;
             }
             @media screen and (max-width: $bp-MD) {
-                font-size: 34px;
+                font-size: 30px;
                 letter-spacing: 6px;
                 margin-bottom: 20px;
             }
             @media screen and (max-width: 430px) {
-                font-size: 38px;
+                font-size: 28px;
+                line-height: 1.4;
+                padding-right: 0;
+                margin-top: 10px;
             }
             @media screen and (max-width: 375px) {
                 font-size: 33.3px;
@@ -378,7 +381,7 @@
                 line-height: 2;
             }
 
-            span {
+            .phrase-2 {
                 display: flex;
                 flex-wrap: nowrap;
                 margin-top: 24px;

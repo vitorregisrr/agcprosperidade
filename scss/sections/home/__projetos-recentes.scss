@@ -113,6 +113,10 @@
                     border-radius: 50%;
                     background-color: #fff;
                     border-radius: 50%;
+
+                    @media screen and (min-width: $bp-LG){
+                        top: 0.6px;
+                    }
                 }
             }
 

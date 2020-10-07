@@ -6703,6 +6703,7 @@ select {
 @media screen and (max-width: 768px) {
   .projetos-recentes__item .content .more {
     margin-bottom: 20px;
+    line-height: 1;
     font-size: 12px;
   }
 }

@@ -10873,7 +10873,7 @@ select {
 }
 
 .banner-orcamento__content .link {
-  font-family: 'FM';
+  font-family: 'FB';
   font-size: 18px;
   letter-spacing: 3px;
   padding: 2px 13px;
@@ -10886,6 +10886,7 @@ select {
 @media screen and (max-width: 768px) {
   .banner-orcamento__content .link {
     font-size: 13px;
+    padding-bottom: 1px;
   }
 }
 

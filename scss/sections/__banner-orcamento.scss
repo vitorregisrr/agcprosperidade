@@ -28,7 +28,7 @@
         }
 
         .link{
-            font-family: 'FM';
+            font-family: 'FB';
             font-size: 18px;
             letter-spacing: 3px;
             padding: 2px 13px;
@@ -39,6 +39,7 @@
 
             @media screen and (max-width: $bp-MD){
                 font-size: 13px;
+                padding-bottom: 1px;
             }
         }
 

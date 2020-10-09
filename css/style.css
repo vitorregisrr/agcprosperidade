@@ -5216,7 +5216,13 @@ select {
 }
 
 .quem-somos__newsletter-body .form label.error {
-  margin-top: 0;
+  margin-top: 3px;
+}
+
+@media screen and (min-width: 992px) {
+  .quem-somos__newsletter-body .form label.error {
+    padding-left: 100px;
+  }
 }
 
 .quem-somos__newsletter-body .form input {

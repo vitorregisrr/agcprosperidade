@@ -946,8 +946,9 @@ button:focus {
 }
 
 .main-nav__tree .tree {
-  width: 100%;
+  width: 101%;
   margin: 0 auto;
+  margin-left: -1.2%;
 }
 
 .main-nav__toggler {

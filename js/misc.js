@@ -118,9 +118,8 @@
             'animation-name' : 'fadeIn'
         }).addClass('animated');
         replaceStyles();
-
-
     }
+    
     $('.home-tree__cookies .closee').click(acceptCookies);
 
     $(window).scroll(function () {

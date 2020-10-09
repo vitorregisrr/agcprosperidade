@@ -8304,7 +8304,7 @@ select {
 @media screen and (max-width: 576px) {
   .solucoes-i__caption .title .ico.movie {
     width: 90px;
-    right: -10px;
+    right: -30px;
   }
 }
 

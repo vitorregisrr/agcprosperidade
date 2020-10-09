@@ -10505,6 +10505,7 @@ select {
   .portfolio-pg__item-caption .desc {
     font-size: 12px;
     letter-spacing: 2px;
+    padding-top: 12px;
   }
 }
 

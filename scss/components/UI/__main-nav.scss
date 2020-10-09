@@ -40,9 +40,11 @@ $treewidthlg: 80px;
     &__tree {
         position: relative;
         display: flex;
+        padding: 20px 30px;
 
         .tree {
             width: 100%;
+            margin: 0 auto;
         }
 
         
@@ -130,6 +132,8 @@ $treewidthlg: 80px;
         display: flex;
         padding-right: 18px;
         z-index: 2;
+        padding-top: 5px;
+        margin-bottom: -7px;
 
         @media screen and (max-width: $bp-LG) {
             width: 100%;
@@ -139,7 +143,7 @@ $treewidthlg: 80px;
             background-color: #ffb84d;
             padding: 40px 43px;
             padding-top: 35px;
-
+            margin-bottom: 0;
         }
 
         @media screen and (max-width: $bp-MD){

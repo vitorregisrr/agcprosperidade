@@ -139,8 +139,9 @@ $treewidthlg: 80px;
         padding-right: 18px;
         z-index: 2;
         padding-top: 5px;
-        margin-bottom: -7px;
-
+        margin-top: -21px;
+        margin-bottom: -8px;
+      
         @media screen and (max-width: $bp-LG) {
             width: 100%;
             flex-direction: column;
@@ -157,10 +158,6 @@ $treewidthlg: 80px;
             margin: 0 auto;
         }
 
-        @media screen and (min-width: 2000px){
-            margin-top: -10px;
-        }
-
         li {
             display: inline-block;
             font-size: 16px;
@@ -175,8 +172,6 @@ $treewidthlg: 80px;
 
             @media screen and (max-width: $bp-XL) {
                 font-size: 14px;
-                margin-top: 8px;
-                margin-bottom: -5px;
             }
 
             @media screen and (min-width: 2000px){

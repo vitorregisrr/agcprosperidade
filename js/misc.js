@@ -160,7 +160,19 @@
                 }
             }
         })
-    })
+    });
+
+    // Active home-woman Navbar GIF
+    const womanTree = $('#home-woman .main-nav__tree .tree');
+    let womanTreeActived = false;
+    $(window).scroll(function () {
+        if(!womanTreeActived){
+            if( womanTree.hasClass('animated') ){
+                womanTreeActived = true;
+                womanTree.attr("src",womanTree.attr("src"))
+            }
+        }
+    });
 
     window.addEventListener("resize", replaceStyles);
     replaceStyles();

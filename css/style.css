@@ -3571,7 +3571,7 @@ select {
 .home-tree.has-cookies .main-nav .colorful .tree {
   position: relative;
   z-index: -1;
-  margin-bottom: -30px;
+  margin-bottom: -27px;
   width: 101%;
   margin-left: -2%;
 }
@@ -3580,6 +3580,12 @@ select {
   .home-tree.has-cookies .main-nav .colorful .tree {
     width: 82px;
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .home-tree.has-cookies .main-nav .colorful .tree {
+    margin-bottom: -42px !important;
   }
 }
 

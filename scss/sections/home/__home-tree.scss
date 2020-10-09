@@ -585,13 +585,17 @@
                 .tree {
                     position: relative;
                     z-index: -1;
-                    margin-bottom: -30px;
+                    margin-bottom: -27px;
                     width: 101%;
                     margin-left: -2%;
 
                     @media screen and (max-width: $bp-LG){
                         width: 82px;
                         margin: 0;
+                    }
+
+                    @media screen and (min-width: 2000px){
+                        margin-bottom: -42px !important;
                     }
                     
                 }

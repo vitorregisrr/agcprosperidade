@@ -11229,6 +11229,11 @@ select {
   }
 }
 
+.banner-newsletter .content .form label.error {
+  margin-bottom: 6px;
+  margin-top: 0;
+}
+
 .banner-newsletter .content .form input {
   background-color: #fff;
   position: relative;
@@ -11243,6 +11248,10 @@ select {
   letter-spacing: 1.3px;
   margin-left: 9%;
   margin-right: 27%;
+}
+
+.banner-newsletter .content .form input.error {
+  margin-bottom: 0 !important;
 }
 
 @media screen and (min-width: 2000px) {

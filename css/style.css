@@ -4669,6 +4669,23 @@ select {
   }
 }
 
+.clientes-banner__depoimentos-carousel.v-purple .owl-dots .owl-dot {
+  border-color: #8169a7;
+}
+
+.clientes-banner__depoimentos-carousel.v-purple .owl-dots .owl-dot.active {
+  border-color: #8169a7;
+  background-color: #8169a7;
+}
+
+.clientes-banner__depoimentos-carousel.v-purple .clientes-banner__depoimento .author {
+  color: #8169a7;
+}
+
+.clientes-banner__depoimentos-carousel.v-purple .clientes-banner__depoimento .desc {
+  color: black;
+}
+
 .clientes-banner__depoimentos-carousel .owl-dots {
   margin-top: -25px;
   margin-bottom: 15px;
@@ -4743,65 +4760,6 @@ select {
 
 .clientes-banner__depoimentos-carousel {
   position: relative;
-}
-
-.clientes-banner .depoimentos-wrapper {
-  position: relative;
-  max-width: 460px;
-  padding-bottom: 40px;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 992px) {
-  .clientes-banner .depoimentos-wrapper {
-    padding-bottom: 0;
-  }
-}
-
-.clientes-banner .depoimentos-wrapper::after {
-  content: '';
-  position: absolute;
-  top: -14px;
-  right: 10px;
-  transform: translateX(100%);
-  width: 77px;
-  height: 77px;
-  background-image: url("../images/ico/quotes.png");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-@media screen and (max-width: 768px) {
-  .clientes-banner .depoimentos-wrapper::after {
-    width: 35px;
-    height: 35px;
-    right: 40px;
-    top: -18px;
-  }
-}
-
-.clientes-banner .depoimentos-wrapper::before {
-  content: '';
-  position: absolute;
-  top: -14px;
-  left: -130px;
-  transform: translateX(100%);
-  width: 77px;
-  height: 77px;
-  background-image: url("../images/ico/quotes-l.png");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-@media screen and (max-width: 768px) {
-  .clientes-banner .depoimentos-wrapper::before {
-    width: 35px;
-    left: -30px;
-    top: -18px;
-    height: 35px;
-  }
 }
 
 .clientes-banner__depoimento {
@@ -4890,6 +4848,78 @@ select {
 
 .clientes-banner.bg-gray .owl-dots .owl-dot.active {
   background-color: #8169a7;
+}
+
+.depoimentos-wrapper {
+  position: relative;
+  max-width: 460px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+
+.depoimentos-wrapper.v-purple {
+  margin-bottom: -30px;
+  margin-top: -10px;
+}
+
+.depoimentos-wrapper.v-purple::before {
+  background-image: url("../images/ico/quote-l-primary.png");
+}
+
+.depoimentos-wrapper.v-purple::after {
+  background-image: url("../images/ico/quote-r-primary.png");
+}
+
+@media screen and (max-width: 992px) {
+  .depoimentos-wrapper {
+    padding-bottom: 0;
+  }
+}
+
+.depoimentos-wrapper::after {
+  content: '';
+  position: absolute;
+  top: -14px;
+  right: 10px;
+  transform: translateX(100%);
+  width: 77px;
+  height: 77px;
+  background-image: url("../images/ico/quotes.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .depoimentos-wrapper::after {
+    width: 35px;
+    height: 35px;
+    right: 40px;
+    top: -18px;
+  }
+}
+
+.depoimentos-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: -130px;
+  transform: translateX(100%);
+  width: 77px;
+  height: 77px;
+  background-image: url("../images/ico/quotes-l.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .depoimentos-wrapper::before {
+    width: 35px;
+    left: -30px;
+    top: -18px;
+    height: 35px;
+  }
 }
 
 .quem-somos {
@@ -11047,7 +11077,7 @@ select {
 
 .banner-orcamento2 .img-top {
   position: absolute;
-  top: 0;
+  top: .6px;
   left: 0;
   transform: translateY(-99%);
   width: 100%;

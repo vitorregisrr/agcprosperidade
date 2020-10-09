@@ -592,36 +592,13 @@
                 }
 
                 &.colorful {
-                    display: flex;
-
-                    @media screen and (max-width: $bp-MD) {
-                        margin-bottom: 13px;
-                    }
-
-                    .tree {
+                    position: relative;
+                    display: block;
+                    
+                    .tree{
+                        position: relative;
+                        z-index: -1;
                         margin-bottom: -50px;
-                        width: 150px;
-
-                        @media screen and (max-width: $bp-LG) {
-                            margin: 0;
-                            width: 110px;
-                        }
-
-                        @media screen and (max-width: $bp-SM) {
-                            width: 80px;
-                        }
-                    }
-
-                    .lines {
-                        width: calc(100% - 110px);
-                        margin-left: -65px;
-                        margin-bottom: -18.4px;
-                        animation-name: slideIn;
-                        animation-duration: 4.3s;
-
-                        @media screen and (min-width: 2000px) {
-                            margin-left: -74px;
-                        }
                     }
                 }
             }

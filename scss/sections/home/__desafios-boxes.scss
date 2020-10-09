@@ -3,8 +3,15 @@
     overflow: hidden;
 
     &__list {
+        position: relative;
         display: flex;
         justify-content: space-between;
+
+        &.is-expanded{
+            @media screen and (max-width: $bp-LG){
+                height: 230px;
+            }
+        }
         
         @media screen and (min-width: 1380px){
             margin-left: -70px;
@@ -71,24 +78,29 @@
         }
 
         @media screen and (max-width: $bp-LG){
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
             max-width: 380px;
-            display: none;
             margin: 0 auto;
+            max-height: 0;
             padding-bottom: 30px;
             padding-left: 40px;
             padding-right: 40px;
             width: 100%;
             font-size: 18px;
+            transition-duration: 0.4s;
+            max-height: 0;
             
             &.active{
-                display: block;
-                animation: fadeIn 0.8s;
+                transition-delay: 0.3s;
+                transition-duration: 2s;
             }
         }
         
         @media screen and (max-width: $bp-MD){
             max-width: 310px;
-            display: none;
             margin: 0 auto;
             padding-bottom: 30px;
             padding-right: 15px;

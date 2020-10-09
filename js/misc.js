@@ -82,6 +82,7 @@
         $('#desafios-boxes').show();
         var target = $(this).attr('data-target');
         $(target).addClass('active');
+        $('.desafios-boxes__list').addClass('is-expanded');
 
         if(window.innerWidth < 992){
             $(target).siblings().removeClass('active');
@@ -89,6 +90,7 @@
     });
     $('.desafios-boxes__item .close').click( function(){
         $(this).parent().removeClass('active');
+        $('.desafios-boxes__list').removeClass('is-expanded');
     });
 
     $('[data-toggle="popup-contact"]').click( function(e){

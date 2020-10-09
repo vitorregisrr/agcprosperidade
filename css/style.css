@@ -949,6 +949,7 @@ button:focus {
   width: 101%;
   margin: 0 auto;
   margin-left: -1.2%;
+  margin-bottom: -4px;
 }
 
 .main-nav__toggler {
@@ -3612,7 +3613,7 @@ select {
 .home-tree.has-cookies .main-nav .colorful .tree {
   position: relative;
   z-index: -1;
-  margin-bottom: -27px;
+  margin-bottom: -31px;
   width: 101%;
   margin-left: -2%;
 }

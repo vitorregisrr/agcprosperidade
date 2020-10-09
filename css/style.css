@@ -11827,6 +11827,10 @@ select {
   width: 95%;
 }
 
+.subscribe-form-box input.error {
+  margin-bottom: 0;
+}
+
 .subscribe-form-box .line-wrapper {
   display: flex;
   align-items: center;

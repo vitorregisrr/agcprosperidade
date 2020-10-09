@@ -935,6 +935,10 @@ button:focus {
   }
 }
 
+.main-nav__brand img {
+  width: 50px;
+}
+
 .main-nav__tree {
   position: relative;
   display: flex;

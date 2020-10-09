@@ -37,6 +37,12 @@ $treewidthlg: 80px;
         }
     }
 
+    &__brand{
+        img{
+            width: 50px;
+        }
+    }
+
     &__tree {
         position: relative;
         display: flex;

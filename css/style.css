@@ -11315,7 +11315,13 @@ select {
 
 .banner-newsletter .content .form label.error {
   margin-bottom: 6px;
-  margin-top: 0;
+  margin-top: 2px;
+}
+
+@media screen and (min-width: 992px) {
+  .banner-newsletter .content .form label.error {
+    padding-left: 80px;
+  }
 }
 
 .banner-newsletter .content .form input {
